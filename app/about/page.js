@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'About Dr. Stephen Thompson | The Founded Project',
-  description: 'Dr. Stephen Thompson, DC, DACM, FAIHM — survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Three generations of healers. Two decades of practice.',
+  description: 'Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM — survivor-scholar-clinician building the governance infrastructure for the people most likely to be extracted from.',
 }
 
 export default function About() {
@@ -13,8 +13,8 @@ export default function About() {
           <h1 className="text-white text-5xl font-light leading-tight mb-6">
             Dr. Stephen Thompson
           </h1>
-          <p style={{ color: '#D8AB69' }} className="text-lg mb-2">DC · DACM · FAIHM</p>
-          <p className="text-gray-400">Northwestern Health Sciences University · AIHM Fellow · Survivor-Scholar-Clinician</p>
+          <p style={{ color: '#D8AB69' }} className="text-lg mb-2">DC · DACM · BCTMB · FAIHM</p>
+          <p className="text-gray-400">Survivor · Scholar · Clinician · Builder</p>
         </div>
       </section>
 
@@ -23,28 +23,41 @@ export default function About() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2">
             <div style={{ width: '60px', height: '2px', backgroundColor: '#D8AB69' }} className="mb-8" />
+
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              Coming from three generations of doctors, Dr. Stephen Thompson was introduced to medicine at a very early age. He completed his undergraduate work at Guilford College, then attended the prestigious Emperor&apos;s College of Traditional Oriental Medicine and Northwestern Health Sciences University, where he focused on orthopedics, pain management, and psycho-emotional disorders.
+              The question Dr. Stephen Thompson has been answering his entire career is this: what happens when you give the most extracted-from people the same structural tools as institutions?
             </p>
+
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              With nearly two decades in clinical medicine, Dr. Thompson brings extensive experience from multiple integrative care settings. His practice incorporates Chiropractic Medicine and Traditional Chinese Medicine — including chiropractic adjustments, acupuncture, Chinese herbal therapy, bodywork, nutrition counseling, rehabilitation, and lifestyle design.
+              He comes from three generations of healers. He trained in integrative medicine, Traditional Chinese Medicine, and chiropractic at Pacific College of Health and Science and Northwestern Health Sciences University. But the clinical work was never the full answer. It was the entry point.
             </p>
+
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              He is an assistant professor and lecturer at Northwestern Health Sciences University in Bloomington, MN, in the College of Health and Wellness, with emphasis on integrative care and clinical massage therapy. He volunteers his time providing trauma-informed care within the community.
+              He survived things that would have ended most careers. That survival became his research. He stopped treating it as backstory and started treating it as data — and what the data showed was consistent: the people most likely to be exploited by modern systems were also the least likely to have access to the governance infrastructure that would protect them.
             </p>
+
+            <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
+              So he built it. Books, platforms, civic tools, coaching frameworks, AI systems, and a personal governance app. Not for the institution. For the person the institution was designed to extract from.
+            </p>
+
+            <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
+              He teaches at Northwestern Health Sciences University. He practices at Stockheart Whole Health. He consults with organizations on corporate wellness and AI readiness through GreyDoc Consulting. He publishes. He codes. He advocates for civic truth through RhetoricalPoints and GroundedVote.
+            </p>
+
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed">
-              His work spans clinical practice, academic instruction, book authorship, app development, and civic technology. The throughline is a single conviction: survival is genius. Adaptation is brilliance. The goal is to give people the structure to protect what they&apos;ve built.
+              The throughline across all of it is a single conviction: the people who were taught to survive deserve the tools to govern. Survival is genius. The goal is to give that genius somewhere to go.
             </p>
           </div>
+
           <div>
-            <div style={{ backgroundColor: '#0F1B1F' }} className="p-8 rounded-sm">
+            <div style={{ backgroundColor: '#0F1B1F' }} className="p-8 rounded-sm mb-6">
               <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-6">Credentials</p>
               <ul className="space-y-4">
                 {[
                   { abbr: 'DC', full: 'Doctor of Chiropractic' },
                   { abbr: 'DACM', full: 'Doctor of Acupuncture & Chinese Medicine' },
+                  { abbr: 'BCTMB', full: 'Board Certified in Therapeutic Massage & Bodywork' },
                   { abbr: 'FAIHM', full: 'Fellow, Academy of Integrative Health & Medicine' },
-                  { abbr: 'LAc', full: 'Licensed Acupuncturist' },
                 ].map((cred) => (
                   <li key={cred.abbr}>
                     <p style={{ color: '#D8AB69' }} className="text-sm font-semibold">{cred.abbr}</p>
@@ -55,44 +68,74 @@ export default function About() {
               <div style={{ height: '1px', backgroundColor: '#D8AB69' }} className="my-6 opacity-30" />
               <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-4">Institutions</p>
               <ul className="space-y-2 text-gray-300 text-xs">
+                <li>Pacific College of Health and Science</li>
                 <li>Northwestern Health Sciences University</li>
-                <li>Emperor&apos;s College of Traditional Oriental Medicine</li>
-                <li>Guilford College</li>
                 <li>AIHM Fellowship</li>
                 <li>Stockheart Whole Health</li>
+              </ul>
+            </div>
+
+            <div style={{ backgroundColor: '#0F1B1F' }} className="p-8 rounded-sm">
+              <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-4">The Work</p>
+              <ul className="space-y-3">
+                {[
+                  { label: 'The Founded App', href: 'https://thefounded.app' },
+                  { label: 'Journey from the Edge', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
+                  { label: 'GroundedVote', href: 'https://groundedvote.com' },
+                  { label: 'RhetoricalPoints', href: 'https://rhetoricalpoints.com' },
+                  { label: 'GreyDoc Consulting', href: 'https://greydoc.com' },
+                  { label: 'Founded Emerging', href: 'https://thefoundedemerging.app' },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <a href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(245,240,232,0.6)', textDecoration: 'none', fontSize: '13px', borderBottom: '1px solid rgba(216,171,105,0.2)', paddingBottom: '2px', display: 'inline-block' }}>
+                      {item.label} →
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Framework */}
+      {/* The Arc */}
       <section style={{ backgroundColor: '#FAFAF7' }} className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <p style={{ color: '#D8AB69' }} className="text-sm font-semibold uppercase tracking-widest mb-4">The Thompson Ecosystem</p>
-          <h2 style={{ color: '#0F1B1F' }} className="text-3xl font-light mb-12">Three layers. One arc.</h2>
+          <h2 style={{ color: '#0F1B1F' }} className="text-3xl font-light mb-4">One question. Many answers.</h2>
+          <p style={{ color: '#0F1B1F' }} className="text-lg opacity-60 max-w-2xl mb-12">
+            Every project in this ecosystem is an attempt to answer the same question from a different angle — what does it look like when you give the most underserved people the same structural intelligence that institutions use every day?
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 name: 'Journey from the Edge',
-                theme: 'Survival Architecture',
-                desc: 'People do not make isolated choices in a neutral world. They adapt to conditions. Journey from the Edge names those adaptations and begins the work of reclamation.',
+                theme: 'Name the survival.',
+                desc: 'The body learns to survive. This book names those patterns, honors them as the intelligence they are, and begins the walk back to choice. Available on Amazon now.',
+                link: { label: 'Buy on Amazon', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
               },
               {
                 name: 'Rooted Reclaimers',
-                theme: 'Reclamation',
-                desc: 'The community and educational layer. Trauma-informed education, movement, breathwork, nutrition, and connection — helping people recover agency and embodied awareness.',
+                theme: 'Reclaim the agency.',
+                desc: 'The community layer. Trauma-informed education, movement, breathwork, nutrition, and connection — for people rebuilding capacity on their own terms.',
+                link: null,
               },
               {
-                name: 'The Human Enterprise',
-                theme: 'Governance & Protection',
-                desc: 'Healing creates possibility. The Human Enterprise gives that possibility structure — mission, values, advisory support, data stewardship, and community coordination.',
+                name: 'The Founded App',
+                theme: 'Build the governance.',
+                desc: 'Healing creates possibility. The Founded gives that possibility structure — mission, board, six capitals, decisions, and continuity. The destination for every node in this ecosystem.',
+                link: { label: 'The Founded App', href: 'https://thefounded.app' },
               },
             ].map((layer) => (
               <div key={layer.name} className="border-t-2 pt-6" style={{ borderColor: '#D8AB69' }}>
                 <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-wider mb-2">{layer.theme}</p>
                 <h3 style={{ color: '#0F1B1F' }} className="text-lg font-semibold mb-4">{layer.name}</h3>
-                <p style={{ color: '#0F1B1F' }} className="text-sm leading-relaxed opacity-80">{layer.desc}</p>
+                <p style={{ color: '#0F1B1F' }} className="text-sm leading-relaxed opacity-70 mb-4">{layer.desc}</p>
+                {layer.link && (
+                  <a href={layer.link.href} target="_blank" rel="noopener noreferrer" style={{ color: '#0F1B1F', fontSize: '12px', fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid #D8AB69', paddingBottom: '1px' }}>
+                    {layer.link.label} →
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -103,12 +146,15 @@ export default function About() {
       <section style={{ backgroundColor: '#0F1B1F' }} className="py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="text-white text-2xl font-light mb-2">Ready to connect?</h2>
-            <p className="text-gray-400 text-sm">Publishers, media, speaking invitations, and partnership inquiries welcome.</p>
+            <h2 className="text-white text-2xl font-light mb-2">Connect with the work.</h2>
+            <p className="text-gray-400 text-sm">Publishers, media, speaking invitations, clinical inquiries, and partnership conversations welcome.</p>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap">
             <a href="/speaking" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F' }} className="px-6 py-3 text-sm font-semibold rounded hover:opacity-90 transition-opacity">
               Speaking
+            </a>
+            <a href="https://greydoc.com" target="_blank" rel="noopener noreferrer" style={{ border: '1px solid rgba(216,171,105,0.4)', color: '#D8AB69' }} className="px-6 py-3 text-sm font-semibold rounded hover:bg-white/5 transition-colors">
+              GreyDoc Consulting
             </a>
             <a href="/contact" style={{ border: '1px solid #D8AB69', color: '#D8AB69' }} className="px-6 py-3 text-sm font-semibold rounded hover:bg-white/5 transition-colors">
               Contact
