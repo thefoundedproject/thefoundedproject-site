@@ -45,7 +45,7 @@ const QUIZ = [
 ]
 const PROFILES = {
   a: { title: 'The Builder Without a Blueprint', desc: 'You have drive and instinct. What is missing is structure — not because you lack it, but because no one handed it to you.', cta: 'The Founded App starts where you are.', href: 'https://thefounded.app' },
-  b: { title: 'The Reclaimer', desc: 'You survived something. That survival is the foundation of your intelligence. Now you need a structure that honors what your nervous system learned.', cta: 'Start with Journey from the Edge.', href: 'https://www.amazon.com/dp/JOURNEY_ASIN' },
+  b: { title: 'The Reclaimer', desc: 'You survived something. That survival is the foundation of your intelligence. Now you need a structure that honors what your nervous system learned.', cta: 'Start with Journey from the Edge.', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
   c: { title: 'The Visionary Missing Infrastructure', desc: 'You can see exactly where you are going. The challenge is the scaffolding. That is a governance problem — and governance is solvable.', cta: 'The Founded App gives your vision the structure it needs.', href: 'https://thefounded.app' },
   d: { title: 'The Competent Carrier', desc: 'You are excellent and exhausted from performing it. The framework does not ask you to perform. It asks what you actually need — and builds around that.', cta: 'Begin with the framework.', href: 'https://thefounded.app' },
 }
@@ -238,7 +238,7 @@ export default function Home() {
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
-              { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/YOUR_ASIN_HERE', nextLabel: 'Rooted Reclaimers community', nextHref: '/about#rooted', status: 'Live', delay: 0 },
+              { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY', nextLabel: 'Rooted Reclaimers community', nextHref: '/about#rooted', status: 'Live', delay: 0 },
               { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', desc: 'A practitioner guide to the body as a site of healing. Touch, relationship, and the nervous system.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', delay: 80 },
               { tag: 'Civic · History · Culture', name: 'The South Never Lost', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known. An unfinished reckoning.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', delay: 160 },
               { tag: 'Governance · Community · Agency', name: 'The Founded: A Human Enterprise Project', desc: 'The governance framework that protects reclaimed agency through structure, counsel, and community coordination.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', delay: 240 },
@@ -355,7 +355,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 1, backgroundColor: 'rgba(216,171,105,0.1)' }}>
             {[
-              { from: 'Journey from the Edge', to: 'Rooted Reclaimers', arrow: 'Survival named → Community found', href: 'https://www.amazon.com/dp/YOUR_ASIN_HERE' },
+              { from: 'Journey from the Edge', to: 'Rooted Reclaimers', arrow: 'Survival named → Community found', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
               { from: 'Rooted Reclaimers', to: 'The Founded App', arrow: 'Community found → Governance built', href: 'https://thefounded.app' },
               { from: 'RhetoricalPoints', to: 'GroundedVote', arrow: 'Truth detected → Alignment found', href: 'https://groundedvote.com' },
               { from: 'GroundedVote', to: 'The Founded App', arrow: 'Civic clarity → Personal governance', href: 'https://thefounded.app' },
@@ -393,7 +393,7 @@ export default function Home() {
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 15, lineHeight: 1.7, marginBottom: 16 }}>There are many doors into this ecosystem. Three honest questions will point you toward the right one.</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 24 }}>
               {[
-                { label: 'Start with the books →', href: 'https://www.amazon.com/dp/YOUR_ASIN_HERE' },
+                { label: 'Start with the books →', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
                 { label: 'Check your civic alignment →', href: 'https://groundedvote.com' },
                 { label: 'Go straight to the app →', href: 'https://thefounded.app' },
               ].map(l => (
@@ -418,7 +418,7 @@ export default function Home() {
           </Reveal>
 
           {[
-            { title: 'Journey from the Edge', status: 'Available on Amazon', statusColor: '#6D8B5F', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. The first volume in the Thompson Ecosystem.', link: { label: 'Buy on Amazon →', href: 'https://www.amazon.com/dp/YOUR_ASIN_HERE' }, next: { label: 'Rooted Reclaimers', href: '/about#rooted' } },
+            { title: 'Journey from the Edge', status: 'Available on Amazon', statusColor: '#6D8B5F', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. The first volume in the Thompson Ecosystem.', link: { label: 'Buy on Amazon →', href: 'https://www.amazon.com/dp/B0GTXBZGJY' }, next: { label: 'Rooted Reclaimers', href: '/about#rooted' } },
             { title: 'P/AIRS Bodywork', status: 'Forthcoming 2026', statusColor: '#D9A441', desc: 'A practitioner guide to the body as a site of healing. Touch, relationship, and the nervous system.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
             { title: 'The South Never Lost', status: 'In Progress', statusColor: '#D9A441', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known and protected. An unfinished reckoning in progress.', next: { label: 'GroundedVote', href: 'https://groundedvote.com' } },
             { title: 'The Founded: A Human Enterprise Project', status: 'Forthcoming', statusColor: 'rgba(15,27,31,0.35)', desc: 'The governance framework. Structure for people who reclaimed their lives and are ready to protect what they built.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
