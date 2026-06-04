@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Projects | The Founded Project Ecosystem',
-  description: 'The Founded Project ecosystem — The Founded App, Founded Emerging, and GroundedVote. Three platforms built on Human Enterprise Theory.',
+  description: 'The Founded Project: The Founded App, Founded Emerging, and GroundedVote. Three platforms built on Human Enterprise Theory.',
 }
 
 export default function Projects() {
@@ -11,8 +11,8 @@ export default function Projects() {
       domain: 'thefounded.app',
       tag: 'Human Enterprise · Personal Governance',
       audience: 'Entrepreneurs · Emerging adults · Black men · Community builders',
-      description: 'The flagship platform. Human Enterprise Theory made accessible through app-based infrastructure, coaching, and community. A governance framework for your life — mission, values, advisory support, data stewardship, and continuity planning for the AI era.',
-      features: ['Human Enterprise Theory overview', 'Thompson Coaching Method', 'Community — Rooted Reclaimers', 'App download (iOS + Android)'],
+      description: 'The flagship platform. The personal governance platform. Mission, board, six capitals, decisions, and continuity built around the life you're actually living.',
+      features: ['Human Enterprise Theory overview', 'Thompson Coaching Method', 'Rooted Reclaimers community', 'App download (iOS + Android)'],
       color: '#1A3A42',
     },
     {
@@ -20,9 +20,9 @@ export default function Projects() {
       url: 'https://thefoundedemerging.app',
       domain: 'thefoundedemerging.app',
       tag: 'Youth Leadership · Emerging Adult Governance',
-      audience: 'High school & college students · Alpha Phi Alpha · HBCUs · Youth orgs · Educators',
-      description: 'The youth-facing arm of the ecosystem. Human Enterprise Theory applied to emerging adults — governance of self before governance of the world. Built for Alpha Phi Alpha chapters, HBCU communities, youth organizations, and educators who know their students are ready for more.',
-      features: ['Emerging adult governance curriculum', 'Alpha Phi Alpha partnership program', 'Educator resources', 'Youth cohort enrollment'],
+      audience: 'High school & college students · Youth orgs · Leadership programs · Educators',
+      description: 'Human Enterprise Theory applied to emerging adults. For young people building serious lives before anyone handed them the map.',
+      features: ['Emerging adult governance curriculum', 'Youth program partnerships', 'Educator resources', 'Youth cohort enrollment'],
       color: '#2A5A66',
     },
     {
@@ -31,7 +31,7 @@ export default function Projects() {
       domain: 'groundedvote.com',
       tag: 'Civic Alignment · Democratic Integrity',
       audience: 'Voters · Organizers · Civic educators · HBCU communities · First-generation voters',
-      description: 'A nonpartisan civic alignment engine. GroundedVote interrupts the pattern of identity-based voting by helping citizens discover which candidates actually match their policy values — independent of party, tribe, or fear. Built on the bias-audited question generation architecture developed for RhetoricalPoints.',
+      description: 'A nonpartisan civic tool. GroundedVote shows you which candidates match what you actually believe. Built on bias-audited AI developed through RhetoricalPoints.',
       features: ['AI-powered voter alignment quiz', 'Bias-audited question pipeline', 'Media literacy toolkit', 'Methodology whitepaper'],
       color: '#0F1B1F',
     },
@@ -44,7 +44,7 @@ export default function Projects() {
           <p style={{ color: '#D8AB69' }} className="text-sm font-semibold uppercase tracking-widest mb-4">Ecosystem</p>
           <h1 className="text-white text-5xl font-light leading-tight mb-6">Three Platforms.<br />One Framework.</h1>
           <p className="text-gray-300 text-lg max-w-2xl">
-            Every platform in The Founded Project ecosystem is built on Human Enterprise Theory — the conviction that ordinary people deserve the structural intelligence that institutions use every day.
+            Every platform in The Founded Project is built on Human Enterprise Theory. The conviction that ordinary people deserve the structural intelligence that institutions use every day.
           </p>
         </div>
       </section>

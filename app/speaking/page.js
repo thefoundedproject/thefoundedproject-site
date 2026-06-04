@@ -7,7 +7,7 @@ const topics = [
   {
     title: 'Human Enterprise Theory',
     audience: 'Corporations · Universities · Conferences',
-    desc: 'How governance structures shape who thrives and who is extracted — and what organizations can do to change that. Bridges structural critique with practical, embodied action.',
+    desc: 'How governance structures shape who thrives and who is extracted. What organizations can do to change that.',
   },
   {
     title: 'Survival as Genius',
@@ -17,7 +17,7 @@ const topics = [
   {
     title: 'The Algorithmic Plantation',
     audience: 'Civic · Academic · Media',
-    desc: 'A deep examination of how digital systems replicate the structural mechanisms of racial exploitation — and how communities build counter-architectures of truth and power.',
+    desc: 'A deep examination of how digital systems replicate structural exploitation. How communities build counter-architectures of truth and power.',
   },
   {
     title: 'Integrative Medicine & Whole-Person Care',
@@ -27,12 +27,12 @@ const topics = [
   {
     title: 'Civic Alignment in the AI Era',
     audience: 'Civic Organizations · HBCUs · Youth',
-    desc: 'How AI-powered tools like GroundedVote can restore trust in democratic participation — and why civic infrastructure needs to be built for those most harmed by the current system.',
+    desc: 'How AI-powered tools like GroundedVote can restore trust in democratic participation. Why civic infrastructure needs to be built for those most harmed by the current system.',
   },
   {
     title: 'Emerging Adult Governance',
     audience: 'Greek Organizations · Youth · Educators',
-    desc: 'Applied Human Enterprise Theory for high school and college students. Governance of self before governance of the world — the framework for Alpha Phi Alpha and youth leadership programs.',
+    desc: 'Applied Human Enterprise Theory for high school and college students. Governance of self before governance of the world.',
   },
 ]
 
@@ -74,10 +74,10 @@ export default function Speaking() {
               Dr. Stephen Thompson is a Doctor of Chiropractic (DC), Doctor of Acupuncture and Chinese Medicine (DACM), and Fellow of the Academy of Integrative Health and Medicine (FAIHM). He is an assistant professor at Northwestern Health Sciences University and the founder of The Founded Project ecosystem.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              His work spans clinical practice, civic technology, book authorship, and youth leadership development. He is the creator of Human Enterprise Theory, the Thompson Coaching Method, and GroundedVote — a nonpartisan civic alignment engine designed to restore policy-based democratic participation.
+              His work spans clinical practice, civic technology, book authorship, and youth leadership development. He's the creator of Human Enterprise Theory, the Thompson Coaching Method, and GroundedVote, a nonpartisan civic tool for policy-based democratic participation.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              He speaks from lived experience, clinical depth, and institutional fluency — never from above, always from alongside.
+              He speaks from lived experience, clinical depth, and institutional fluency. From alongside, never from above.
             </p>
           </div>
           <div>

@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'About Dr. Stephen Thompson | The Founded Project',
-  description: 'Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM — survivor-scholar-clinician building the governance infrastructure for the people most likely to be extracted from.',
+  description: 'Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM, survivor-scholar-clinician building the governance infrastructure for the people most likely to be extracted from.',
 }
 
 export default function About() {
@@ -33,7 +33,7 @@ export default function About() {
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              He survived things that would have ended most careers. That survival became his research. He stopped treating it as backstory and started treating it as data — and what the data showed was consistent: the people most likely to be exploited by modern systems were also the least likely to have access to the governance infrastructure that would protect them.
+              He survived things that would have ended most careers. That survival became his research. He stopped treating it as backstory and started treating it as data. What the data showed was consistent: the people most likely to be exploited by modern systems were also the least likely to have access to the governance infrastructure that would protect them.
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
@@ -104,7 +104,7 @@ export default function About() {
           <p style={{ color: '#D8AB69' }} className="text-sm font-semibold uppercase tracking-widest mb-4">The Thompson Ecosystem</p>
           <h2 style={{ color: '#0F1B1F' }} className="text-3xl font-light mb-4">One question. Many answers.</h2>
           <p style={{ color: '#0F1B1F' }} className="text-lg opacity-60 max-w-2xl mb-12">
-            Every project in this ecosystem is an attempt to answer the same question from a different angle — what does it look like when you give the most underserved people the same structural intelligence that institutions use every day?
+            Every project in this ecosystem is an attempt to answer the same question from a different angle: what does it look like when you give the most underserved people the same structural intelligence that institutions use every day?
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -117,13 +117,13 @@ export default function About() {
               {
                 name: 'Rooted Reclaimers',
                 theme: 'Reclaim the agency.',
-                desc: 'The community layer. Trauma-informed education, movement, breathwork, nutrition, and connection — for people rebuilding capacity on their own terms.',
+                desc: 'The community layer. Trauma-informed education, movement, breathwork, nutrition, and connection — for people rebuilding, on their own terms.',
                 link: null,
               },
               {
                 name: 'The Founded App',
                 theme: 'Build the governance.',
-                desc: 'Healing creates possibility. The Founded gives that possibility structure — mission, board, six capitals, decisions, and continuity. The destination for every node in this ecosystem.',
+                desc: 'Healing creates possibility. The Founded gives that possibility structure: mission, board, six capitals, decisions, and continuity. The destination for every node in this ecosystem.',
                 link: { label: 'The Founded App', href: 'https://thefounded.app' },
               },
             ].map((layer) => (

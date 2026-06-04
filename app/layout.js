@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'The Founded Project | Dr. Stephen Thompson, DC, DACM, FAIHM',
-  description: 'The Founded Project is the ecosystem of Dr. Stephen Thompson — survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Books, platforms, civic tools, and healing infrastructure built to get humans organized and reinforced.',
+  description: 'The Founded Project is the work of Dr. Stephen Thompson, survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Books, platforms, civic tools, and healing infrastructure built to get humans organized and reinforced.',
   keywords: 'Human Enterprise Theory, Dr. Stephen Thompson, Founded Project, GroundedVote, trauma-informed, survivor scholar, Black healing, civic alignment',
   openGraph: {
     title: 'The Founded Project',
@@ -48,7 +48,7 @@ function Footer() {
           <div className="md:col-span-2">
             <div className="text-white font-semibold text-lg mb-3">The Founded Project</div>
             <p className="text-sm leading-relaxed max-w-sm">
-              Get humans organized and reinforced. Answer the questions society isn&apos;t asking yet — because they don&apos;t yet have the language.
+              Get humans organized and reinforced. Answer the questions society isn't asking yet. The language is still being built.
             </p>
             <div style={{ width: '40px', height: '2px', backgroundColor: '#D8AB69' }} className="mt-4" />
           </div>

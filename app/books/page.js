@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Books | The Founded Project',
-  description: 'Books by Dr. Stephen Thompson — The South Never Lost, Journey from the Edge, P/AIRS Bodywork, Human Enterprise Theory, and more.',
+  description: 'Books by Dr. Stephen Thompson — The South Never Lost, Journey from the Edge, P/AIRS Bodywork, The Founded: A Human Enterprise Project, and more.',
 }
 
 const books = [
@@ -8,14 +8,14 @@ const books = [
     title: 'The South Never Lost',
     status: 'Complete',
     category: 'Civic · History · Culture',
-    description: 'The algorithmic plantation, democratic integrity, and the truth about what the South has always known. This book challenges the dominant narrative of Southern defeat and traces how Black Southern resistance, knowledge, and community architecture has persisted — and what that means for democracy today.',
+    description: 'The algorithmic plantation, democratic integrity, and the truth about what the South has always known. What the South has always known and protected. An unfinished reckoning.',
     themes: ['Civic truth-telling', 'Algorithmic governance', 'Black Southern resilience', 'Democratic integrity'],
   },
   {
     title: 'Journey from the Edge',
     status: 'Forthcoming',
     category: 'Memoir · Trauma · Reclamation',
-    description: 'A survival architecture memoir. The story of what the body learns to do to keep a person alive — and what it costs to unlearn it. Grounded in lived experience and clinical understanding of the nervous system, trauma adaptation, and the long road back to agency.',
+    description: 'A survival architecture memoir. The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice.',
     themes: ['Nervous system', 'Survival plasticity', 'Reclamation', 'Lived experience'],
   },
   {
@@ -26,7 +26,7 @@ const books = [
     themes: ['Somatic care', 'Trauma-informed practice', 'Relational healing', 'TCM integration'],
   },
   {
-    title: 'Human Enterprise Theory',
+    title: 'The Founded: A Human Enterprise Project',
     status: 'Forthcoming',
     category: 'Governance · Community · Agency',
     description: 'The governance framework that protects reclaimed agency through structure, counsel, data stewardship, and community coordination. Humanizing the corporation, not corporatizing the human. For individuals, families, and communities navigating the AI era.',

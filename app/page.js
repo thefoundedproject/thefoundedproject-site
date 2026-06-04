@@ -33,7 +33,7 @@ const QUIZ = [
   { q: 'When a major decision arrives, what happens?', options: [
     { label: 'I move fast. Urgency is my default.', value: 'a' },
     { label: 'I freeze. The weight of it is heavy.', value: 'b' },
-    { label: 'I consult people — but I am not always sure they are the right ones.', value: 'c' },
+    { label: 'I consult people, but I'm not always sure they are the right ones.', value: 'c' },
     { label: 'I make it alone and carry the outcome alone.', value: 'd' },
   ]},
   { q: 'What do you most need right now?', options: [
@@ -191,7 +191,7 @@ export default function Home() {
               Dr. Stephen Thompson built this work to answer questions society does not yet have language for.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 18, lineHeight: 1.75 }}>
-              He is a clinician, a scholar, and a survivor. Everything here comes from the same place — and leads to the same destination.
+              He's a clinician, a scholar, and a survivor. Everything here comes from the same place and leads to the same destination.
             </p>
           </div>
         </div>
@@ -233,7 +233,7 @@ export default function Home() {
           {/* THE BOOKS */}
           <Reveal delay={80}>
             <p style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20, paddingBottom: 10, borderBottom: '1px solid rgba(15,27,31,0.1)' }}>
-              The Voice — Books & Manuscripts
+              The Voice: Books and Manuscripts
             </p>
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
@@ -252,7 +252,7 @@ export default function Home() {
           {/* THE PLATFORMS */}
           <Reveal delay={80}>
             <p style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20, paddingBottom: 10, borderBottom: '1px solid rgba(15,27,31,0.1)' }}>
-              The Tools — Platforms & Apps
+              The Tools: Platforms and Apps
             </p>
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
@@ -271,7 +271,7 @@ export default function Home() {
           {/* COMMUNITY */}
           <Reveal delay={80}>
             <p style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20, paddingBottom: 10, borderBottom: '1px solid rgba(15,27,31,0.1)' }}>
-              The Community — Programs & Spaces
+              The Community: Programs and Spaces
             </p>
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
@@ -289,7 +289,7 @@ export default function Home() {
           {/* SERVICES */}
           <Reveal delay={80}>
             <p style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20, paddingBottom: 10, borderBottom: '1px solid rgba(15,27,31,0.1)' }}>
-              The Practice — Services & Consulting
+              The Practice: Services and Consulting
             </p>
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
@@ -319,7 +319,7 @@ export default function Home() {
           {/* MERCH */}
           <Reveal delay={80}>
             <p style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20, paddingBottom: 10, borderBottom: '1px solid rgba(15,27,31,0.1)' }}>
-              The Store — Branded Merchandise
+              The Store: Branded Merchandise
             </p>
           </Reveal>
           <Reveal delay={100}>
@@ -330,7 +330,7 @@ export default function Home() {
                 <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 15, lineHeight: 1.65 }}>Branded apparel and goods from across the ecosystem — The Founded, GroundedVote, RhetoricalPoints, Journey from the Edge, and Rooted Reclaimers.</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {['The Founded — Governance apparel', 'GroundedVote — Civic tools merch', 'Journey from the Edge — Reclamation gear', 'Rooted Reclaimers — Community wear'].map(item => (
+                {['The Founded: Governance apparel', 'GroundedVote: Civic tools merch', 'Journey from the Edge: Reclamation gear', 'Rooted Reclaimers: Community wear'].map(item => (
                   <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'rgba(245,240,232,0.6)', fontSize: 14 }}>
                     <span style={{ color: '#D8AB69' }}>◈</span>{item}
                   </div>
@@ -349,7 +349,7 @@ export default function Home() {
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>The Arc</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(28px, 4vw, 52px)', fontWeight: 300, letterSpacing: '-0.025em', marginBottom: 12 }}>Every road leads here.</h2>
             <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 17, lineHeight: 1.7, maxWidth: 560, marginBottom: 60 }}>
-              Whether you enter through a book, a civic tool, a debate, or a consulting engagement — the arc is the same. Name the survival. Reclaim the agency. Build the governance. The Founded App is where the governance lives.
+              Whether you enter through a book, a civic tool, a debate, or a consulting engagement, the arc is the same. Name the survival. Reclaim the agency. Build the governance. The Founded App is where the governance lives.
             </p>
           </Reveal>
 
