@@ -264,6 +264,114 @@ function NodeCard({ tag, name, desc, href, nextLabel, nextHref, status, dark = f
   )
 }
 
+// ─── Stages Title ──────────────────────────────────────────────────────────────
+const STAGES = [
+  'Reclamation',
+  'Agency',
+  'Governance',
+  'Discernment',
+  'Contribution',
+]
+
+function StagesTitle({ visible }) {
+  const [hovered, setHovered] = useState(null)
+  return (
+    <div style={{ maxWidth: 900, position: 'relative', paddingTop: 8 }}>
+      <p style={{
+        color: 'rgba(245,240,232,0.4)',
+        fontSize: 11,
+        fontWeight: 600,
+        letterSpacing: '0.18em',
+        textTransform: 'uppercase',
+        marginBottom: 28,
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 0.8s ease 300ms',
+      }}>
+        The Five Stages of Recovery
+      </p>
+
+      <div style={{ position: 'relative' }}>
+        {/* Animated gold spine connecting the stages */}
+        <div style={{
+          position: 'absolute',
+          left: 'clamp(14px, 1.5vw, 20px)',
+          top: 8,
+          bottom: 8,
+          width: 2,
+          background: 'linear-gradient(to bottom, transparent 0%, rgba(216,171,105,0.7) 12%, rgba(216,171,105,0.7) 88%, transparent 100%)',
+          transformOrigin: 'top',
+          transform: visible ? 'scaleY(1)' : 'scaleY(0)',
+          opacity: visible ? 1 : 0,
+          transition: 'transform 1800ms cubic-bezier(0.16, 1, 0.3, 1) 400ms, opacity 600ms ease 400ms',
+          pointerEvents: 'none',
+        }} />
+
+        {STAGES.map((stage, i) => {
+          const isHovered = hovered === i
+          const delay = 600 + i * 220
+          return (
+            <div
+              key={i}
+              onMouseEnter={() => setHovered(i)}
+              onMouseLeave={() => setHovered(null)}
+              style={{
+                display: 'flex',
+                alignItems: 'baseline',
+                gap: 'clamp(18px, 2.5vw, 32px)',
+                paddingLeft: 'clamp(0px, 0.5vw, 8px)',
+                marginBottom: 'clamp(10px, 1.5vw, 18px)',
+                opacity: visible ? 1 : 0,
+                transform: visible ? 'translateX(0)' : 'translateX(-24px)',
+                transition: `opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform 700ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
+                cursor: 'default',
+              }}
+            >
+              {/* Number node sitting on the spine */}
+              <span style={{
+                position: 'relative',
+                color: '#D8AB69',
+                fontSize: 'clamp(13px, 1.4vw, 18px)',
+                fontWeight: 700,
+                fontFamily: 'ui-monospace, "SF Mono", Menlo, monospace',
+                letterSpacing: '0.08em',
+                minWidth: 'clamp(28px, 3vw, 40px)',
+                zIndex: 1,
+              }}>
+                <span style={{
+                  position: 'absolute',
+                  left: -6,
+                  top: '50%',
+                  width: 14,
+                  height: 14,
+                  borderRadius: '50%',
+                  backgroundColor: '#0F1B1F',
+                  border: `2px solid ${isHovered ? '#F5F0E8' : '#D8AB69'}`,
+                  transform: 'translateY(-50%)',
+                  boxShadow: isHovered ? '0 0 12px rgba(216,171,105,0.5)' : 'none',
+                  transition: 'all 250ms ease',
+                }} />
+                <span style={{ position: 'relative', marginLeft: 18 }}>0{i + 1}</span>
+              </span>
+
+              <span style={{
+                color: isHovered ? '#D8AB69' : '#F5F0E8',
+                fontSize: 'clamp(28px, 5.5vw, 64px)',
+                fontWeight: 300,
+                lineHeight: 1.05,
+                letterSpacing: '-0.02em',
+                transition: 'color 250ms ease, transform 250ms ease',
+                transform: isHovered ? 'translateX(4px)' : 'none',
+              }}>
+                {stage}
+              </span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 // ─── MAIN PAGE ─────────────────────────────────────────────────────────────────
 export default function Home() {
   const [heroVisible, setHeroVisible] = useState(false)
@@ -278,24 +386,14 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%' }}>
           <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 80, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>The Founded Project</p>
 
-          <div style={{ maxWidth: 900 }}>
-            {[
-              'Get humans',
-              <span key="2"><span style={{ color: '#D8AB69' }}>organized</span> and</span>,
-              'reinforced.',
-            ].map((line, i) => (
-              <div key={i} style={{ overflow: 'hidden' }}>
-                <div style={{ fontSize: 'clamp(50px, 9vw, 108px)', fontWeight: 300, color: '#F5F0E8', lineHeight: 1.05, letterSpacing: '-0.025em', opacity: heroVisible ? 1 : 0, transform: heroVisible ? 'none' : 'translateY(100%)', transition: `all 0.9s ease ${350 + i * 140}ms` }}>{line}</div>
-              </div>
-            ))}
-          </div>
+          <StagesTitle visible={heroVisible} />
 
           <div style={{ maxWidth: 560, marginTop: 48, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1.1s' }}>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 18, lineHeight: 1.75, marginBottom: 14 }}>
-              This work came from survival. It grew into a system.
+              This work came from survival. It grew into a system that names what gets extracted, by whom, and at what cost.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 18, lineHeight: 1.75 }}>
-              The destination is a life you govern on your own terms. Answering questions society has yet to ask.
+              The destination is a life you govern on your own terms, inside conditions engineered to take it from you.
             </p>
           </div>
         </div>
@@ -348,7 +446,7 @@ export default function Home() {
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>The Workflow</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(28px, 4vw, 52px)', fontWeight: 300, letterSpacing: '-0.025em', marginBottom: 16 }}>Agency at every scale.</h2>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 17, lineHeight: 1.7, maxWidth: 720, marginBottom: 56 }}>
-              Civic agency doesn&apos;t start in the voting booth. It starts in your body and works outward from there: into your closest relationships, into the groups you build with, and into the public square. Each layer needs different tools. This ecosystem has tools for each one.
+              Extraction operates at every scale. The algorithm takes attention before breakfast. The billing system takes the clinician&apos;s time before the patient gets seen. The platform monetizes the outrage that exhausts the citizen before the citizen reaches the ballot. Agency has to operate at the same scales the extraction does, and the ecosystem has tools for each layer.
             </p>
           </Reveal>
 

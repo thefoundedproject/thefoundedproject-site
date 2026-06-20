@@ -106,11 +106,11 @@ export default function About() {
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              He survived things that would have ended most careers. That survival became his research. He stopped treating it as backstory and started treating it as data. The data showed this: the same people modern systems exploit have the least access to the governance tools that would protect them.
+              He lived through conditions he never planned to live through. Over years, he stopped treating the surviving as backstory and started treating it as data. The data named one pattern across every domain. The people modern systems extract from have the least access to the governance tools that would protect them. Extraction sits at the center of the diagnosis, and the work begins by naming who benefits when a person cannot pay attention to their own life.
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              So he built it. Books, platforms, civic tools, coaching frameworks, AI systems, and a personal governance app. Not for the institution. For the people institutions extract from.
+              So he built the answer. Books, platforms, civic tools, coaching frameworks, AI systems, and a personal governance app. The infrastructure exists for the people institutions extract from, who have rarely been given the same structural intelligence the institutions take for granted.
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
