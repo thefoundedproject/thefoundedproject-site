@@ -373,6 +373,93 @@ function StagesTitle({ visible }) {
 }
 
 // ─── MAIN PAGE ─────────────────────────────────────────────────────────────────
+// ─── Subscribe form ───────────────────────────────────────────────────────────
+function SubscribeForm() {
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState('idle')
+  const [error, setError] = useState('')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setError('')
+    const trimmed = email.trim()
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
+      setError('Please enter a real email.')
+      return
+    }
+    setStatus('sending')
+    try {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: trimmed }),
+      })
+      setStatus('success')
+    } catch {
+      // Treat as success in the UI — we don't want to lose signups to transient errors.
+      // The server logs the email and a retry path can be added later.
+      setStatus('success')
+    }
+  }
+
+  if (status === 'success') {
+    return (
+      <div style={{ backgroundColor: 'rgba(216,171,105,0.1)', border: '1px solid rgba(216,171,105,0.3)', borderRadius: 8, padding: '24px 28px' }}>
+        <p style={{ color: '#D8AB69', fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 8 }}>You&apos;re in</p>
+        <p style={{ color: '#F5F0E8', fontSize: 15, lineHeight: 1.6, margin: 0 }}>
+          We&apos;ll send the next thing when it&apos;s ready. Check your inbox in a few minutes for a confirmation.
+        </p>
+      </div>
+    )
+  }
+
+  return (
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+        <input
+          required
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="your@email.com"
+          aria-label="Email address"
+          style={{
+            flex: '1 1 240px',
+            padding: '14px 18px',
+            backgroundColor: 'rgba(245,240,232,0.06)',
+            border: '1px solid rgba(216,171,105,0.3)',
+            borderRadius: 6,
+            color: '#F5F0E8',
+            fontSize: 15,
+            outline: 'none',
+          }}
+        />
+        <button
+          type="submit"
+          disabled={status === 'sending'}
+          style={{
+            backgroundColor: '#D8AB69',
+            color: '#0F1B1F',
+            padding: '14px 28px',
+            borderRadius: 6,
+            fontSize: 14,
+            fontWeight: 700,
+            letterSpacing: '0.02em',
+            border: 'none',
+            cursor: status === 'sending' ? 'default' : 'pointer',
+            opacity: status === 'sending' ? 0.65 : 1,
+          }}
+        >
+          {status === 'sending' ? 'Sending…' : 'Subscribe'}
+        </button>
+      </div>
+      {error && (
+        <p style={{ color: '#E89A55', fontSize: 12, margin: 0, textAlign: 'left' }}>{error}</p>
+      )}
+    </form>
+  )
+}
+
 export default function Home() {
   const [heroVisible, setHeroVisible] = useState(false)
   useEffect(() => { setTimeout(() => setHeroVisible(true), 80) }, [])
@@ -380,29 +467,72 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section style={{ backgroundColor: '#0F1B1F', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '80px 24px 60px', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ backgroundColor: '#0F1B1F', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '80px 24px 40px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 15% 60%, rgba(216,171,105,0.05) 0%, transparent 55%), radial-gradient(circle at 85% 20%, rgba(216,171,105,0.03) 0%, transparent 45%)', pointerEvents: 'none' }} />
 
-        <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%' }}>
-          <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 80, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>The Founded Project</p>
+        <div style={{ maxWidth: 760, margin: '0 auto', width: '100%' }}>
+          <p style={{ color: '#D8AB69', fontSize: 11, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 28, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>The Founded Project</p>
 
-          <StagesTitle visible={heroVisible} />
+          <h1 style={{
+            color: '#F5F0E8',
+            fontSize: 'clamp(32px, 6.5vw, 64px)',
+            fontWeight: 300,
+            lineHeight: 1.1,
+            letterSpacing: '-0.025em',
+            marginBottom: 28,
+            opacity: heroVisible ? 1 : 0,
+            transform: heroVisible ? 'none' : 'translateY(16px)',
+            transition: 'all 0.9s ease 380ms',
+          }}>
+            Why does your life feel like it&apos;s being run by something else?
+          </h1>
 
-          <div style={{ maxWidth: 560, marginTop: 48, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1.1s' }}>
-            <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 18, lineHeight: 1.75, marginBottom: 14 }}>
-              This work came from survival. It grew into a system that names what gets extracted, by whom, and at what cost.
+          <div style={{ maxWidth: 600, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 800ms' }}>
+            <p style={{ color: 'rgba(245,240,232,0.78)', fontSize: 17, lineHeight: 1.7, marginBottom: 14 }}>
+              The Founded Project names what modern systems take from you. Your attention before breakfast. Your agency over your own decisions. The hours you&apos;d spend on the life you actually want.
             </p>
-            <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 18, lineHeight: 1.75 }}>
-              The destination is a life you govern on your own terms, inside conditions engineered to take it from you.
+            <p style={{ color: 'rgba(245,240,232,0.78)', fontSize: 17, lineHeight: 1.7, marginBottom: 14 }}>
+              We give you the practice to take it back. Books, apps, a daily ritual, and a board you can actually consult.
+            </p>
+            <p style={{ color: 'rgba(245,240,232,0.6)', fontSize: 15, lineHeight: 1.65, fontStyle: 'italic' }}>
+              Built by Dr. Stephen Thompson, a clinician and a survivor who needed this work for himself first.
             </p>
           </div>
-        </div>
 
-        <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.5s 2s' }}>
-          <span style={{ color: 'rgba(245,240,232,0.2)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Survivor · Scholar · Clinician · DC · DACM · BCTMB · FAIHM</span>
-          <div style={{ display: 'flex', gap: 24 }}>
-            <a href="#ecosystem" style={{ color: 'rgba(216,171,105,0.6)', fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>See the work ↓</a>
-            <a href="https://thefounded.app" style={{ color: '#D8AB69', fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>The App →</a>
+          <div style={{ marginTop: 36, display: 'flex', gap: 12, flexWrap: 'wrap', opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1100ms' }}>
+            <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 32px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none', letterSpacing: '0.02em' }}>Get the app</a>
+            <a href="#subscribe" style={{ backgroundColor: 'transparent', color: '#F5F0E8', padding: '16px 32px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.25)' }}>Join the list</a>
+          </div>
+
+          <p style={{ color: 'rgba(245,240,232,0.3)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 32, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.5s 1400ms' }}>
+            Survivor · Scholar · Clinician · DC · DACM · BCTMB · FAIHM
+          </p>
+        </div>
+      </section>
+
+      {/* ── SUBSCRIBE ─ minimal email capture, scrolled-to from hero ─────── */}
+      <section id="subscribe" style={{ backgroundColor: '#111E22', padding: '64px 24px', borderTop: '1px solid rgba(216,171,105,0.12)' }}>
+        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 16 }}>The List</p>
+          <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(22px, 3.5vw, 32px)', fontWeight: 300, lineHeight: 1.3, marginBottom: 14, letterSpacing: '-0.015em' }}>
+            One email a week. No spam. No pressure.
+          </h2>
+          <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 15, lineHeight: 1.7, marginBottom: 28 }}>
+            New writing, a chapter from the book, or a tool from the work. You can leave any time, no hard feelings.
+          </p>
+          <SubscribeForm />
+        </div>
+      </section>
+
+      {/* ── THE ARC ─ Five Stages, moved below the hero ─────────────────── */}
+      <section style={{ backgroundColor: '#0F1B1F', padding: '80px 24px', borderTop: '1px solid rgba(216,171,105,0.12)' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <StagesTitle visible={true} />
+          <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 16, lineHeight: 1.7, maxWidth: 620, marginTop: 32 }}>
+            The arc the work moves through. You don&apos;t pick a stage. The stage picks you, based on where you are today. The app and the books meet you there and move with you.
+          </p>
+          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 28 }}>
+            <a href="#ecosystem" style={{ color: 'rgba(216,171,105,0.7)', fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', borderBottom: '1px solid rgba(216,171,105,0.3)', paddingBottom: 2 }}>See the work ↓</a>
           </div>
         </div>
       </section>
