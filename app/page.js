@@ -553,6 +553,92 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── THE SIX CAPITALS ─ explicit subcategories per capital ─────────── */}
+      <section id="capitals" style={{ backgroundColor: '#F5F0E8', padding: '100px 24px', borderTop: '1px solid rgba(15,27,31,0.08)' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <Reveal>
+            <p style={{ color: '#9E6F2C', fontSize: 11, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 16 }}>The Six Capitals</p>
+            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(28px, 4.5vw, 48px)', fontWeight: 300, letterSpacing: '-0.02em', lineHeight: 1.15, marginBottom: 16 }}>
+              What you&apos;re actually stewarding.
+            </h2>
+            <p style={{ color: 'rgba(15,27,31,0.65)', fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 56 }}>
+              Every life carries six categories of capital. They compound or erode together. The Founded gives each one its own department, its own status, its own attention.
+            </p>
+          </Reveal>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
+            {[
+              {
+                glyph: '◉',
+                name: 'Human Capital',
+                tagline: 'Your body and your mind. The vehicle.',
+                items: ['Health & vitality', 'Self-care & regulation', 'Sleep, nutrition, energy', 'Mental wellness'],
+              },
+              {
+                glyph: '◎',
+                name: 'Financial Capital',
+                tagline: 'Your money and your protection.',
+                items: ['Income & savings', 'Investments & debt', 'Insurance & legal exposure', 'Long-term strategy'],
+              },
+              {
+                glyph: '◐',
+                name: 'Relational Capital',
+                tagline: 'The people in your circle.',
+                items: ['Romantic partnership', 'Family & home', 'Close friendships', 'Trusted advisors (your board)'],
+              },
+              {
+                glyph: '✦',
+                name: 'Intellectual Capital',
+                tagline: 'What you know. What you build.',
+                items: ['Career & vocation', 'Education & skill', 'Ideas in progress', 'Decisions logged across years'],
+              },
+              {
+                glyph: '◈',
+                name: 'Reputational Capital',
+                tagline: 'How the world meets you.',
+                items: ['Public presence & brand', 'Digital footprint', 'Purpose & values you stand for', 'Story of who you are'],
+              },
+              {
+                glyph: '⚖',
+                name: 'Civic Capital',
+                tagline: 'Your contribution beyond yourself.',
+                items: ['Community & service', 'Operations & systems', 'Civic participation', 'What you give back'],
+              },
+            ].map((cap, i) => (
+              <Reveal key={cap.name} delay={i * 60}>
+                <div style={{
+                  backgroundColor: '#0F1B1F',
+                  borderRadius: 12,
+                  padding: '28px 26px',
+                  height: '100%',
+                  borderTop: '3px solid #D8AB69',
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+                    <span style={{ color: '#D8AB69', fontSize: 24 }}>{cap.glyph}</span>
+                    <p style={{ color: '#F5F0E8', fontSize: 18, fontWeight: 600, margin: 0 }}>{cap.name}</p>
+                  </div>
+                  <p style={{ color: 'rgba(216,171,105,0.75)', fontSize: 13, fontStyle: 'italic', marginBottom: 16, lineHeight: 1.45 }}>{cap.tagline}</p>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {cap.items.map(item => (
+                      <li key={item} style={{ color: 'rgba(245,240,232,0.7)', fontSize: 13, lineHeight: 1.5, display: 'flex', gap: 8, alignItems: 'flex-start' }}>
+                        <span style={{ color: 'rgba(216,171,105,0.5)', marginTop: 2 }}>·</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={300}>
+            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 14, lineHeight: 1.7, maxWidth: 720, marginTop: 48, fontStyle: 'italic' }}>
+              The Founded app lets you activate the capitals that are live in your life right now, set a green/yellow/red status for each, and assign goals and a steward to whichever ones need attention this season.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── APP MOCKUP ──────────────────────────────────────────────────── */}
       <section style={{ backgroundColor: '#0F1B1F', padding: '80px 24px', borderTop: '1px solid rgba(216,171,105,0.1)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
