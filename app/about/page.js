@@ -228,7 +228,7 @@ export default function About() {
             title="Civic Infrastructure"
             nodes={[
               { tag: 'Media Literacy · AI · Debate', name: 'ChatWithMe Debates', status: 'Live', desc: 'Watch two AIs argue. Notice who you believe. That is the lesson. That is the literacy.' },
-              { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They will live in a world tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
+              { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
             ]}
           />
 

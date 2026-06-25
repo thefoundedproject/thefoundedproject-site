@@ -48,7 +48,7 @@ export default function SpeakingPage() {
           <TalkCard
             title="Body-First Medicine: What the Fascia Knows the Chart Doesn&apos;t"
             audience="Clinical · Bodywork · Integrative medicine"
-            blurb="Fifteen years of clinical work with patients whose bodies remembered what their charts couldn&apos;t hold. The clinical case for P/AIRS bodywork and somatic-first practice."
+            blurb="Fifteen years of clinical work with patients whose bodies remembered what their charts never recorded. The clinical case for P/AIRS bodywork and somatic-first practice."
           />
           <TalkCard
             title="The Algorithmic Plantation: Civic Agency in the Age of Extraction"

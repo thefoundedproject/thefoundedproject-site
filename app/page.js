@@ -34,10 +34,10 @@ const QUIZ = [
     { label: 'I move fast. Urgency is my default.', value: 'a' },
     { label: 'I freeze. The weight of it is heavy.', value: 'b' },
     { label: 'I consult people, but I\'m not always sure they\'re the right ones.', value: 'c' },
-    { label: 'I make it alone and carry the outcome alone.', value: 'd' },
+    { label: 'I make it alone and answer for the outcome alone.', value: 'd' },
   ]},
   { q: 'What do you most need right now?', options: [
-    { label: 'Daily structure for what matters most.', value: 'a' },
+    { label: 'Daily structure for my real priorities.', value: 'a' },
     { label: 'Language for what I\'m already experiencing.', value: 'b' },
     { label: 'A board who will tell me the truth.', value: 'c' },
     { label: 'Protection for what I\'ve built.', value: 'd' },
@@ -266,15 +266,46 @@ function NodeCard({ tag, name, desc, href, nextLabel, nextHref, status, dark = f
 
 // ─── Stages Title ──────────────────────────────────────────────────────────────
 const STAGES = [
-  'Reclamation',
-  'Agency',
-  'Governance',
-  'Discernment',
-  'Contribution',
+  {
+    name: 'Reclamation',
+    what: 'Meeting the body and the survival adaptations that kept you alive, then learning to choose alongside them instead of being driven by them.',
+    agency: 'Reopens access to choice. You can’t govern what you can’t reach, and reclamation is how you reach it again.',
+    trust: 'Rebuilds trust with your own body after years of overriding its signals. Self-trust starts here.',
+    adjacent: 'Comes first. Everything after it stands on this ground, and it feeds directly into Agency.',
+  },
+  {
+    name: 'Agency',
+    what: 'The practiced capacity to shape your life inside the actual conditions you live in. Not control, not unlimited freedom, but the real field of meaningful choice.',
+    agency: 'This is the center of the whole arc. Every other stage exists to protect and extend it.',
+    trust: 'Deepens each time you honor your own signal and act on it. Trust in yourself compounds.',
+    adjacent: 'Grows out of Reclamation. Needs Governance next, or it leaks back into reactivity.',
+  },
+  {
+    name: 'Governance',
+    what: 'Giving your decisions, values, risks, relationships, and resources a place to live, so your nervous system stops running your whole life from an emergency channel.',
+    agency: 'Structure is what lets reclaimed agency last across years instead of dissolving under load.',
+    trust: 'A governed life is one your people can rely on. Consistency builds trust outward and inward.',
+    adjacent: 'Steadies Agency behind it. Feeds Discernment ahead of it with clear, organized inputs.',
+  },
+  {
+    name: 'Discernment',
+    what: 'Keeping your field of perception clear enough to make real choices inside an information environment engineered to cloud it.',
+    agency: 'Protects agency from manipulation. A captured perception makes a free choice impossible.',
+    trust: 'Lets you extend trust by evidence instead of by tribe, to sources, people, and institutions.',
+    adjacent: 'Guards the inputs Governance depends on. Prepares you to contribute without being misled.',
+  },
+  {
+    name: 'Contribution',
+    what: 'Extending your protected agency into family, community, work, and civic life without erasing yourself.',
+    agency: 'Agency sealed inside the self atrophies. Contribution is where it matures.',
+    trust: 'Rebuilds the collective trust the breakdown frayed, one relationship and institution at a time.',
+    adjacent: 'The fruit of the first four. It returns the work to the world.',
+  },
 ]
 
 function StagesTitle({ visible }) {
   const [hovered, setHovered] = useState(null)
+  const [open, setOpen] = useState(null)
   return (
     <div style={{ maxWidth: 900, position: 'relative', paddingTop: 8 }}>
       <p style={{
@@ -288,6 +319,17 @@ function StagesTitle({ visible }) {
         transition: 'opacity 0.8s ease 300ms',
       }}>
         The Five Stages of Recovery
+      </p>
+      <p style={{
+        color: 'rgba(245,240,232,0.45)',
+        fontSize: 13,
+        lineHeight: 1.5,
+        marginTop: -16,
+        marginBottom: 26,
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 0.8s ease 450ms',
+      }}>
+        Tap a stage to see what it protects, and how it feeds the next.
       </p>
 
       <div style={{ position: 'relative' }}>
@@ -307,63 +349,116 @@ function StagesTitle({ visible }) {
         }} />
 
         {STAGES.map((stage, i) => {
-          const isHovered = hovered === i
+          const isOpen = open === i
+          const isActive = hovered === i || isOpen
           const delay = 600 + i * 220
           return (
-            <div
-              key={i}
-              onMouseEnter={() => setHovered(i)}
-              onMouseLeave={() => setHovered(null)}
-              style={{
-                display: 'flex',
-                alignItems: 'baseline',
-                gap: 'clamp(18px, 2.5vw, 32px)',
-                paddingLeft: 'clamp(0px, 0.5vw, 8px)',
-                marginBottom: 'clamp(10px, 1.5vw, 18px)',
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateX(0)' : 'translateX(-24px)',
-                transition: `opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform 700ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-                cursor: 'default',
-              }}
-            >
-              {/* Number node sitting on the spine */}
-              <span style={{
-                position: 'relative',
-                color: '#D8AB69',
-                fontSize: 'clamp(13px, 1.4vw, 18px)',
-                fontWeight: 700,
-                fontFamily: 'ui-monospace, "SF Mono", Menlo, monospace',
-                letterSpacing: '0.08em',
-                minWidth: 'clamp(28px, 3vw, 40px)',
-                zIndex: 1,
-              }}>
+            <div key={i} style={{
+              opacity: visible ? 1 : 0,
+              transform: visible ? 'translateX(0)' : 'translateX(-24px)',
+              transition: `opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform 700ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
+            }}>
+              <div
+                role="button"
+                tabIndex={0}
+                aria-expanded={isOpen}
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(null)}
+                onClick={() => setOpen(isOpen ? null : i)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setOpen(isOpen ? null : i) } }}
+                style={{
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  gap: 'clamp(18px, 2.5vw, 32px)',
+                  paddingLeft: 'clamp(0px, 0.5vw, 8px)',
+                  marginBottom: isOpen ? 'clamp(6px, 1vw, 10px)' : 'clamp(10px, 1.5vw, 18px)',
+                  cursor: 'pointer',
+                  transition: 'margin-bottom 250ms ease',
+                }}
+              >
+                {/* Number node sitting on the spine */}
                 <span style={{
-                  position: 'absolute',
-                  left: -6,
-                  top: '50%',
-                  width: 14,
-                  height: 14,
-                  borderRadius: '50%',
-                  backgroundColor: '#0F1B1F',
-                  border: `2px solid ${isHovered ? '#F5F0E8' : '#D8AB69'}`,
-                  transform: 'translateY(-50%)',
-                  boxShadow: isHovered ? '0 0 12px rgba(216,171,105,0.5)' : 'none',
-                  transition: 'all 250ms ease',
-                }} />
-                <span style={{ position: 'relative', marginLeft: 18 }}>0{i + 1}</span>
-              </span>
+                  position: 'relative',
+                  color: '#D8AB69',
+                  fontSize: 'clamp(13px, 1.4vw, 18px)',
+                  fontWeight: 700,
+                  fontFamily: 'ui-monospace, "SF Mono", Menlo, monospace',
+                  letterSpacing: '0.08em',
+                  minWidth: 'clamp(28px, 3vw, 40px)',
+                  zIndex: 1,
+                }}>
+                  <span style={{
+                    position: 'absolute',
+                    left: -6,
+                    top: '50%',
+                    width: 14,
+                    height: 14,
+                    borderRadius: '50%',
+                    backgroundColor: isOpen ? '#D8AB69' : '#0F1B1F',
+                    border: `2px solid ${isActive ? '#F5F0E8' : '#D8AB69'}`,
+                    transform: 'translateY(-50%)',
+                    boxShadow: isActive ? '0 0 12px rgba(216,171,105,0.5)' : 'none',
+                    transition: 'all 250ms ease',
+                  }} />
+                  <span style={{ position: 'relative', marginLeft: 18 }}>0{i + 1}</span>
+                </span>
 
-              <span style={{
-                color: isHovered ? '#D8AB69' : '#F5F0E8',
-                fontSize: 'clamp(28px, 5.5vw, 64px)',
-                fontWeight: 300,
-                lineHeight: 1.05,
-                letterSpacing: '-0.02em',
-                transition: 'color 250ms ease, transform 250ms ease',
-                transform: isHovered ? 'translateX(4px)' : 'none',
+                <span style={{
+                  flex: 1,
+                  color: isActive ? '#D8AB69' : '#F5F0E8',
+                  fontSize: 'clamp(28px, 5.5vw, 64px)',
+                  fontWeight: 300,
+                  lineHeight: 1.05,
+                  letterSpacing: '-0.02em',
+                  transition: 'color 250ms ease, transform 250ms ease',
+                  transform: isActive ? 'translateX(4px)' : 'none',
+                }}>
+                  {stage.name}
+                </span>
+
+                {/* expand indicator */}
+                <span aria-hidden="true" style={{
+                  alignSelf: 'center',
+                  color: isActive ? '#D8AB69' : 'rgba(245,240,232,0.35)',
+                  fontSize: 'clamp(18px, 2vw, 26px)',
+                  fontWeight: 300,
+                  lineHeight: 1,
+                  transform: isOpen ? 'rotate(45deg)' : 'none',
+                  transition: 'transform 250ms ease, color 250ms ease',
+                }}>+</span>
+              </div>
+
+              {/* Detail panel: what the stage means for agency, trust, and adjacent stages */}
+              <div style={{
+                maxHeight: isOpen ? 680 : 0,
+                opacity: isOpen ? 1 : 0,
+                overflow: 'hidden',
+                marginLeft: 'clamp(46px, 5.5vw, 72px)',
+                marginBottom: isOpen ? 'clamp(18px, 2.4vw, 30px)' : 0,
+                transition: 'max-height 450ms cubic-bezier(0.16, 1, 0.3, 1), opacity 350ms ease, margin-bottom 350ms ease',
               }}>
-                {stage}
-              </span>
+                <div style={{
+                  borderLeft: '2px solid rgba(216,171,105,0.35)',
+                  paddingLeft: 'clamp(14px, 1.6vw, 22px)',
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  maxWidth: 620,
+                }}>
+                  <p style={{ color: 'rgba(245,240,232,0.82)', fontSize: 'clamp(15px, 1.5vw, 17px)', lineHeight: 1.6, margin: '0 0 18px' }}>
+                    {stage.what}
+                  </p>
+                  {[
+                    { k: 'For agency', v: stage.agency },
+                    { k: 'For trust', v: stage.trust },
+                    { k: 'Adjacent stages', v: stage.adjacent },
+                  ].map(({ k, v }) => (
+                    <div key={k} style={{ marginBottom: 12 }}>
+                      <span style={{ display: 'block', color: '#D8AB69', fontSize: 11, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 4 }}>{k}</span>
+                      <span style={{ color: 'rgba(245,240,232,0.6)', fontSize: 'clamp(14px, 1.4vw, 15px)', lineHeight: 1.55 }}>{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )
         })}
@@ -515,7 +610,7 @@ export default function Home() {
         <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 16 }}>The List</p>
           <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(22px, 3.5vw, 32px)', fontWeight: 300, lineHeight: 1.3, marginBottom: 14, letterSpacing: '-0.015em' }}>
-            One email a week. No spam. No pressure.
+            One email a week. No spam. Unsubscribe anytime.
           </h2>
           <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 15, lineHeight: 1.7, marginBottom: 28 }}>
             New writing, a chapter from the book, or a tool from the work. You can leave any time, no hard feelings.
@@ -562,7 +657,7 @@ export default function Home() {
               What you&apos;re actually stewarding.
             </h2>
             <p style={{ color: 'rgba(15,27,31,0.65)', fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 56 }}>
-              Every life carries six categories of capital. They compound or erode together. The Founded gives each one its own department, its own status, its own attention.
+              Every life runs on six categories of capital. They compound or erode together. The Founded gives each one its own department, its own status, its own attention.
             </p>
           </Reveal>
 
@@ -682,7 +777,7 @@ export default function Home() {
               {
                 tier: '02 · Family',
                 title: 'Trust between people.',
-                body: 'Your closest relationships have been through years of misunderstood signals, old hurts, and patterns you’ve been carrying since you were a kid. You may have noticed yourself shutting down before you can catch what set it off. Like when a comment shifts the whole evening, or when a text takes too long to come back and you’re already telling yourself a story about why. Our goal is to call out those patterns, find the people who actually show up for you, and build some structure for honest conversation.',
+                body: 'Your closest relationships have been through years of misunderstood signals, old hurts, and patterns you’ve repeated since you were a kid. You may have noticed yourself shutting down before you can catch what set it off. Like when a comment shifts the whole evening, or when a text takes too long to come back and you’re already telling yourself a story about why. Our goal is to call out those patterns, find the people who actually show up for you, and build some structure for honest conversation.',
                 tools: [
                   { name: 'Rooted Reclaimers', href: '/about#rooted' },
                   { name: 'P/AIRS Bodywork', href: null },
@@ -802,7 +897,7 @@ export default function Home() {
             {[
               { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 0 },
               { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
-              { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They will live in a world tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', delay: 160 },
+              { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', delay: 160 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>
                 <NodeCard {...node} />
@@ -850,7 +945,7 @@ export default function Home() {
             <div style={{ backgroundColor: '#0F1B1F', borderRadius: 10, padding: '40px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 40, alignItems: 'center' }}>
               <div>
                 <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>The Founded Project Store</p>
-                <h3 style={{ color: '#F5F0E8', fontSize: 24, fontWeight: 300, lineHeight: 1.3, marginBottom: 12 }}>Wear the work.<br />Carry the mission.</h3>
+                <h3 style={{ color: '#F5F0E8', fontSize: 24, fontWeight: 300, lineHeight: 1.3, marginBottom: 12 }}>Wear the work.<br />Back the mission.</h3>
                 <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 15, lineHeight: 1.65 }}>Branded apparel and goods from across the ecosystem. The Founded, GroundedVote, RhetoricalPoints, Journey from the Edge, and Rooted Reclaimers.</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>

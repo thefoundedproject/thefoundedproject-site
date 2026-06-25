@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Store | The Founded Project',
-  description: 'Wear the work. Carry the mission. Branded apparel and goods from across The Founded Project ecosystem. The Founded, GroundedVote, RhetoricalPoints, Journey from the Edge, and Rooted Reclaimers.',
+  description: 'Wear the work. Back the mission. Branded apparel and goods from across The Founded Project ecosystem. The Founded, GroundedVote, RhetoricalPoints, Journey from the Edge, and Rooted Reclaimers.',
 }
 
 const COLLECTIONS = [
@@ -142,7 +142,7 @@ export default function Store() {
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 20 }}>The Founded Project Store</p>
             <h1 style={{ color: '#F5F0E8', fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 24 }}>
               Wear the work.<br />
-              <span style={{ color: '#D8AB69' }}>Carry the mission.</span>
+              <span style={{ color: '#D8AB69' }}>Back the mission.</span>
             </h1>
             <p style={{ color: 'rgba(245,240,232,0.55)', fontSize: 16, lineHeight: 1.7, maxWidth: 420, marginBottom: 32 }}>
               Every collection in the store connects to a node in the ecosystem. Wear what you believe. Signal what you\'re building.

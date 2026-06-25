@@ -90,7 +90,7 @@ export default function BooksPage() {
           kind="Somatic practice · 12 regional chapters"
           status="In revision"
           year="Target 2026"
-          blurb="The body-first half of the work. The fascia carries patterns from before the patient could name them. P/AIRS is the framework for meeting the body where it actually lives."
+          blurb="The body-first half of the work. The fascia stores patterns from before the patient could name them. P/AIRS is the framework for meeting the body where it actually lives."
         />
 
         <BookCard
@@ -106,7 +106,7 @@ export default function BooksPage() {
           kind="Practitioner business"
           status="In progress"
           year="Target 2027"
-          blurb="The five years between starting a serious practice and reaching the version of it that holds. Strategy, money, mistakes, what no one teaches in school."
+          blurb="The five years between starting a serious practice and reaching the version of it that finally works. Strategy, money, mistakes, what no one teaches in school."
         />
 
         <BookCard
