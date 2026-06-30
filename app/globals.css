@@ -8,6 +8,11 @@
   --night-teal: #0F1B1F;
   --wheat-gold: #D8AB69;
   --bone: #F5F0E8;
+  /* Arc colors — section progression that mirrors the book's tonal arc. */
+  --arc-cedar: #2D4A47;
+  --arc-amber: #B86B3A;
+  --arc-moss:  #3F5D3A;
+  --arc-bloom: #E8C68A;
 }
 
 html { scroll-behavior: smooth; }
@@ -22,3 +27,32 @@ body {
 
 a { color: inherit; text-decoration: none; }
 * { box-sizing: border-box; }
+
+/* ── Motion at the pace of breath ──────────────────────────────────
+   Slow, looping, never sharp. Used on the hero gradient and select
+   accents so the page is never visually still. */
+@keyframes breath {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.04); }
+}
+.breath { animation: breath 14s ease-in-out infinite; }
+
+/* Drift-in fade for hope markers. Slower than scroll reveal so the
+   line settles into the page rather than popping. */
+@keyframes drift-in {
+  0%   { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.drift-in { animation: drift-in 1.6s ease-out 4s both; }
+
+/* Grain overlay. Inline SVG noise sits at low opacity over deep
+   sections to break up flat color and add texture under the type. */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.847 0 0 0 0 0.671 0 0 0 0 0.412 0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

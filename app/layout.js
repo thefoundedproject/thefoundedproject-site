@@ -83,7 +83,15 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        {/* Permission line — present on every page, every visit. */}
+        <div className="border-t border-gray-800 pt-8 pb-6 text-center">
+          <p style={{ color: '#D8AB69', fontSize: 13, fontStyle: 'italic', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
+            You can stop anytime. No pushing through.
+            <br />
+            Pause check: breath, shoulders, jaw. You choose the pace.
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-t border-gray-800 pt-6">
           <p className="text-xs">© 2026 Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM. All rights reserved.</p>
           <p className="text-xs">The Founded Project · Stockheart Whole Health · GreyDoc Consulting · Odigo Properties</p>
         </div>

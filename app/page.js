@@ -562,10 +562,10 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section style={{ backgroundColor: '#0F1B1F', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '80px 24px 40px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 15% 60%, rgba(216,171,105,0.05) 0%, transparent 55%), radial-gradient(circle at 85% 20%, rgba(216,171,105,0.03) 0%, transparent 45%)', pointerEvents: 'none' }} />
+      <section className="grain" style={{ backgroundColor: '#0F1B1F', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '80px 24px 40px', position: 'relative', overflow: 'hidden' }}>
+        <div className="breath" style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 15% 60%, rgba(216,171,105,0.08) 0%, transparent 55%), radial-gradient(circle at 85% 20%, rgba(216,171,105,0.05) 0%, transparent 45%)', pointerEvents: 'none', willChange: 'opacity, transform' }} />
 
-        <div style={{ maxWidth: 760, margin: '0 auto', width: '100%' }}>
+        <div style={{ maxWidth: 760, margin: '0 auto', width: '100%', position: 'relative' }}>
           <p style={{ color: '#D8AB69', fontSize: 11, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 28, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>The Founded Project</p>
 
           <h1 style={{
@@ -603,6 +603,15 @@ export default function Home() {
             Survivor · Scholar · Clinician · DC · DACM · BCTMB · FAIHM
           </p>
         </div>
+
+        {/* Hope marker — drifts in 4 seconds after page load.
+            Sensory cue + permission statement. Wheat gold on deep teal. */}
+        <div className="drift-in" style={{ position: 'absolute', bottom: 28, right: 28, maxWidth: 280, padding: '14px 18px', borderLeft: '1px solid rgba(216,171,105,0.35)', display: 'none' }} data-hope-marker>
+          <p style={{ color: 'rgba(216,171,105,0.78)', fontSize: 13, fontStyle: 'italic', lineHeight: 1.55, margin: 0 }}>
+            Look across the room. Soften your eyes. Exhale once. If that gave you one percent more room, that counts.
+          </p>
+        </div>
+        <style>{`@media (min-width: 900px) { [data-hope-marker] { display: block !important; } }`}</style>
       </section>
 
       {/* ── SUBSCRIBE ─ minimal email capture, scrolled-to from hero ─────── */}
@@ -664,39 +673,76 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
             {[
               {
-                glyph: '◉',
                 name: 'Human Capital',
                 tagline: 'Your body and your mind. The vehicle.',
+                arcColor: '#3F5D3A', // moss · capacity
+                mark: (c) => (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <circle cx="11" cy="11" r="9" stroke={c} strokeWidth="1.3" />
+                    <circle cx="11" cy="11" r="3" fill={c} fillOpacity="0.55" />
+                  </svg>
+                ),
                 items: ['Health & vitality', 'Self-care & regulation', 'Sleep, nutrition, energy', 'Mental wellness'],
               },
               {
-                glyph: '◎',
                 name: 'Financial Capital',
                 tagline: 'Your money and your protection.',
+                arcColor: '#2D4A47', // cedar · awareness
+                mark: (c) => (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <path d="M3 5 H19 M5 5 V17 H17 V5" stroke={c} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M8 11 H14 M8 14 H14" stroke={c} strokeWidth="1.2" strokeLinecap="round" />
+                  </svg>
+                ),
                 items: ['Income & savings', 'Investments & debt', 'Insurance & legal exposure', 'Long-term strategy'],
               },
               {
-                glyph: '◐',
                 name: 'Relational Capital',
                 tagline: 'The people in your circle.',
+                arcColor: '#B86B3A', // amber · grief/warmth
+                mark: (c) => (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <circle cx="7" cy="11" r="3.5" stroke={c} strokeWidth="1.3" />
+                    <circle cx="15" cy="11" r="3.5" stroke={c} strokeWidth="1.3" />
+                    <path d="M10.5 11 H11.5" stroke={c} strokeWidth="1.6" strokeLinecap="round" />
+                  </svg>
+                ),
                 items: ['Romantic partnership', 'Family & home', 'Close friendships', 'Trusted advisors (your board)'],
               },
               {
-                glyph: '✦',
                 name: 'Intellectual Capital',
                 tagline: 'What you know. What you build.',
+                arcColor: '#E8C68A', // bloom · belonging
+                mark: (c) => (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <path d="M11 2 L13 9 L20 11 L13 13 L11 20 L9 13 L2 11 L9 9 Z" stroke={c} strokeWidth="1.2" strokeLinejoin="round" fill={c} fillOpacity="0.2" />
+                  </svg>
+                ),
                 items: ['Career & vocation', 'Education & skill', 'Ideas in progress', 'Decisions logged across years'],
               },
               {
-                glyph: '◈',
                 name: 'Reputational Capital',
                 tagline: 'How the world meets you.',
+                arcColor: '#D8AB69', // wheat gold · signal
+                mark: (c) => (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <path d="M2 14 Q6 8 11 11 T20 8" stroke={c} strokeWidth="1.4" strokeLinecap="round" fill="none" />
+                    <circle cx="11" cy="11" r="1.4" fill={c} />
+                  </svg>
+                ),
                 items: ['Public presence & brand', 'Digital footprint', 'Purpose & values you stand for', 'Story of who you are'],
               },
               {
-                glyph: '⚖',
                 name: 'Civic Capital',
                 tagline: 'Your contribution beyond yourself.',
+                arcColor: '#2A5A66', // teal light · gathering
+                mark: (c) => (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <path d="M3 17 Q11 3 19 17" stroke={c} strokeWidth="1.3" fill="none" strokeLinecap="round" />
+                    <path d="M3 17 H19" stroke={c} strokeWidth="1.3" strokeLinecap="round" />
+                    <circle cx="11" cy="17" r="1.3" fill={c} />
+                  </svg>
+                ),
                 items: ['Community & service', 'Operations & systems', 'Civic participation', 'What you give back'],
               },
             ].map((cap, i) => (
@@ -706,21 +752,28 @@ export default function Home() {
                   borderRadius: 12,
                   padding: '28px 26px',
                   height: '100%',
-                  borderTop: '3px solid #D8AB69',
+                  borderTop: `3px solid ${cap.arcColor}`,
+                  boxShadow: `0 0 0 1px ${cap.arcColor}22, 0 12px 28px -18px ${cap.arcColor}66`,
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
-                    <span style={{ color: '#D8AB69', fontSize: 24 }}>{cap.glyph}</span>
+                    {cap.mark(cap.arcColor)}
                     <p style={{ color: '#F5F0E8', fontSize: 18, fontWeight: 600, margin: 0 }}>{cap.name}</p>
                   </div>
                   <p style={{ color: 'rgba(216,171,105,0.75)', fontSize: 13, fontStyle: 'italic', marginBottom: 16, lineHeight: 1.45 }}>{cap.tagline}</p>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
                     {cap.items.map(item => (
                       <li key={item} style={{ color: 'rgba(245,240,232,0.7)', fontSize: 13, lineHeight: 1.5, display: 'flex', gap: 8, alignItems: 'flex-start' }}>
-                        <span style={{ color: 'rgba(216,171,105,0.5)', marginTop: 2 }}>·</span>
+                        <span style={{ color: cap.arcColor, marginTop: 2, opacity: 0.65 }}>·</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
+                  {/* Status indicator trio — visual preview of the app's green / yellow / red feature. */}
+                  <div style={{ display: 'flex', gap: 5, marginTop: 20, opacity: 0.32 }} aria-hidden="true">
+                    <span style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: '#7BAE6E' }} />
+                    <span style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: '#D8AB69' }} />
+                    <span style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: '#B86B3A' }} />
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -807,11 +860,15 @@ export default function Home() {
                 ],
                 delay: 240,
               },
-            ].map((tier, idx, arr) => (
+            ].map((tier, idx, arr) => {
+              // Color arc through the four layers. Self runs cool. Family warms.
+              // Community moves to living green. Society returns to signal-gold.
+              const accent = ['#2D4A47', '#B86B3A', '#3F5D3A', '#D8AB69'][idx];
+              return (
               <Reveal key={tier.tier} delay={tier.delay}>
-                <div style={{ backgroundColor: 'rgba(15,27,31,0.5)', padding: '40px 36px', borderBottom: idx < arr.length - 1 ? '1px solid rgba(216,171,105,0.12)' : 'none', display: 'grid', gridTemplateColumns: 'minmax(200px, 280px) 1fr', gap: 40, alignItems: 'start' }}>
+                <div style={{ backgroundColor: 'rgba(15,27,31,0.5)', padding: '40px 36px', borderLeft: `4px solid ${accent}`, borderBottom: idx < arr.length - 1 ? '1px solid rgba(216,171,105,0.12)' : 'none', display: 'grid', gridTemplateColumns: 'minmax(200px, 280px) 1fr', gap: 40, alignItems: 'start' }}>
                   <div>
-                    <p style={{ color: '#D8AB69', fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 14 }}>{tier.tier}</p>
+                    <p style={{ color: accent, fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 14 }}>{tier.tier}</p>
                     <h3 style={{ color: '#F5F0E8', fontSize: 26, fontWeight: 400, lineHeight: 1.2, letterSpacing: '-0.015em', marginBottom: 18 }}>{tier.title}</h3>
                     <p style={{ color: 'rgba(216,171,105,0.55)', fontSize: 10, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>Tools at this layer</p>
                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -829,7 +886,8 @@ export default function Home() {
                   <p style={{ color: 'rgba(245,240,232,0.62)', fontSize: 15.5, lineHeight: 1.75, margin: 0 }}>{tier.body}</p>
                 </div>
               </Reveal>
-            ))}
+              )
+            })}
           </div>
 
           <Reveal delay={400}>
