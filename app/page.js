@@ -579,18 +579,18 @@ export default function Home() {
             transform: heroVisible ? 'none' : 'translateY(16px)',
             transition: 'all 0.9s ease 380ms',
           }}>
-            Why does your life feel like it&apos;s being run by something else?
+            What does it mean to be a whole person in a divided world with enough agency to govern one&apos;s life?
           </h1>
 
           <div style={{ maxWidth: 600, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 800ms' }}>
             <p style={{ color: 'rgba(245,240,232,0.78)', fontSize: 17, lineHeight: 1.7, marginBottom: 14 }}>
-              The Founded Project names what modern systems take from you. Your attention before breakfast. Your agency over your own decisions. The hours you&apos;d spend on the life you actually want.
+              Modern systems extract various forms of capital including your attention, time, decisions, labor, and mental health. These extractions affect your body, your relationships, your money and your wellbeing.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.78)', fontSize: 17, lineHeight: 1.7, marginBottom: 14 }}>
-              We give you the practice to take it back. Books, apps, a daily ritual, and a board you can actually consult.
+              The Founded Project is a map leading you from simple Survival to Human Flourishing. The vehicle is governance and your agency stays behind the wheel. Agency requires trust, council, boundaries, dynamic balance, and discernment. The books, apps, and daily practices within the Founded Project are the practical application of cultivated agency.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.6)', fontSize: 15, lineHeight: 1.65, fontStyle: 'italic' }}>
-              Built by Dr. Stephen Thompson, a clinician and a survivor who needed this work for himself first.
+              Built for the coming age by Dr. Stephen Thompson, a clinician and humanist who believes in the power of radical collective agency.
             </p>
           </div>
 
