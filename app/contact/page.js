@@ -42,8 +42,8 @@ export default function ContactPage() {
             Trouble with The Founded app, a question about how a feature works, or a bug you ran into. Send a short description of what you were doing and what happened, plus your device model and iOS version if you have them.
           </p>
           <p>
-            <a href="mailto:contact@thefoundedproject.com" style={{ color: '#D8AB69' }} className="font-bold">
-              contact@thefoundedproject.com
+            <a href="mailto:Thefoundedproject@gmail.com" style={{ color: '#D8AB69' }} className="font-bold">
+              Thefoundedproject@gmail.com
             </a>
           </p>
         </Section>

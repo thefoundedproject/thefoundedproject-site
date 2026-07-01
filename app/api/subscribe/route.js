@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server'
  * Captures an email address for The Founded Project mailing list.
  *
  * If RESEND_API_KEY is set, the endpoint forwards the new subscriber to
- * docthompsondacmdc@gmail.com so Dr. Thompson can add them to whichever
+ * Thefoundedproject@gmail.com so Dr. Thompson can add them to whichever
  * mailing-list service he chooses (ConvertKit, Buttondown, plain Gmail, etc.).
  *
  * If RESEND_API_KEY is NOT set, the endpoint still returns success and logs
@@ -40,7 +40,7 @@ export async function POST(request) {
       },
       body: JSON.stringify({
         from: 'The Founded Project <noreply@thefoundedproject.com>',
-        to: ['docthompsondacmdc@gmail.com'],
+        to: ['Thefoundedproject@gmail.com'],
         subject: `New mailing-list signup: ${email}`,
         html: `
           <div style="font-family:Georgia,serif;max-width:600px;padding:24px;background:#F5F0E8;color:#0F1B1F;">
