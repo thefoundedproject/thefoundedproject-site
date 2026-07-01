@@ -95,6 +95,9 @@ function Footer() {
           <p className="text-xs">© 2026 Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM. All rights reserved.</p>
           <p className="text-xs">The Founded Project · Stockheart Whole Health · GreyDoc Consulting · Odigo Properties</p>
         </div>
+        <p className="text-xs text-gray-500 mt-4" style={{ fontSize: 10, opacity: 0.6 }}>
+          Photography via Unsplash: Alexander Grey, Melissa Askew.
+        </p>
       </div>
     </footer>
   )

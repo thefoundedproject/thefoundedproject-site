@@ -563,7 +563,11 @@ export default function Home() {
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="grain" style={{ backgroundColor: '#0F1B1F', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '80px 24px 40px', position: 'relative', overflow: 'hidden' }}>
-        <div className="breath" style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 15% 60%, rgba(216,171,105,0.08) 0%, transparent 55%), radial-gradient(circle at 85% 20%, rgba(216,171,105,0.05) 0%, transparent 45%)', pointerEvents: 'none', willChange: 'opacity, transform' }} />
+        {/* Hero photograph — hand on white textile by Alexander Grey via Unsplash. */}
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1550791793-db3e9a0a3a92?w=1920&q=75&fm=jpg&auto=format&fit=crop)', backgroundSize: 'cover', backgroundPosition: 'center', pointerEvents: 'none' }} />
+        {/* Dark teal wash for text legibility. */}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(15,27,31,0.88) 0%, rgba(15,27,31,0.68) 45%, rgba(15,27,31,0.82) 100%)', pointerEvents: 'none' }} />
+        <div className="breath" style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 15% 60%, rgba(216,171,105,0.12) 0%, transparent 55%), radial-gradient(circle at 85% 20%, rgba(216,171,105,0.08) 0%, transparent 45%)', pointerEvents: 'none', willChange: 'opacity, transform' }} />
 
         <div style={{ maxWidth: 760, margin: '0 auto', width: '100%', position: 'relative' }}>
           <p style={{ color: '#D8AB69', fontSize: 11, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 28, opacity: heroVisible ? 1 : 0, transition: 'opacity 0.8s 200ms' }}>The Founded Project</p>
@@ -658,7 +662,16 @@ export default function Home() {
       </section>
 
       {/* ── THE SIX CAPITALS ─ explicit subcategories per capital ─────────── */}
-      <section id="capitals" style={{ backgroundColor: '#F5F0E8', padding: '100px 24px', borderTop: '1px solid rgba(15,27,31,0.08)' }}>
+      {/* Six Capitals — cream ground with a wheat photograph texturing through.
+          Photo: wheat field by Melissa Askew via Unsplash. */}
+      <section id="capitals" style={{
+        backgroundColor: '#F5F0E8',
+        backgroundImage: 'linear-gradient(rgba(245,240,232,0.88), rgba(245,240,232,0.85)), url(https://images.unsplash.com/photo-1437252611977-07f74518abd7?w=1920&q=70&fm=jpg&auto=format&fit=crop)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '100px 24px',
+        borderTop: '1px solid rgba(184,107,58,0.25)'
+      }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <Reveal>
             <p style={{ color: '#9E6F2C', fontSize: 11, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 16 }}>The Six Capitals</p>
@@ -866,9 +879,9 @@ export default function Home() {
               const accent = ['#2D4A47', '#B86B3A', '#3F5D3A', '#D8AB69'][idx];
               return (
               <Reveal key={tier.tier} delay={tier.delay}>
-                <div style={{ backgroundColor: 'rgba(15,27,31,0.5)', padding: '40px 36px', borderLeft: `4px solid ${accent}`, borderBottom: idx < arr.length - 1 ? '1px solid rgba(216,171,105,0.12)' : 'none', display: 'grid', gridTemplateColumns: 'minmax(200px, 280px) 1fr', gap: 40, alignItems: 'start' }}>
+                <div style={{ backgroundColor: `${accent}55`, padding: '40px 36px', borderLeft: `4px solid ${accent}`, borderBottom: idx < arr.length - 1 ? '1px solid rgba(216,171,105,0.15)' : 'none', display: 'grid', gridTemplateColumns: 'minmax(200px, 280px) 1fr', gap: 40, alignItems: 'start' }}>
                   <div>
-                    <p style={{ color: accent, fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 14 }}>{tier.tier}</p>
+                    <p style={{ color: '#F5F0E8', fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 14, opacity: 0.92 }}>{tier.tier}</p>
                     <h3 style={{ color: '#F5F0E8', fontSize: 26, fontWeight: 400, lineHeight: 1.2, letterSpacing: '-0.015em', marginBottom: 18 }}>{tier.title}</h3>
                     <p style={{ color: 'rgba(216,171,105,0.55)', fontSize: 10, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>Tools at this layer</p>
                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
