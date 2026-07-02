@@ -130,89 +130,100 @@ function QuizFunnel() {
 
 // ─── APP MOCKUP ────────────────────────────────────────────────────────────────
 function AppMockup() {
+  // Real captures from The Founded iOS app. Cycled with a slow cross-fade so
+  // the visitor sees the app doing something rather than a static screenshot.
   const screens = [
-    { label: 'Dashboard', icon: '◉', active: true },
-    { label: 'Mission', icon: '▣', active: false },
-    { label: 'Board', icon: '◎', active: false },
-    { label: 'Decide', icon: '◈', active: false },
+    { src: '/app-screenshots/founded-app-home.png',    label: 'Home',                caption: 'Meets you where the day begins.' },
+    { src: '/app-screenshots/founded-app-journal.png', label: 'Your Record',         caption: 'The writing surface waits, quiet.' },
+    { src: '/app-screenshots/founded-app-entry.png',   label: 'Evening Reflections', caption: 'Close the day on your own terms.' },
   ]
-  const items = [
-    { title: 'Morning Ritual', sub: 'Complete · 4 steps done', status: '#3D8B5E' },
-    { title: 'Board Meeting', sub: 'Advisor response waiting', status: '#C88A00' },
-    { title: 'Capital Review', sub: 'Social capital: 3 open loops', status: '#C88A00' },
-    { title: 'Decision Queue', sub: '2 decisions pending', status: '#C88A00' },
-  ]
+  const [idx, setIdx] = useState(0)
+  useEffect(() => {
+    const id = setInterval(() => setIdx(i => (i + 1) % screens.length), 4200)
+    return () => clearInterval(id)
+  }, [screens.length])
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 24, flexWrap: 'wrap', padding: '20px 0' }}>
-      {/* Phone mockup */}
-      <div style={{
-        width: 260,
-        backgroundColor: '#0A1519',
-        borderRadius: 40,
-        padding: 14,
-        boxShadow: '0 60px 120px rgba(0,0,0,0.5), 0 0 0 1px rgba(216,171,105,0.2), inset 0 0 0 1px rgba(255,255,255,0.05)',
-        flexShrink: 0,
-      }}>
-        {/* Notch */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
-          <div style={{ width: 60, height: 6, backgroundColor: '#0A1519', borderRadius: 3, border: '1px solid rgba(216,171,105,0.1)' }} />
-        </div>
-        {/* Screen */}
-        <div style={{ backgroundColor: '#0F1B1F', borderRadius: 28, overflow: 'hidden', minHeight: 520 }}>
-          {/* Status bar */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 16px 0', marginBottom: 4 }}>
-            <span style={{ color: 'rgba(216,171,105,0.4)', fontSize: 9, fontWeight: 600 }}>9:41</span>
-            <span style={{ color: 'rgba(216,171,105,0.4)', fontSize: 9 }}>● ●●</span>
-          </div>
-          {/* Header */}
-          <div style={{ padding: '12px 16px 16px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-              <div>
-                <p style={{ color: 'rgba(216,171,105,0.5)', fontSize: 8, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 2 }}>The Founded</p>
-                <p style={{ color: '#F5F0E8', fontSize: 15, fontWeight: 600 }}>Good morning.</p>
-              </div>
-              <div style={{ width: 32, height: 32, borderRadius: '50%', backgroundColor: 'rgba(216,171,105,0.15)', border: '1px solid rgba(216,171,105,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span style={{ color: '#D8AB69', fontSize: 14 }}>◎</span>
-              </div>
-            </div>
-            {/* Mission pill */}
-            <div style={{ backgroundColor: 'rgba(216,171,105,0.1)', border: '1px solid rgba(216,171,105,0.2)', borderRadius: 10, padding: '10px 14px', marginBottom: 14 }}>
-              <p style={{ color: 'rgba(216,171,105,0.6)', fontSize: 8, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 3 }}>Mission</p>
-              <p style={{ color: '#F5F0E8', fontSize: 11, lineHeight: 1.4 }}>Get humans organized and reinforced.</p>
-            </div>
-            {/* Items */}
-            {items.map((item, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', backgroundColor: 'rgba(255,255,255,0.04)', borderRadius: 8, marginBottom: 6, border: '1px solid rgba(255,255,255,0.05)' }}>
-                <div style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: item.status, flexShrink: 0 }} />
-                <div style={{ flex: 1 }}>
-                  <p style={{ color: '#F5F0E8', fontSize: 10, fontWeight: 600, marginBottom: 1 }}>{item.title}</p>
-                  <p style={{ color: 'rgba(245,240,232,0.4)', fontSize: 9 }}>{item.sub}</p>
-                </div>
-                <span style={{ color: 'rgba(216,171,105,0.3)', fontSize: 10 }}>›</span>
-              </div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 40, flexWrap: 'wrap', padding: '20px 0' }}>
+      {/* Device frame with real screenshot cycling. */}
+      <div style={{ width: 288, flexShrink: 0 }}>
+        <div style={{
+          backgroundColor: '#0A1519',
+          borderRadius: 44,
+          padding: 8,
+          boxShadow: '0 60px 120px rgba(0,0,0,0.55), 0 0 0 1px rgba(216,171,105,0.25), inset 0 0 0 1px rgba(255,255,255,0.06)',
+        }}>
+          <div
+            onContextMenu={(e) => e.preventDefault()}
+            style={{
+              position: 'relative',
+              aspectRatio: '1320 / 2868',
+              borderRadius: 36,
+              overflow: 'hidden',
+              backgroundColor: '#0F1B1F',
+            }}
+          >
+            {screens.map((s, i) => (
+              <img
+                key={s.src}
+                src={s.src}
+                alt={`The Founded app — ${s.label}`}
+                loading={i === 0 ? 'eager' : 'lazy'}
+                draggable={false}
+                style={{
+                  position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
+                  opacity: idx === i ? 1 : 0,
+                  transition: 'opacity 900ms ease',
+                  userSelect: 'none', WebkitUserDrag: 'none',
+                }}
+              />
             ))}
-          </div>
-          {/* Bottom nav */}
-          <div style={{ display: 'flex', justifyContent: 'space-around', padding: '12px 8px', borderTop: '1px solid rgba(216,171,105,0.08)', marginTop: 8 }}>
-            {screens.map(s => (
-              <div key={s.label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, opacity: s.active ? 1 : 0.35 }}>
-                <span style={{ color: s.active ? '#D8AB69' : 'rgba(245,240,232,0.5)', fontSize: 14 }}>{s.icon}</span>
-                <span style={{ color: s.active ? '#D8AB69' : 'rgba(245,240,232,0.5)', fontSize: 7, fontWeight: 600, letterSpacing: '0.05em' }}>{s.label}</span>
-              </div>
-            ))}
+            {/* Dynamic island overlay to sell the device frame. */}
+            <div style={{ position: 'absolute', top: 10, left: '50%', transform: 'translateX(-50%)', width: 96, height: 28, backgroundColor: '#0A1519', borderRadius: 14, zIndex: 3 }} />
+            {/* Semi-transparent watermark. Deters casual scraping,
+                not a security guarantee. */}
+            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 4 }}>
+              <p style={{ color: '#D8AB69', opacity: 0.13, fontSize: 13, letterSpacing: '0.35em', textTransform: 'uppercase', fontWeight: 700, transform: 'rotate(-24deg)', whiteSpace: 'nowrap', margin: 0 }}>
+                © The Founded Project 2026
+              </p>
+            </div>
           </div>
         </div>
-        {/* Home indicator */}
-        <div style={{ width: 70, height: 4, backgroundColor: 'rgba(216,171,105,0.25)', borderRadius: 2, margin: '10px auto 4px' }} />
+        {/* Caption + navigation dots. */}
+        <div style={{ textAlign: 'center', marginTop: 22 }}>
+          <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 8, transition: 'opacity 400ms ease' }}>
+            {screens[idx].label}
+          </p>
+          <p style={{ color: 'rgba(245,240,232,0.6)', fontSize: 12, lineHeight: 1.5, marginBottom: 14, minHeight: 36, transition: 'opacity 400ms ease' }}>
+            {screens[idx].caption}
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 7 }}>
+            {screens.map((s, i) => (
+              <button
+                key={s.src}
+                onClick={() => setIdx(i)}
+                aria-label={`Show ${s.label}`}
+                style={{
+                  width: idx === i ? 22 : 7,
+                  height: 7,
+                  borderRadius: 4,
+                  backgroundColor: idx === i ? '#D8AB69' : 'rgba(216,171,105,0.3)',
+                  border: 'none', cursor: 'pointer', padding: 0,
+                  transition: 'all 0.35s ease',
+                }}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* Feature callouts */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxWidth: 220 }}>
+      {/* Feature callouts remain to describe what the app does at a glance. */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxWidth: 240 }}>
         {[
           { icon: '◉', label: 'Personal Governance', sub: 'Mission, board, six capitals' },
-          { icon: '◎', label: 'Advisory Board', sub: 'Real advisors. Real counsel.' },
-          { icon: '◈', label: 'Decision Framework', sub: 'Structure for hard choices' },
-          { icon: '▣', label: 'Evening Ritual', sub: 'Close the day with intention' },
+          { icon: '◎', label: 'Advisory Board',      sub: 'Real advisors. Real counsel.' },
+          { icon: '◈', label: 'Decision Framework',  sub: 'Structure for hard choices' },
+          { icon: '▣', label: 'Evening Ritual',      sub: 'Close the day with intention' },
         ].map(f => (
           <div key={f.label} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
             <span style={{ color: '#D8AB69', fontSize: 18, marginTop: 1, flexShrink: 0 }}>{f.icon}</span>

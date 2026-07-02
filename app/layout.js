@@ -95,8 +95,10 @@ function Footer() {
           <p className="text-xs">© 2026 Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM. All rights reserved.</p>
           <p className="text-xs">The Founded Project · Stockheart Whole Health · GreyDoc Consulting · Odigo Properties</p>
         </div>
-        <p className="text-xs text-gray-500 mt-4" style={{ fontSize: 10, opacity: 0.6 }}>
+        <p className="text-xs text-gray-500 mt-4" style={{ fontSize: 10, opacity: 0.6, lineHeight: 1.6 }}>
           Photography via Unsplash: Alexander Grey, Melissa Askew.
+          <br />
+          The Founded app screenshots, interaction patterns, and copy are proprietary work of Dr. Stephen Thompson. Unauthorized reproduction, reverse engineering, or derivative use is prohibited.
         </p>
       </div>
     </footer>
