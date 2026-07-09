@@ -615,7 +615,7 @@ export default function Home() {
           </div>
 
           <p style={{ color: 'rgba(245,240,232,0.3)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 32, opacity: heroVisible ? 1 : 0, transition: 'opacity 1.5s 1400ms' }}>
-            Survivor · Scholar · Clinician · DC · DACM · BCTMB · FAIHM
+            Survivor · Scholar · Clinician
           </p>
         </div>
 
@@ -1160,7 +1160,6 @@ export default function Home() {
           <Reveal>
             <div>
               <p style={{ color: '#F5F0E8', fontWeight: 600, fontSize: 18, marginBottom: 4 }}>Dr. Stephen Thompson</p>
-              <p style={{ color: 'rgba(245,240,232,0.4)', fontSize: 13, marginBottom: 16 }}>DC · DACM · FAIHM · Northwestern Health Sciences · AIHM Fellow</p>
               <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 14, lineHeight: 1.65, maxWidth: 420 }}>
                 Clinician, author, and builder of systems for human reclamation. Three generations of doctors. Two decades of practice. One mission: get humans organized and reinforced.
               </p>

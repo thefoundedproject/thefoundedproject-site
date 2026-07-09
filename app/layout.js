@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'The Founded Project | Dr. Stephen Thompson, DC, DACM, FAIHM',
+  title: 'The Founded Project | Dr. Stephen Thompson',
   description: 'The Founded Project is the ecosystem of Dr. Stephen Thompson. Survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Books, platforms, civic tools, and healing infrastructure. All working to get humans organized and reinforced.',
   keywords: 'Human Enterprise Theory, Dr. Stephen Thompson, Founded Project, GroundedVote, trauma-informed, survivor scholar, Black healing, civic alignment',
   openGraph: {
@@ -50,10 +50,6 @@ function Footer() {
             <p className="text-sm leading-relaxed max-w-sm mb-4">
               Get humans organized and reinforced. Answering questions society has yet to ask.
             </p>
-            <p className="text-xs" style={{ color: 'rgba(216,171,105,0.5)' }}>
-              DC · DACM · BCTMB · FAIHM<br />
-              Northwestern Health Sciences · AIHM Fellow
-            </p>
             <div style={{ width: '40px', height: '2px', backgroundColor: '#D8AB69' }} className="mt-4" />
           </div>
           <div>
@@ -92,7 +88,7 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-t border-gray-800 pt-6">
-          <p className="text-xs">© 2026 Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM. All rights reserved.</p>
+          <p className="text-xs">© 2026 Dr. Stephen Thompson. All rights reserved.</p>
           <p className="text-xs">The Founded Project · Stockheart Whole Health · GreyDoc Consulting · Odigo Properties</p>
         </div>
         <p className="text-xs text-gray-500 mt-4" style={{ fontSize: 10, opacity: 0.6, lineHeight: 1.6 }}>

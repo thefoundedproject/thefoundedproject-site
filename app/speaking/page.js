@@ -71,10 +71,10 @@ export default function SpeakingPage() {
           <h2 style={{ color: '#0F1B1F', fontSize: 14, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Credentials</h2>
           <div style={{ backgroundColor: 'rgba(216,171,105,0.08)', borderLeft: '3px solid #9E6F2C', padding: '24px 28px', borderRadius: '0 8px 8px 0' }}>
             <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.7, marginBottom: 8 }}>
-              <b>Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM</b>
+              <b>Dr. Stephen Thompson</b>
             </p>
             <p style={{ color: 'rgba(15,27,31,0.7)', fontSize: 14, lineHeight: 1.7 }}>
-              Chiropractor (Doctor of Chiropractic), Doctor of Acupuncture and Chinese Medicine, Board-Certified Therapeutic Massage and Bodywork, Fellow of the Academy of Integrative Health and Medicine. Twenty years of clinical practice, training faculty for AIHM and Northwestern Health Sciences University, and the builder of the Founded Project ecosystem.
+              Twenty years of clinical practice, faculty-level teaching in integrative health, and the builder of the Founded Project ecosystem.
             </p>
           </div>
         </section>
@@ -93,7 +93,7 @@ export default function SpeakingPage() {
         </div>
 
         <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-12">
-          Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM<br />
+          Dr. Stephen Thompson<br />
           The Founded Project
         </p>
       </article>

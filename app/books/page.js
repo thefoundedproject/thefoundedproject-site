@@ -131,7 +131,7 @@ export default function BooksPage() {
         </div>
 
         <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-12">
-          Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM
+          Dr. Stephen Thompson
         </p>
       </article>
     </main>

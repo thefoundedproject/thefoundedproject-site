@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'About Dr. Stephen Thompson | The Founded Project',
-  description: 'Dr. Stephen Thompson, DC, DACM, BCTMB, FAIHM. Survivor-scholar-clinician. He builds governance infrastructure for the people institutions extract from.',
+  description: 'Dr. Stephen Thompson. Survivor-scholar-clinician. He builds governance infrastructure for the people institutions extract from.',
 }
 
 // ─── Ecosystem Node Card ───────────────────────────────────────────────────────
@@ -82,7 +82,6 @@ export default function About() {
           <h1 className="text-white text-5xl font-light leading-tight mb-6">
             Dr. Stephen Thompson
           </h1>
-          <p style={{ color: '#D8AB69' }} className="text-lg mb-2">DC · DACM · BCTMB · FAIHM</p>
           <p className="text-gray-400">Survivor · Scholar · Clinician · Builder</p>
         </div>
       </section>
@@ -102,7 +101,7 @@ export default function About() {
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              He comes from three generations of healers. He trained in integrative medicine, Traditional Chinese Medicine, and chiropractic at Pacific College of Health and Science and Northwestern Health Sciences University. But the clinical work was never the full answer. It was the entry point.
+              He comes from three generations of healers. He trained in integrative medicine, Traditional Chinese Medicine, and chiropractic. But the clinical work was never the full answer. It was the entry point.
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
@@ -114,7 +113,7 @@ export default function About() {
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed mb-6">
-              He teaches at Northwestern Health Sciences University. He practices at Stockheart Whole Health. He consults with organizations on corporate wellness and AI readiness through GreyDoc Consulting. He publishes. He codes. He advocates for civic truth through RhetoricalPoints and GroundedVote.
+              He practices at Stockheart Whole Health. He consults with organizations on corporate wellness and AI readiness through GreyDoc Consulting. He publishes. He codes. He advocates for civic truth through RhetoricalPoints and GroundedVote.
             </p>
 
             <p style={{ color: '#0F1B1F' }} className="text-lg leading-relaxed">
@@ -123,31 +122,6 @@ export default function About() {
           </div>
 
           <div>
-            <div style={{ backgroundColor: '#0F1B1F' }} className="p-8 rounded-sm mb-6">
-              <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-6">Credentials</p>
-              <ul className="space-y-4">
-                {[
-                  { abbr: 'DC', full: 'Doctor of Chiropractic' },
-                  { abbr: 'DACM', full: 'Doctor of Acupuncture & Chinese Medicine' },
-                  { abbr: 'BCTMB', full: 'Board Certified in Therapeutic Massage & Bodywork' },
-                  { abbr: 'FAIHM', full: 'Fellow, Academy of Integrative Health & Medicine' },
-                ].map((cred) => (
-                  <li key={cred.abbr}>
-                    <p style={{ color: '#D8AB69' }} className="text-sm font-semibold">{cred.abbr}</p>
-                    <p className="text-gray-300 text-xs">{cred.full}</p>
-                  </li>
-                ))}
-              </ul>
-              <div style={{ height: '1px', backgroundColor: '#D8AB69' }} className="my-6 opacity-30" />
-              <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-4">Institutions</p>
-              <ul className="space-y-2 text-gray-300 text-xs">
-                <li>Pacific College of Health and Science</li>
-                <li>Northwestern Health Sciences University</li>
-                <li>AIHM Fellowship</li>
-                <li>Stockheart Whole Health</li>
-              </ul>
-            </div>
-
             <div style={{ backgroundColor: '#0F1B1F' }} className="p-8 rounded-sm">
               <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-4">Quick Links</p>
               <ul className="space-y-3">
