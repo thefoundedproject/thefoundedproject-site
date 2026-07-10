@@ -1,4 +1,9 @@
 import './globals.css'
+import Script from 'next/script'
+
+// William — the Founded Project concierge. Served by the isolated concierge
+// service; no access to this site's code or data.
+const CONCIERGE_URL = 'https://rhetoricalpoints-production-4da4.up.railway.app'
 
 export const metadata = {
   title: 'The Founded Project | Dr. Stephen Thompson',
@@ -110,6 +115,10 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <Script id="rpc-config" strategy="beforeInteractive">
+          {`window.RP_CONCIERGE={site:'thefoundedproject',api:'${CONCIERGE_URL}',name:'William',accent:'#D8AB69'}`}
+        </Script>
+        <Script src={`${CONCIERGE_URL}/widget.js`} strategy="afterInteractive" />
       </body>
     </html>
   )
