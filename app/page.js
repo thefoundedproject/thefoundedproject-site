@@ -44,9 +44,9 @@ const QUIZ = [
   ]},
 ]
 const PROFILES = {
-  a: { title: 'The Builder Without a Blueprint', desc: 'You have drive and instinct. You\'ve been building your life from scratch every day. We can give you the structure to do it on purpose.', cta: 'The Founded App starts where you are.', href: 'https://thefounded.app' },
+  a: { title: 'The Builder Without a Blueprint', desc: 'You have drive and instinct. You\'ve been building your life from scratch every day. We can give you the structure to do it on purpose.', cta: 'The Founded starts where you are.', href: 'https://thefounded.app' },
   b: { title: 'The Reclaimer', desc: 'You survived something hard. Your survival built your intelligence. Now you need a structure that respects what your body already knows.', cta: 'Start with Journey from the Edge.', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
-  c: { title: 'The Visionary Missing Infrastructure', desc: 'You can see exactly where you\'re going. You\'re missing the scaffolding to get there. We can build that with you.', cta: 'The Founded App gives your vision the structure it needs.', href: 'https://thefounded.app' },
+  c: { title: 'The Visionary Missing Infrastructure', desc: 'You can see exactly where you\'re going. You\'re missing the scaffolding to get there. We can build that with you.', cta: 'The Founded gives your vision the structure it needs.', href: 'https://thefounded.app' },
   d: { title: 'The Competent Carrier', desc: 'You\'re excellent and exhausted from performing it. We won\'t ask you to perform here. We\'ll ask what you actually need and build the structure around your answer.', cta: 'Begin with the framework.', href: 'https://thefounded.app' },
 }
 
@@ -610,7 +610,7 @@ export default function Home() {
           </div>
 
           <div style={{ marginTop: 36, display: 'flex', gap: 12, flexWrap: 'wrap', opacity: heroVisible ? 1 : 0, transition: 'opacity 1.2s ease 1100ms' }}>
-            <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 32px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none', letterSpacing: '0.02em' }}>Get the app</a>
+            <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 32px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none', letterSpacing: '0.02em' }}>Start free</a>
             <a href="#subscribe" style={{ backgroundColor: 'transparent', color: '#F5F0E8', padding: '16px 32px', borderRadius: 6, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.25)' }}>Join the list</a>
           </div>
 
@@ -816,9 +816,9 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12, textAlign: 'center' }}>The Platform</p>
-            <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(24px, 3.5vw, 42px)', fontWeight: 300, textAlign: 'center', marginBottom: 8, letterSpacing: '-0.02em' }}>Personal governance. In your pocket.</h2>
+            <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(24px, 3.5vw, 42px)', fontWeight: 300, textAlign: 'center', marginBottom: 8, letterSpacing: '-0.02em' }}>Personal governance, wherever you are.</h2>
             <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 15, lineHeight: 1.7, maxWidth: 480, margin: '0 auto 40px', textAlign: 'center' }}>
-              The Founded App gives you the structure to govern your life intentionally. Mission, board, decisions, continuity.
+              The Founded gives you the structure to govern your life intentionally. Open it in any browser today. Mission, board, decisions, continuity. The iOS app follows.
             </p>
           </Reveal>
           <Reveal delay={200}>

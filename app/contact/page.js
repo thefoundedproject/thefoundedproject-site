@@ -37,9 +37,9 @@ export default function ContactPage() {
         </h1>
         <p style={{ color: 'rgba(15,27,31,0.55)' }} className="text-sm mb-12">Dr. Thompson reads what comes in. Replies usually arrive within 1–2 business days.</p>
 
-        <Section title="App support — The Founded">
+        <Section title="Support for The Founded">
           <p>
-            Trouble with The Founded app, a question about how a feature works, or a bug you ran into. Send a short description of what you were doing and what happened, plus your device model and iOS version if you have them.
+            Trouble with The Founded, a question about how a feature works, or a bug you ran into. Send a short description of what you were doing and what happened, plus whether you were in the web app or on your phone, and your browser or iOS version if you have it.
           </p>
           <p>
             <a href="mailto:Thefoundedproject@gmail.com" style={{ color: '#D8AB69' }} className="font-bold">
@@ -50,7 +50,7 @@ export default function ContactPage() {
 
         <Section title="Speaking, press, podcasts">
           <p>
-            For interviews, conference invitations, or podcast appearances for Dr. Stephen Thompson — clinician and author of The South Never Lost and Founded Emerging — use the email above with &quot;Press&quot; or &quot;Speaking&quot; in the subject line.
+            For interviews, conference invitations, or podcast appearances for Dr. Stephen Thompson, clinician and author of The South Never Lost and Founded Emerging, use the email above with &quot;Press&quot; or &quot;Speaking&quot; in the subject line.
           </p>
         </Section>
 

@@ -60,7 +60,7 @@ function Footer() {
           <div>
             <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Platform</div>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://thefounded.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">The Founded App</a></li>
+              <li><a href="https://thefounded.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">The Founded</a></li>
               <li><a href="https://thefoundedemerging.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Founded Emerging</a></li>
               <li><a href="https://groundedvote.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GroundedVote</a></li>
               <li><a href="https://rhetoricalpoints.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">RhetoricalPoints</a></li>
