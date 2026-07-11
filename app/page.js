@@ -817,8 +817,11 @@ export default function Home() {
           <Reveal>
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12, textAlign: 'center' }}>The Platform</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(24px, 3.5vw, 42px)', fontWeight: 300, textAlign: 'center', marginBottom: 8, letterSpacing: '-0.02em' }}>Personal governance, wherever you are.</h2>
-            <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 15, lineHeight: 1.7, maxWidth: 480, margin: '0 auto 40px', textAlign: 'center' }}>
-              The Founded gives you the structure to govern your life intentionally. Open it in any browser today. Mission, board, decisions, continuity. The iOS app follows.
+            <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 15, lineHeight: 1.7, maxWidth: 480, margin: '0 auto 10px', textAlign: 'center' }}>
+              The Founded gives you the structure to govern your life intentionally. Open it in any browser today. Mission, board, decisions, continuity.
+            </p>
+            <p style={{ color: 'rgba(245,240,232,0.35)', fontSize: 13, textAlign: 'center', margin: '0 auto 40px', letterSpacing: '0.02em' }}>
+              Dedicated mobile app coming soon.
             </p>
           </Reveal>
           <Reveal delay={200}>
