@@ -33,6 +33,19 @@ h1, h2, h3 { font-family: 'Newsreader', Georgia, serif; }
 /* Warm image key so documentary photography reads as one firelit world. */
 .warm-tone { filter: saturate(1.06) contrast(1.03) brightness(0.97) sepia(0.14); }
 
+/* "Agency at every scale" tier cards: label/tools column beside the body copy
+   on wide screens, stacked on narrow so the paragraph never squeezes into a
+   narrow side column. */
+.tier-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 780px) {
+  .tier-grid { grid-template-columns: 1fr; gap: 20px; }
+}
+
 a { color: inherit; text-decoration: none; }
 * { box-sizing: border-box; }
 

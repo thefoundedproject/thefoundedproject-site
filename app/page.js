@@ -893,7 +893,7 @@ export default function Home() {
               const accent = ['#2D4A47', '#B86B3A', '#3F5D3A', '#D8AB69'][idx];
               return (
               <Reveal key={tier.tier} delay={tier.delay}>
-                <div style={{ backgroundColor: `${accent}55`, padding: '40px 36px', borderLeft: `4px solid ${accent}`, borderBottom: idx < arr.length - 1 ? '1px solid rgba(216,171,105,0.15)' : 'none', display: 'grid', gridTemplateColumns: 'minmax(200px, 280px) 1fr', gap: 40, alignItems: 'start' }}>
+                <div className="tier-grid" style={{ backgroundColor: `${accent}55`, padding: '40px 36px', borderLeft: `4px solid ${accent}`, borderBottom: idx < arr.length - 1 ? '1px solid rgba(216,171,105,0.15)' : 'none' }}>
                   <div>
                     <p style={{ color: '#F5F0E8', fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 14, opacity: 0.92 }}>{tier.tier}</p>
                     <h3 style={{ color: '#F5F0E8', fontSize: 26, fontWeight: 400, lineHeight: 1.2, letterSpacing: '-0.015em', marginBottom: 18 }}>{tier.title}</h3>
