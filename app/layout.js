@@ -20,10 +20,11 @@ export const metadata = {
 
 function Nav() {
   return (
-    <nav style={{ backgroundColor: '#0F1B1F' }} className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+    <nav style={{ backgroundColor: '#17110B' }} className="fixed top-0 left-0 right-0 z-50 px-6 py-3.5 border-b border-white/5">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <a href="/" className="text-white font-semibold text-lg tracking-wide">
-          The Founded Project
+        <a href="/" className="flex items-center gap-2.5 text-white font-semibold text-lg tracking-wide">
+          <img src="/brand/logo_mark_gold.png" alt="" className="h-8 w-auto" />
+          <span style={{ fontFamily: 'Fraunces, Georgia, serif' }}>The Founded Project</span>
         </a>
         <div className="hidden md:flex items-center gap-6">
           <a href="/about" className="text-gray-300 hover:text-white text-sm transition-colors">About</a>
@@ -31,7 +32,7 @@ function Nav() {
           <a href="/projects" className="text-gray-300 hover:text-white text-sm transition-colors">Projects</a>
           <a href="/store" className="text-gray-300 hover:text-white text-sm transition-colors">Store</a>
           <a href="/speaking" className="text-gray-300 hover:text-white text-sm transition-colors">Speaking</a>
-          <a href="/contact" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F' }} className="px-4 py-2 text-sm font-semibold rounded hover:opacity-90 transition-opacity">
+          <a href="/contact" style={{ backgroundColor: '#E0A45B', color: '#17110B' }} className="px-4 py-2 text-sm font-semibold rounded hover:opacity-90 transition-opacity">
             Connect
           </a>
         </div>
@@ -47,15 +48,18 @@ function Nav() {
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: '#0F1B1F' }} className="text-gray-400 py-16 px-6 mt-24">
+    <footer style={{ backgroundColor: '#17110B' }} className="text-gray-400 py-16 px-6 mt-24">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-5 gap-10 mb-12">
           <div className="md:col-span-2">
-            <div className="text-white font-semibold text-lg mb-3">The Founded Project</div>
+            <div className="flex items-center gap-2.5 mb-3">
+              <img src="/brand/logo_mark_gold.png" alt="" className="h-9 w-auto" />
+              <span className="text-white font-semibold text-lg" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>The Founded Project</span>
+            </div>
             <p className="text-sm leading-relaxed max-w-sm mb-4">
               Get humans organized and reinforced. Answering questions society has yet to ask.
             </p>
-            <div style={{ width: '40px', height: '2px', backgroundColor: '#D8AB69' }} className="mt-4" />
+            <div style={{ width: '40px', height: '2px', backgroundColor: '#E0A45B' }} className="mt-4" />
           </div>
           <div>
             <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Platform</div>
