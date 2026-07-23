@@ -24,7 +24,7 @@ function Nav() {
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2.5 text-white font-semibold text-lg tracking-wide">
           <img src="/brand/logo_mark_gold.png" alt="" className="h-8 w-auto" />
-          <span style={{ fontFamily: 'Fraunces, Georgia, serif' }}>The Founded Project</span>
+          <span style={{ fontFamily: 'Newsreader, Georgia, serif' }}>The Founded Project</span>
         </a>
         <div className="hidden md:flex items-center gap-6">
           <a href="/about" className="text-gray-300 hover:text-white text-sm transition-colors">About</a>
@@ -54,7 +54,7 @@ function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-3">
               <img src="/brand/logo_mark_gold.png" alt="" className="h-9 w-auto" />
-              <span className="text-white font-semibold text-lg" style={{ fontFamily: 'Fraunces, Georgia, serif' }}>The Founded Project</span>
+              <span className="text-white font-semibold text-lg" style={{ fontFamily: 'Newsreader, Georgia, serif' }}>The Founded Project</span>
             </div>
             <p className="text-sm leading-relaxed max-w-sm mb-4">
               Get humans organized and reinforced. Answering questions society has yet to ask.

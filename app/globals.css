@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,14 +21,14 @@ html { scroll-behavior: smooth; }
 body {
   background-color: var(--bone);
   color: var(--night-teal);
-  font-family: 'Figtree', 'Inter', system-ui, sans-serif;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings speak in Fraunces — the warm, human welcome (shared with the flagship). */
-h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; }
+/* Headings speak in Newsreader — a warm, literary editorial serif (shared with the flagship). */
+h1, h2, h3 { font-family: 'Newsreader', Georgia, serif; }
 
 /* Warm image key so documentary photography reads as one firelit world. */
 .warm-tone { filter: saturate(1.06) contrast(1.03) brightness(0.97) sepia(0.14); }
