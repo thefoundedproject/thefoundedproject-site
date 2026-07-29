@@ -26,6 +26,20 @@ export async function POST(request) {
     // Always log the signup so it's never silently dropped.
     console.log(`[subscribe] ${ts} ${email}`)
 
+    // Durable list + welcome email: forward into The Minutes, which lives in
+    // the thefounded.app service (it owns the database and the drip sender).
+    // Failure here never blocks the signup; the notification below and the
+    // server log remain the safety net.
+    try {
+      await fetch('https://thefounded.app/api/minutes/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'thefoundedproject.com' }),
+      })
+    } catch (err) {
+      console.error('[subscribe] minutes forward failed:', err)
+    }
+
     if (!process.env.RESEND_API_KEY) {
       // Resend not configured yet. Return ok so the user sees confirmation;
       // server log is the durable record until Resend (or another service) is wired.
