@@ -77,3 +77,12 @@ a { color: inherit; text-decoration: none; }
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.847 0 0 0 0 0.671 0 0 0 0 0.412 0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
+/* ── Field Notes body typography ─────────────────────────────────────── */
+.note-body h2 { font-family: 'Newsreader', Georgia, serif; font-size: 1.6rem; font-weight: 600; color: #17110B; margin: 2.2rem 0 0.8rem; }
+.note-body h3 { font-family: 'Newsreader', Georgia, serif; font-size: 1.25rem; font-weight: 600; color: #17110B; margin: 1.8rem 0 0.6rem; }
+.note-body p { margin: 0 0 1.15rem; }
+.note-body ul { margin: 0 0 1.15rem 1.25rem; list-style: disc; }
+.note-body li { margin-bottom: 0.4rem; }
+.note-body blockquote { border-left: 3px solid #E0A45B; padding: 0.2rem 0 0.2rem 1rem; margin: 1.4rem 0; color: #5b5245; font-style: italic; }
+.note-body a.note-link { color: #A66A3F; text-decoration: underline; text-underline-offset: 3px; }

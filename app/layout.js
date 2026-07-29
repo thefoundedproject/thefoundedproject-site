@@ -30,6 +30,7 @@ function Nav() {
           <a href="/about" className="text-gray-300 hover:text-white text-sm transition-colors">About</a>
           <a href="/books" className="text-gray-300 hover:text-white text-sm transition-colors">Books</a>
           <a href="/projects" className="text-gray-300 hover:text-white text-sm transition-colors">Projects</a>
+          <a href="/notes" className="text-gray-300 hover:text-white text-sm transition-colors">Field Notes</a>
           <a href="/store" className="text-gray-300 hover:text-white text-sm transition-colors">Store</a>
           <a href="/speaking" className="text-gray-300 hover:text-white text-sm transition-colors">Speaking</a>
           <a href="/contact" style={{ backgroundColor: '#E0A45B', color: '#17110B' }} className="px-4 py-2 text-sm font-semibold rounded hover:opacity-90 transition-opacity">
