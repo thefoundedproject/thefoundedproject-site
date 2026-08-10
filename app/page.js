@@ -675,11 +675,7 @@ export default function Home() {
       {/* ── THE SIX CAPITALS ─ explicit subcategories per capital ─────────── */}
       {/* Six Capitals — cream ground with a wheat photograph texturing through.
           Photo: wheat field by Melissa Askew via Unsplash. */}
-      <section id="capitals" style={{
-        backgroundColor: '#F5F0E8',
-        backgroundImage: 'linear-gradient(rgba(245,240,232,0.88), rgba(245,240,232,0.85)), url(https://images.unsplash.com/photo-1437252611977-07f74518abd7?w=1920&q=70&fm=jpg&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+      <section id="capitals" className="photo-wash" style={{
         padding: '100px 24px',
         borderTop: '1px solid rgba(184,107,58,0.25)'
       }}>

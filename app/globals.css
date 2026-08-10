@@ -46,6 +46,26 @@ h1, h2, h3 { font-family: 'Newsreader', Georgia, serif; }
   .tier-grid { grid-template-columns: 1fr; gap: 20px; }
 }
 
+/* ── Photo-backed sections ─────────────────────────────────────────
+   A `cover` background on a tall, narrow viewport scales the photo to
+   the section's HEIGHT, so a phone shows roughly a 10% center crop:
+   an unreadable smear rather than a wheat field. Below 780px the photo
+   steps aside and the warm brand wash carries the section instead. */
+.photo-wash {
+  background-color: #F5F0E8;
+  background-image:
+    linear-gradient(rgba(245, 240, 232, 0.88), rgba(245, 240, 232, 0.85)),
+    url(https://images.unsplash.com/photo-1437252611977-07f74518abd7?w=1920&q=70&fm=jpg&auto=format&fit=crop);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 780px) {
+  .photo-wash {
+    background-image:
+      linear-gradient(180deg, rgba(216, 171, 105, 0.16), rgba(245, 240, 232, 0.6) 22%, #F5F0E8 55%);
+  }
+}
+
 a { color: inherit; text-decoration: none; }
 * { box-sizing: border-box; }
 
