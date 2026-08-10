@@ -77,7 +77,7 @@ export default function BooksPage() {
           The body of work.
         </h1>
         <p style={{ color: 'rgba(15,27,31,0.6)', fontSize: 17, lineHeight: 1.65, maxWidth: 620 }} className="mb-16">
-          Eight titles across memoir, theory, somatic practice, and civic analysis. Some are out, some are close, some are still becoming. The arc is one body of work: name what extracts from a modern life, give the reader the architecture to take it back.
+          Eight titles across memoir, theory, somatic practice, civic analysis, and fiction. Some are out, some are close, some are still becoming. The arc is one body of work: name what extracts from a modern life, give the reader the architecture to take it back.
         </p>
 
         <BookCard
@@ -151,12 +151,12 @@ export default function BooksPage() {
 
         <BookCard
           title="The Manufactured Knight"
-          kind="Cultural critique"
-          status="Concept"
-          year="Target 2028"
-          percent={5}
-          basis="Concept note only."
-          blurb="What gets made when a culture engineers its protector class. The manufactured masculine ideal and what it costs."
+          kind="Novel \u00b7 Book One of a trilogy"
+          status="Drafted"
+          year="Target 2027"
+          percent={65}
+          basis="Book One first draft complete: 43,700 words across 24 chapters, a prologue, and an epilogue. Continuous read and line revision remain."
+          blurb="Julian Virelli was raised inside a world his parents built for him. Every villain an actor, every rescue placed in the news, every voice in his ear a script. He has been the city\u2019s vigilante folk hero since he was twenty-one and he believes all of it. Then a man on a job calls him by a name that was never in the story. To learn who he actually is, he has to take apart the family that manufactured him."
         />
 
         <div style={{ marginTop: 64, padding: '32px 36px', backgroundColor: '#0F1B1F', borderRadius: 10 }}>
