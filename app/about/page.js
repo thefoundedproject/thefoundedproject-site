@@ -201,7 +201,7 @@ export default function About() {
             eyebrow="The Signal"
             title="Civic Infrastructure"
             nodes={[
-              { tag: 'Media Literacy · AI · Debate', name: 'ChatWithMe Debates', status: 'Live', desc: 'Watch two AIs argue. Notice who you believe. That is the lesson. That is the literacy.' },
+              { tag: 'Conversation · Media Literacy · Live', name: 'Consider Otherwise: Life Conversations', status: 'Live', desc: 'A live conversation show. Guests, callers, and a standing invitation: bring me your argument. When someone makes a claim we can check, we stop and check it on air with RhetoricalPoints, run the same way for my claims as for theirs.' },
               { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
             ]}
           />
