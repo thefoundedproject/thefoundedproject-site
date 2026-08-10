@@ -253,7 +253,7 @@ function NodeCard({ tag, name, desc, href, nextLabel, nextHref, status, dark = f
     <div style={{ backgroundColor: bg, border: `1px solid ${border}`, borderRadius: 10, padding: '28px', display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
         <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase' }}>{tag}</p>
-        {status && <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '3px 8px', borderRadius: 3, backgroundColor: status === 'Live' ? 'rgba(109,139,95,0.2)' : status === 'In Progress' ? 'rgba(217,164,65,0.2)' : 'rgba(216,171,105,0.1)', color: status === 'Live' ? '#6D8B5F' : status === 'In Progress' ? '#D9A441' : 'rgba(216,171,105,0.6)', whiteSpace: 'nowrap' }}>{status}</span>}
+        {status && <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '3px 8px', borderRadius: 3, backgroundColor: status === 'Live' ? 'rgba(109,139,95,0.2)' : (status === 'In Progress' || status === 'In review') ? 'rgba(217,164,65,0.2)' : 'rgba(216,171,105,0.1)', color: status === 'Live' ? '#6D8B5F' : (status === 'In Progress' || status === 'In review') ? '#D9A441' : 'rgba(216,171,105,0.6)', whiteSpace: 'nowrap' }}>{status}</span>}
       </div>
       <div>
         <p style={{ color: text, fontSize: 17, fontWeight: 600, marginBottom: 6 }}>{name}</p>
@@ -957,7 +957,7 @@ export default function Home() {
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
-              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', status: 'Live', delay: 0 },
+              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', status: 'In review', delay: 0 },
               { tag: 'Civic Agency · Vote · Alignment', name: 'GroundedVote', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
               { tag: 'Civic Agency · Signal · Discourse', name: 'RhetoricalPoints', desc: 'Public discourse runs on disorientation. Four AI models score political speech in real time. Hear what people are actually saying. Signal restored.', href: 'https://rhetoricalpoints.com', nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'Live', delay: 160 },
               { tag: 'Education · Entertainment · AI', name: 'ChatWithMe Debates', desc: 'Watch two AIs argue. Notice who you believe. That is the lesson. That is the literacy.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'Live', delay: 240 },
@@ -977,7 +977,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
               { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 0 },
-              { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
+              { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'In review', delay: 80 },
               { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', delay: 160 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>
