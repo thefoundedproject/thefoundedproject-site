@@ -174,7 +174,7 @@ export default function About() {
               { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', status: 'Forthcoming', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.' },
               { tag: 'Civic · History · Culture', name: 'The South Never Lost', status: 'In Progress', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known. An unfinished reckoning.' },
               { tag: 'Governance · Theory · Framework', name: 'Founded: Human Enterprise Theory', status: 'Forthcoming', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.' },
-              { tag: 'Coaching · Method · Practice', name: 'Thompson Coaching Method', status: 'Complete', desc: 'The complete practitioner framework for the Thompson Coaching Method. Internal and trainer editions.' },
+              { tag: 'Coaching · Method · Practice', name: 'Thompson Coaching Method', status: 'In Progress', desc: 'The practitioner framework underneath the Founded apps. The manual is compiled and in active practice. The student edition and the certification course are in production now.' },
             ]}
           />
 

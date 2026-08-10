@@ -243,7 +243,36 @@ function AppMockup() {
 }
 
 // ─── NODE CARD ─────────────────────────────────────────────────────────────────
-function NodeCard({ tag, name, desc, href, nextLabel, nextHref, status, dark = false }) {
+/**
+ * Progress bar for anything short of shipped. Live nodes show the status chip
+ * alone: a full bar on a running product reads as finished, which no live
+ * product ever is. Percentages match the books and projects pages.
+ */
+function ProgressBar({ percent, basis, dark = false }) {
+  if (!percent || percent >= 100) return null
+  const track = dark ? 'rgba(245,240,232,0.15)' : 'rgba(15,27,31,0.10)'
+  const label = dark ? 'rgba(245,240,232,0.55)' : 'rgba(15,27,31,0.5)'
+  return (
+    <div>
+      <div
+        role="progressbar"
+        aria-valuenow={percent}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${percent} percent complete`}
+        style={{ height: 4, borderRadius: 2, backgroundColor: track, overflow: 'hidden' }}
+      >
+        <div style={{ width: `${percent}%`, height: '100%', backgroundColor: '#D8AB69', borderRadius: 2 }} />
+      </div>
+      <p style={{ color: label, fontSize: 11, lineHeight: 1.5, marginTop: 6 }}>
+        <span style={{ fontWeight: 700, color: '#D9A441' }}>{percent}%</span>
+        {basis ? ` \u00b7 ${basis}` : ''}
+      </p>
+    </div>
+  )
+}
+
+function NodeCard({ tag, name, desc, href, nextLabel, nextHref, status, percent, basis, dark = false }) {
   const bg = dark ? '#0F1B1F' : '#F5F0E8'
   const text = dark ? '#F5F0E8' : '#0F1B1F'
   const sub = dark ? 'rgba(245,240,232,0.55)' : 'rgba(15,27,31,0.6)'
@@ -257,7 +286,8 @@ function NodeCard({ tag, name, desc, href, nextLabel, nextHref, status, dark = f
       </div>
       <div>
         <p style={{ color: text, fontSize: 17, fontWeight: 600, marginBottom: 6 }}>{name}</p>
-        <p style={{ color: sub, fontSize: 13, lineHeight: 1.65 }}>{desc}</p>
+        <p style={{ color: sub, fontSize: 13, lineHeight: 1.65, marginBottom: percent ? 14 : 0 }}>{desc}</p>
+        <ProgressBar percent={percent} basis={basis} dark={dark} />
       </div>
       <div style={{ marginTop: 'auto', paddingTop: 12, borderTop: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 8 }}>
         {href && (
@@ -939,9 +969,9 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
               { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY', nextLabel: 'Rooted Reclaimers community', nextHref: '/about#rooted', status: 'Live', delay: 0 },
-              { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', delay: 80 },
-              { tag: 'Civic · History · Culture', name: 'The South Never Lost', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known. An unfinished reckoning.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', delay: 160 },
-              { tag: 'Governance · Community · Agency', name: 'The Founded: A Human Enterprise Project', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', delay: 240 },
+              { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', delay: 80 },
+              { tag: 'Civic · History · Culture', name: 'The South Never Lost', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known. An unfinished reckoning.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', delay: 160 },
+              { tag: 'Governance · Community · Agency', name: 'The Founded: A Human Enterprise Project', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', delay: 240 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>
                 <NodeCard {...node} />
@@ -957,7 +987,7 @@ export default function Home() {
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
-              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', status: 'In review', delay: 0 },
+              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', status: 'In review', percent: 90, basis: 'Built and submitted. Waiting on App Store review.', delay: 0 },
               { tag: 'Civic Agency · Vote · Alignment', name: 'GroundedVote', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
               { tag: 'Civic Agency · Signal · Discourse', name: 'RhetoricalPoints', desc: 'Public discourse runs on disorientation. Four AI models score political speech in real time. Hear what people are actually saying. Signal restored.', href: 'https://rhetoricalpoints.com', nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'Live', delay: 160 },
               { tag: 'Education · Entertainment · AI', name: 'ChatWithMe Debates', desc: 'Watch two AIs argue. Notice who you believe. That is the lesson. That is the literacy.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'Live', delay: 240 },
@@ -977,8 +1007,8 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
               { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 0 },
-              { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'In review', delay: 80 },
-              { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', delay: 160 },
+              { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'In review', percent: 90, basis: 'Built and submitted. Waiting on App Store review.', delay: 80 },
+              { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', percent: 25, basis: 'Curriculum outlined. Nonprofit filing in progress.', delay: 160 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>
                 <NodeCard {...node} />
@@ -1132,9 +1162,9 @@ export default function Home() {
 
           {[
             { title: 'Journey from the Edge', status: 'Available on Amazon', statusColor: '#6D8B5F', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. The first volume in the Thompson Ecosystem.', link: { label: 'Buy on Amazon →', href: 'https://www.amazon.com/dp/B0GTXBZGJY' }, next: { label: 'Rooted Reclaimers', href: '/about#rooted' } },
-            { title: 'P/AIRS Bodywork', status: 'Forthcoming 2026', statusColor: '#D9A441', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
-            { title: 'The South Never Lost', status: 'In Progress', statusColor: '#D9A441', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known and protected. An unfinished reckoning in progress.', next: { label: 'GroundedVote', href: 'https://groundedvote.com' } },
-            { title: 'The Founded: A Human Enterprise Project', status: 'Forthcoming', statusColor: 'rgba(15,27,31,0.35)', desc: 'The governance framework. Structure for survivors ready to protect what they built.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
+            { title: 'P/AIRS Bodywork', status: 'Forthcoming 2026', statusColor: '#D9A441', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
+            { title: 'The South Never Lost', status: 'In Progress', statusColor: '#D9A441', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known and protected. An unfinished reckoning in progress.', next: { label: 'GroundedVote', href: 'https://groundedvote.com' } },
+            { title: 'The Founded: A Human Enterprise Project', status: 'Forthcoming', statusColor: 'rgba(15,27,31,0.35)', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', desc: 'The governance framework. Structure for survivors ready to protect what they built.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
           ].map((book, i) => (
             <Reveal key={book.title} delay={i * 80}>
               <div style={{ borderTop: '1px solid rgba(15,27,31,0.1)', padding: '32px 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 24, alignItems: 'start' }}>
@@ -1142,7 +1172,10 @@ export default function Home() {
                   <p style={{ color: book.statusColor, fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 4 }}>{book.status}</p>
                   <p style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 700 }}>{book.title}</p>
                 </div>
-                <p style={{ color: 'rgba(15,27,31,0.6)', fontSize: 14, lineHeight: 1.7 }}>{book.desc}</p>
+                <div>
+                  <p style={{ color: 'rgba(15,27,31,0.6)', fontSize: 14, lineHeight: 1.7, marginBottom: book.percent ? 14 : 0 }}>{book.desc}</p>
+                  <ProgressBar percent={book.percent} basis={book.basis} />
+                </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                   {book.link && <a href={book.link.href} target="_blank" rel="noopener noreferrer" style={{ color: '#0F1B1F', fontSize: 13, fontWeight: 700, textDecoration: 'none', borderBottom: '1px solid #D8AB69', paddingBottom: 1, width: 'fit-content' }}>{book.link.label}</a>}
                   {book.next && <a href={book.next.href} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(15,27,31,0.45)', fontSize: 12, textDecoration: 'none' }}>Natural next: {book.next.label} →</a>}

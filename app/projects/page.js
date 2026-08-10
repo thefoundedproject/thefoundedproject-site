@@ -15,6 +15,8 @@ const PLATFORMS = [
     color: '#0F1B1F',
     status: 'In review',
     statusColor: '#C88A00',
+    percent: 90,
+    basis: 'Built and submitted. Waiting on App Store review.',
   },
   {
     name: 'Founded Emerging',
@@ -27,6 +29,8 @@ const PLATFORMS = [
     color: '#1A3A42',
     status: 'In review',
     statusColor: '#C88A00',
+    percent: 90,
+    basis: 'Built and submitted. Waiting on App Store review.',
   },
   {
     name: 'GroundedVote',
@@ -100,10 +104,39 @@ const COMMUNITY = [
     color: '#1F1F1F',
     status: 'Building',
     statusColor: '#C88A00',
+    percent: 30,
+    basis: 'Programming designed. First retreat not yet scheduled.',
   },
 ]
 
-function ProjectCard({ name, url, domain, tag, audience, description, features, color, status, statusColor }) {
+/**
+ * Progress bar for anything short of shipped. Live projects show the status dot
+ * alone: a full bar on a running product reads as finished, which no live
+ * product ever is. Each percentage carries a basis line so the number is checkable.
+ */
+function ProgressBar({ percent, basis }) {
+  if (!percent || percent >= 100) return null
+  return (
+    <div style={{ marginTop: 16, maxWidth: 260 }}>
+      <div
+        role="progressbar"
+        aria-valuenow={percent}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${percent} percent complete`}
+        style={{ height: 4, borderRadius: 2, backgroundColor: 'rgba(245,240,232,0.15)', overflow: 'hidden' }}
+      >
+        <div style={{ width: `${percent}%`, height: '100%', backgroundColor: '#D8AB69', borderRadius: 2 }} />
+      </div>
+      <p style={{ color: 'rgba(245,240,232,0.6)', fontSize: 12, lineHeight: 1.5, marginTop: 7 }}>
+        <span style={{ fontWeight: 700, color: '#D8AB69' }}>{percent}%</span>
+        {basis ? ` \u00b7 ${basis}` : ''}
+      </p>
+    </div>
+  )
+}
+
+function ProjectCard({ name, url, domain, tag, audience, description, features, color, status, statusColor, percent, basis }) {
   return (
     <div className="grid md:grid-cols-5 gap-0 overflow-hidden rounded-sm" style={{ border: '1px solid rgba(15,27,31,0.08)' }}>
       <div className="md:col-span-2 p-10 flex flex-col justify-between" style={{ backgroundColor: color }}>
@@ -115,6 +148,7 @@ function ProjectCard({ name, url, domain, tag, audience, description, features, 
           <p style={{ color: '#D8AB69' }} className="text-xs font-semibold uppercase tracking-widest mb-3">{tag}</p>
           <h2 className="text-white text-2xl font-semibold mb-2">{name}</h2>
           {domain && <p className="text-gray-400 text-xs">{domain}</p>}
+          <ProgressBar percent={percent} basis={basis} />
         </div>
         {url && (
           <a href={url} target="_blank" rel="noopener noreferrer"

@@ -11,7 +11,34 @@ export const metadata = {
   description: 'Books by Dr. Stephen Thompson. Memoir, theory, somatic practice, civic analysis. Published, in-progress, and forthcoming titles from The Founded Project.',
 }
 
-function BookCard({ title, status, year, kind, blurb, link }) {
+/**
+ * Progress bar. Every percentage carries a basis line naming what was counted,
+ * so a reader can check the claim instead of taking the number on faith.
+ * Published titles show no bar. A finished book is finished.
+ */
+function ProgressBar({ percent, basis }) {
+  if (!percent || percent >= 100) return null
+  return (
+    <div style={{ marginBottom: 14 }}>
+      <div
+        role="progressbar"
+        aria-valuenow={percent}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${percent} percent complete`}
+        style={{ height: 4, borderRadius: 2, backgroundColor: 'rgba(15,27,31,0.10)', overflow: 'hidden' }}
+      >
+        <div style={{ width: `${percent}%`, height: '100%', backgroundColor: '#D8AB69', borderRadius: 2 }} />
+      </div>
+      <p style={{ color: 'rgba(15,27,31,0.5)', fontSize: 12, lineHeight: 1.5, marginTop: 7 }}>
+        <span style={{ fontWeight: 700, color: 'rgba(15,27,31,0.7)' }}>{percent}%</span>
+        {basis ? ` · ${basis}` : ''}
+      </p>
+    </div>
+  )
+}
+
+function BookCard({ title, status, year, kind, blurb, link, percent, basis }) {
   const statusColor = status === 'Available' ? '#2A5C30'
     : status === 'In revision' ? '#9E6F2C'
     : status === 'Drafted' ? '#9E6F2C'
@@ -27,7 +54,8 @@ function BookCard({ title, status, year, kind, blurb, link }) {
         </span>
       </div>
       <p style={{ color: 'rgba(15,27,31,0.5)', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 14 }}>{kind}</p>
-      <p style={{ color: 'rgba(15,27,31,0.78)', fontSize: 16, lineHeight: 1.7, marginBottom: 12 }}>{blurb}</p>
+      <p style={{ color: 'rgba(15,27,31,0.78)', fontSize: 16, lineHeight: 1.7, marginBottom: 14 }}>{blurb}</p>
+      <ProgressBar percent={percent} basis={basis} />
       {link && (
         <a href={link} target={link.startsWith('http') ? '_blank' : '_self'} rel={link.startsWith('http') ? 'noreferrer' : undefined} style={{ color: '#9E6F2C', fontSize: 13, fontWeight: 700, textDecoration: 'underline' }}>
           {link.startsWith('http') ? 'Buy on Amazon →' : 'Read more →'}
@@ -66,6 +94,8 @@ export default function BooksPage() {
           kind="Theory · 45 chapters · the flagship"
           status="In revision"
           year="Target 2027"
+          percent={75}
+          basis="All 45 chapters drafted and cited. Revision pass underway."
           blurb="Human Enterprise Theory in book form. The full architecture of extraction, reclamation, agency, governance, discernment, and contribution. Built for the reader who wants the diagnosis and the destination in one place."
         />
 
@@ -74,15 +104,19 @@ export default function BooksPage() {
           kind="Civic analysis"
           status="Drafted"
           year="Target 2026"
+          percent={80}
+          basis="Full draft complete. Revision and one added chapter pending."
           blurb="The algorithmic dimension of American civic life, with the South as the proving ground. How extraction at scale shapes belief, vote, and self-image, and the literacy that protects against it."
         />
 
         <BookCard
           title="Thompson Coaching Method"
-          kind="Practitioner manual"
-          status="Available"
-          year="2024"
-          blurb="The clinical and coaching framework underneath the Founded apps. Internal Master Edition and Trainer Edition compiled. Used in active practice and in training programs."
+          kind="Practitioner manual · certification course"
+          status="In progress"
+          year="Target 2026"
+          percent={70}
+          basis="Manual compiled and in active practice. Certification course: 6 of 8 modules built."
+          blurb="The clinical and coaching framework underneath the Founded apps. The Internal Master and Trainer editions are compiled and in use. The student edition and practitioner certification are in production now."
         />
 
         <BookCard
@@ -90,6 +124,8 @@ export default function BooksPage() {
           kind="Somatic practice · 12 regional chapters"
           status="In revision"
           year="Target 2026"
+          percent={70}
+          basis="Chapters 2 through 13 written. Chapter 1 and the illustration set remain."
           blurb="The body-first half of the work. The fascia stores patterns from before the patient could name them. P/AIRS is the framework for meeting the body where it actually lives."
         />
 
@@ -98,6 +134,8 @@ export default function BooksPage() {
           kind="Story medicine"
           status="In progress"
           year="Target 2027"
+          percent={10}
+          basis="Proposals written. Chapters not started."
           blurb="A translation of integrative medicine through the language of story rather than biomedical pathology. The book the clinic was waiting for."
         />
 
@@ -106,6 +144,8 @@ export default function BooksPage() {
           kind="Practitioner business"
           status="In progress"
           year="Target 2027"
+          percent={15}
+          basis="Source material and financial records gathered. Narrative not started."
           blurb="The five years between starting a serious practice and reaching the version of it that finally works. Strategy, money, mistakes, what no one teaches in school."
         />
 
@@ -114,6 +154,8 @@ export default function BooksPage() {
           kind="Cultural critique"
           status="Concept"
           year="Target 2028"
+          percent={5}
+          basis="Concept note only."
           blurb="What gets made when a culture engineers its protector class. The manufactured masculine ideal and what it costs."
         />
 
