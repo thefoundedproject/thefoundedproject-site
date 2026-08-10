@@ -13,8 +13,8 @@ const PLATFORMS = [
     description: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Decisions. Continuity. Built around the life you\'re actually living. The destination for every node in this ecosystem.',
     features: ['Human Enterprise Theory overview', 'Personal governance board', 'Thompson Coaching Method', 'Six capitals tracking', 'Evening ritual + daily check-in', 'Crisis support integration'],
     color: '#0F1B1F',
-    status: 'Live',
-    statusColor: '#3D8B5E',
+    status: 'In review',
+    statusColor: '#C88A00',
   },
   {
     name: 'Founded Emerging',
@@ -25,8 +25,8 @@ const PLATFORMS = [
     description: 'Human Enterprise Theory applied to emerging adults. For young people building serious lives without a map. Youth-safe and crisis-aware. Parental consent comes with it.',
     features: ['Emerging adult governance curriculum', 'Youth program partnerships', 'Educator resources', 'Parental consent + youth safety', '988 crisis integration', 'Youth cohort enrollment'],
     color: '#1A3A42',
-    status: 'Live',
-    statusColor: '#3D8B5E',
+    status: 'In review',
+    statusColor: '#C88A00',
   },
   {
     name: 'GroundedVote',
