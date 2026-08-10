@@ -202,6 +202,7 @@ export default function About() {
             title="Civic Infrastructure"
             nodes={[
               { tag: 'Conversation · Media Literacy · Public', name: 'Consider Otherwise: Life Conversations', status: 'In Progress', desc: 'Conversations with the public about the questions The Founded Project asks, about politics, and about whatever the day put in front of all of us. Everybody gets time. When a claim comes up that we can check, RhetoricalPoints checks it live, and the standard is the same for the host\u2019s claims as for yours. When a conversation needs more structure, it moves to the debate room.' },
+              { tag: 'Civic Agency · AI · Media Literacy', name: 'Rhetorical Points: Bot vs Bot', status: 'In Progress', desc: 'Two AI models take opposite sides of a real question and talk it out while the RhetoricalPoints engine scores both of them live. Watch where each one stretches, dodges, or wins the point. Notice which one you believed before the scores came up. That gap is the whole lesson.' },
               { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
             ]}
           />
