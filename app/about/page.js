@@ -201,7 +201,7 @@ export default function About() {
             eyebrow="The Signal"
             title="Civic Infrastructure"
             nodes={[
-              { tag: 'Conversation · Media Literacy · Live', name: 'Consider Otherwise: Life Conversations', status: 'Live', desc: 'A live conversation show. Guests, callers, and a standing invitation: bring me your argument. When someone makes a claim we can check, we stop and check it on air with RhetoricalPoints, run the same way for my claims as for theirs.' },
+              { tag: 'Conversation · Media Literacy · Public', name: 'Consider Otherwise: Life Conversations', status: 'In Progress', desc: 'Conversations with the public about the questions The Founded Project asks, about politics, and about whatever the day put in front of all of us. Everybody gets time. When a claim comes up that we can check, RhetoricalPoints checks it live, and the standard is the same for the host\u2019s claims as for yours. When a conversation needs more structure, it moves to the debate room.' },
               { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
             ]}
           />
