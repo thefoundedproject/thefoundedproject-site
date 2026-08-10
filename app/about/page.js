@@ -193,7 +193,7 @@ export default function About() {
             nodes={[
               { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', status: 'Live', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.' },
               { tag: 'Reset · Structure · Accountability', name: 'Rooted Reset', status: 'Live', desc: 'A 21-day structured reset program. Daily worksheets, breathwork protocols, and community accountability. 21 days of rebuilding from the ground up.' },
-              { tag: 'Retreat · Healing · Brotherhood', name: 'BLACC Retreats', status: 'Building', desc: 'Healing-centered retreat experiences for Black men and communities. Space. Brotherhood. Practice. The conditions reclamation needs.' },
+              { tag: 'Retreat · Healing · Brotherhood', name: 'BLACC Retreats', status: 'Live', desc: 'Healing-centered retreat experiences for Black men and communities. Space. Brotherhood. Practice. The conditions reclamation needs.' },
             ]}
           />
 

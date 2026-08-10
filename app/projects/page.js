@@ -99,13 +99,11 @@ const COMMUNITY = [
     name: 'BLACC Retreats',
     tag: 'Healing · Brotherhood · Reclamation',
     audience: 'Black men · Community leaders · People in reclamation',
-    description: 'Healing-centered retreat experiences for Black men and communities. Space. Brotherhood. Practice. The conditions reclamation needs.',
+    description: 'Healing-centered retreat experiences for Black men and communities. Space. Brotherhood. Practice. The conditions reclamation needs. The first demo event has run and the format works. We\u2019re bringing on facilitators to take it to more rooms.',
     features: ['Healing-centered programming', 'Brotherhood cohorts', 'Breathwork + somatic practice', 'Governance workshops', 'Community building', 'Thompson method integration'],
     color: '#1F1F1F',
-    status: 'Building',
-    statusColor: '#C88A00',
-    percent: 30,
-    basis: 'Programming designed. First retreat not yet scheduled.',
+    status: 'Live',
+    statusColor: '#3D8B5E',
   },
 ]
 
