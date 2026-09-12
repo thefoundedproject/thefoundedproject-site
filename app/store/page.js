@@ -80,20 +80,68 @@ const PRODUCTS = [
   },
 ]
 
+const COMING_SOON = [
+  {
+    brand: 'Afro-Loon of Minnesota',
+    name: 'Afro-Loon Embroidered Cap',
+    price: '$44.99',
+    image: '/store/afro-loon-embroidered-cap.png',
+    imageBackground: '#121212',
+    note: 'A circular embroidered loon badge carrying Minnesota identity through a Black cultural lens.',
+  },
+  {
+    brand: 'Black Art Saves Lives',
+    name: 'Black Art Saves Lives Tee',
+    image: '/store/black-art-saves-lives-tee.png',
+    imageBackground: '#111111',
+    note: 'A flowering Black power fist for the art, expression, and imagination that keep people alive.',
+  },
+  {
+    brand: 'The Founded',
+    name: 'I AM AGENTIC Tee',
+    image: '/store/i-am-agentic-tee.png',
+    imageBackground: '#111111',
+    note: 'Agency is not a destination. It is a practice.',
+  },
+  {
+    brand: 'Founded Emerging',
+    name: 'EDUCATED & EMERGING Hoodie',
+    image: '/store/educated-emerging-hoodie.png',
+    imageBackground: '#103B31',
+    note: 'Education creates the conditions; emergence makes growth visible.',
+  },
+  {
+    brand: 'Rhetorical Points',
+    name: 'RHETORICAL ORACLE Cap',
+    image: '/store/rhetorical-oracle-cap.png',
+    imageBackground: '#111111',
+    note: 'For the person who asks the second question before accepting the first answer.',
+  },
+  {
+    brand: 'The Founded',
+    name: 'RECLAIMED / GOVERNED / DISCERNING',
+    image: '/store/reclaimed-governed-discerning.png',
+    imageBackground: '#F5F0E8',
+    note: 'Three capacities at the center of reclaiming and governing a life.',
+  },
+]
+
 function ProductCard({ product }) {
+  const isComingSoon = !product.href
+
   return (
     <article style={{ backgroundColor: '#FFFFFF', border: '1px solid rgba(15,27,31,0.09)', borderRadius: 12, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ backgroundColor: '#EFEAE1', aspectRatio: '1 / 1', overflow: 'hidden' }}>
-        <img src={product.image} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+      <div style={{ backgroundColor: product.imageBackground || '#EFEAE1', aspectRatio: '1 / 1', overflow: 'hidden', padding: isComingSoon ? 24 : 0 }}>
+        <img src={product.image} alt={product.name} style={{ width: '100%', height: '100%', objectFit: isComingSoon ? 'contain' : 'cover', display: 'block' }} />
       </div>
       <div style={{ padding: 24, display: 'flex', flexDirection: 'column', flex: 1 }}>
         <p style={{ color: '#9A7135', fontSize: 9, fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 8 }}>{product.brand}</p>
         <h2 style={{ color: '#0F1B1F', fontSize: 20, lineHeight: 1.25, marginBottom: 10 }}>{product.name}</h2>
         <p style={{ color: 'rgba(15,27,31,0.62)', fontSize: 13, lineHeight: 1.65, marginBottom: 20, flex: 1 }}>{product.note}</p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-          <span style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 800 }}>{product.price}</span>
-          <a href={product.href} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '11px 18px', borderRadius: 6, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
-            Buy on Etsy →
+          <span style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 800 }}>{product.price || 'Coming soon'}</span>
+          <a href={product.href || ETSY_STORE} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '11px 18px', borderRadius: 6, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
+            {isComingSoon ? 'Visit Etsy →' : 'Buy on Etsy →'}
           </a>
         </div>
       </div>
@@ -137,6 +185,19 @@ export default function Store() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
             {PRODUCTS.map(product => <ProductCard key={product.name} product={product} />)}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ backgroundColor: '#E9E1D4', padding: '82px 24px' }}>
+        <div className="max-w-6xl mx-auto">
+          <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>New designs</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap', marginBottom: 42 }}>
+            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15 }}>Coming into the collection.</h2>
+            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, maxWidth: 430 }}>These designs are in production. The Etsy store will carry each product as it clears final review.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
+            {COMING_SOON.map(product => <ProductCard key={product.name} product={product} />)}
           </div>
         </div>
       </section>
