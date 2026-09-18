@@ -106,3 +106,11 @@ a { color: inherit; text-decoration: none; }
 .note-body li { margin-bottom: 0.4rem; }
 .note-body blockquote { border-left: 3px solid #E0A45B; padding: 0.2rem 0 0.2rem 1rem; margin: 1.4rem 0; color: #5b5245; font-style: italic; }
 .note-body a.note-link { color: #A66A3F; text-decoration: underline; text-underline-offset: 3px; }
+/* Footnotes: essays cite their sources, and a reader should reach the citation
+   and get back to the sentence without losing their place. */
+.note-body sup.fnref { font-size: 0.72em; line-height: 0; margin-left: 0.1em; }
+.note-body sup.fnref a { color: #A66A3F; text-decoration: none; font-weight: 600; padding: 0 0.1em; }
+.note-body ol.footnotes { margin: 0.4rem 0 1.15rem 1.25rem; list-style: decimal; font-size: 0.92rem; color: #5b5245; }
+.note-body ol.footnotes li { margin-bottom: 0.7rem; line-height: 1.55; }
+.note-body ol.footnotes li:target { background: rgba(224,164,91,0.14); }
+.note-body a.fnback { color: #A66A3F; text-decoration: none; margin-left: 0.25em; }

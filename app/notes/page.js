@@ -25,8 +25,17 @@ export const metadata = {
 export const revalidate = 3600
 
 export default async function NotesPage() {
-  const substack = await getSubstackPosts()
-  const notes = [...getNotes(), ...substack].sort((a, b) => b.date.localeCompare(a.date))
+  const local = getNotes()
+  // An essay published here first and later sent through Substack exists in
+  // both places. Show it once, from here: match on the substack: URL a note
+  // records, with the title as a fallback for notes that don't record one.
+  const norm = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+  const claimedUrls = new Set(local.map((n) => n.substack).filter(Boolean))
+  const claimedTitles = new Set(local.map((n) => norm(n.title)))
+  const substack = (await getSubstackPosts()).filter(
+    (s) => !claimedUrls.has(s.href) && !claimedTitles.has(norm(s.title))
+  )
+  const notes = [...local, ...substack].sort((a, b) => b.date.localeCompare(a.date))
   return (
     <main className="pt-24 pb-24 px-6" style={{ backgroundColor: '#F5F0E8', minHeight: '100vh' }}>
       <div className="max-w-3xl mx-auto">
