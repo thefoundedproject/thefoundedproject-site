@@ -7,6 +7,7 @@
  */
 
 export const metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact | The Founded Project',
   description: 'Reach The Founded Project for app support, partnerships, speaking, or anything else.',
 }

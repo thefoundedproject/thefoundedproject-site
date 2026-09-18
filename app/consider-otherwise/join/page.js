@@ -14,6 +14,7 @@
 import JoinGate from './JoinGate'
 
 export const metadata = {
+  alternates: { canonical: '/consider-otherwise/join' },
   title: 'Join the conversation | Consider Otherwise',
   description:
     'Consider Otherwise is a live conversation show with fact checking. Read the rules, agree to them, and get your link to join the room.',

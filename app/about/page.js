@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: '/about' },
   title: 'About Dr. Stephen Thompson | The Founded Project',
   description: 'Dr. Stephen Thompson. Survivor-scholar-clinician. He builds governance infrastructure for the people institutions extract from.',
 }

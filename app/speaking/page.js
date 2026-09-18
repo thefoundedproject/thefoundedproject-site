@@ -7,6 +7,7 @@
  */
 
 export const metadata = {
+  alternates: { canonical: '/speaking' },
   title: 'Speaking | The Founded Project',
   description: 'Dr. Stephen Thompson speaks on Human Enterprise Theory, body-first medicine, civic agency, and the architecture of self-governance. Conferences, keynotes, and institutional cohorts.',
 }

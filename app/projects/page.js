@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: '/projects' },
   title: 'Projects | The Founded Project Ecosystem',
   description: 'The full ecosystem of The Founded Project. Platforms, civic tools, community programs, and consulting services. Human Enterprise Theory grounds all of it.',
 }
@@ -13,10 +14,9 @@ const PLATFORMS = [
     description: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Decisions. Continuity. Built around the life you\'re actually living. The destination for every node in this ecosystem.',
     features: ['Human Enterprise Theory overview', 'Personal governance board', 'Thompson Coaching Method', 'Six capitals tracking', 'Evening ritual + daily check-in', 'Crisis support integration'],
     color: '#0F1B1F',
-    status: 'In review',
-    statusColor: '#C88A00',
-    percent: 90,
-    basis: 'Built and submitted. Waiting on App Store review.',
+    status: 'Live',
+    statusColor: '#3D8B5E',
+    appStore: 'https://apps.apple.com/us/app/the-founded/id6786498112',
   },
   {
     name: 'Founded Emerging',
@@ -27,10 +27,9 @@ const PLATFORMS = [
     description: 'Human Enterprise Theory applied to emerging adults. For young people building serious lives without a map. Youth-safe and crisis-aware. Parental consent comes with it.',
     features: ['Emerging adult governance curriculum', 'Youth program partnerships', 'Educator resources', 'Parental consent + youth safety', '988 crisis integration', 'Youth cohort enrollment'],
     color: '#1A3A42',
-    status: 'In review',
-    statusColor: '#C88A00',
-    percent: 90,
-    basis: 'Built and submitted. Waiting on App Store review.',
+    status: 'Live',
+    statusColor: '#3D8B5E',
+    appStore: 'https://apps.apple.com/us/app/emerging/id6786498515',
   },
   {
     name: 'GroundedVote',
@@ -134,7 +133,7 @@ function ProgressBar({ percent, basis }) {
   )
 }
 
-function ProjectCard({ name, url, domain, tag, audience, description, features, color, status, statusColor, percent, basis }) {
+function ProjectCard({ name, url, appStore, domain, tag, audience, description, features, color, status, statusColor, percent, basis }) {
   return (
     <div className="grid md:grid-cols-5 gap-0 overflow-hidden rounded-sm" style={{ border: '1px solid rgba(15,27,31,0.08)' }}>
       <div className="md:col-span-2 p-10 flex flex-col justify-between" style={{ backgroundColor: color }}>
@@ -148,12 +147,23 @@ function ProjectCard({ name, url, domain, tag, audience, description, features, 
           {domain && <p className="text-gray-400 text-xs">{domain}</p>}
           <ProgressBar percent={percent} basis={basis} />
         </div>
-        {url && (
-          <a href={url} target="_blank" rel="noopener noreferrer"
-            style={{ backgroundColor: '#D8AB69', color: '#0F1B1F' }}
-            className="inline-block mt-8 px-5 py-2.5 text-sm font-semibold rounded hover:opacity-90 transition-opacity w-fit">
-            Visit Site →
-          </a>
+        {(url || appStore) && (
+          <div className="flex flex-wrap gap-3 mt-8">
+            {url && (
+              <a href={url} target="_blank" rel="noopener noreferrer"
+                style={{ backgroundColor: '#D8AB69', color: '#0F1B1F' }}
+                className="inline-block px-5 py-2.5 text-sm font-semibold rounded hover:opacity-90 transition-opacity w-fit">
+                Visit Site →
+              </a>
+            )}
+            {appStore && (
+              <a href={appStore} target="_blank" rel="noopener noreferrer"
+                style={{ border: '1px solid #D8AB69', color: '#D8AB69' }}
+                className="inline-block px-5 py-2.5 text-sm font-semibold rounded hover:opacity-90 transition-opacity w-fit">
+                App Store →
+              </a>
+            )}
+          </div>
         )}
       </div>
       <div className="md:col-span-3 p-10" style={{ backgroundColor: '#F5F0E8' }}>
@@ -176,9 +186,42 @@ function ProjectCard({ name, url, domain, tag, audience, description, features, 
   )
 }
 
+// Structured data for the two live iOS apps. Lets a search for either name
+// resolve to an app with an install link rather than only a web page. Price,
+// category and minimum iOS come from the App Store's own lookup, 2026-09-18.
+const APPS_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'MobileApplication',
+      name: 'The Founded',
+      operatingSystem: 'iOS 16.4 or later',
+      applicationCategory: 'HealthApplication',
+      installUrl: 'https://apps.apple.com/us/app/the-founded/id6786498112',
+      url: 'https://thefounded.app',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@id': 'https://thefoundedproject.com/#organization' },
+    },
+    {
+      '@type': 'MobileApplication',
+      name: 'Emerging',
+      operatingSystem: 'iOS 16.4 or later',
+      applicationCategory: 'HealthApplication',
+      installUrl: 'https://apps.apple.com/us/app/emerging/id6786498515',
+      url: 'https://thefoundedemerging.app',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@id': 'https://thefoundedproject.com/#organization' },
+    },
+  ],
+}
+
 export default function Projects() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(APPS_LD) }}
+      />
       <section style={{ backgroundColor: '#0F1B1F' }} className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <p style={{ color: '#D8AB69' }} className="text-sm font-semibold uppercase tracking-widest mb-4">Ecosystem</p>

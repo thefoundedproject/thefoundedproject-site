@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: '/store' },
   title: 'Store | The Founded Project',
   description: 'Shop apparel and goods from The Founded Project, Founded Emerging, Rhetorical Points, and GroundedVote.',
 }

@@ -846,8 +846,10 @@ export default function Home() {
             <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 15, lineHeight: 1.7, maxWidth: 480, margin: '0 auto 10px', textAlign: 'center' }}>
               The Founded gives you the structure to govern your life intentionally. Open it in any browser today. Mission, board, decisions, continuity.
             </p>
-            <p style={{ color: 'rgba(245,240,232,0.35)', fontSize: 13, textAlign: 'center', margin: '0 auto 40px', letterSpacing: '0.02em' }}>
-              Dedicated mobile app coming soon.
+            <p style={{ textAlign: 'center', margin: '0 auto 40px' }}>
+              <a href="https://apps.apple.com/us/app/the-founded/id6786498112" target="_blank" rel="noopener noreferrer" style={{ color: '#D8AB69', fontSize: 14, fontWeight: 700, textDecoration: 'none', letterSpacing: '0.04em' }}>
+                Download The Founded for iPhone on the App Store →
+              </a>
             </p>
           </Reveal>
           <Reveal delay={200}>
@@ -987,7 +989,7 @@ export default function Home() {
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
-              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', status: 'In review', percent: 90, basis: 'Built and submitted. Waiting on App Store review.', delay: 0 },
+              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', nextLabel: 'The Founded on the App Store', nextHref: 'https://apps.apple.com/us/app/the-founded/id6786498112', status: 'Live', delay: 0 },
               { tag: 'Civic Agency · Vote · Alignment', name: 'GroundedVote', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
               { tag: 'Civic Agency · Signal · Discourse', name: 'RhetoricalPoints', desc: 'Public discourse runs on disorientation. Four AI models score political speech in real time. Hear what people are actually saying. Signal restored.', href: 'https://rhetoricalpoints.com', nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'Live', delay: 160 },
               { tag: 'Conversation · Media Literacy · Public', name: 'Consider Otherwise: Life Conversations', desc: 'Conversations with the public about the questions The Founded Project asks, about politics, and about whatever the day put in front of all of us. Everybody gets time. When a claim comes up that we can check, RhetoricalPoints checks it live, and the standard is the same for the host\u2019s claims as for yours. When a conversation needs more structure, it moves to the debate room.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', percent: 60, basis: 'Production package built and rigged. First episode not yet aired.', delay: 240 },
@@ -1008,7 +1010,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
               { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 0 },
-              { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'In review', percent: 90, basis: 'Built and submitted. Waiting on App Store review.', delay: 80 },
+              { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'Emerging on the App Store', nextHref: 'https://apps.apple.com/us/app/emerging/id6786498515', status: 'Live', delay: 80 },
               { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', percent: 45, basis: 'Digital identity curriculum built and teachable inside Founded Emerging. A dedicated AI literacy track and the nonprofit filing remain.', delay: 160 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>

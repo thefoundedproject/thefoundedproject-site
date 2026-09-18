@@ -5,8 +5,50 @@ import Script from 'next/script'
 // service; no access to this site's code or data.
 const CONCIERGE_URL = 'https://rhetoricalpoints-production-4da4.up.railway.app'
 
+const SITE = 'https://thefoundedproject.com'
+
+// Structured data. Search engines and AI assistants read this to know who is
+// behind the site and what it publishes, instead of guessing from page copy.
+// Name without the prefix, credentials as post-nominals: the settled byline rule.
+const JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${SITE}/#organization`,
+      name: 'The Founded Project',
+      url: SITE,
+      logo: `${SITE}/icon.png`,
+      founder: { '@id': `${SITE}/#stephen-thompson` },
+      sameAs: ['https://thefoundedproject.substack.com'],
+    },
+    {
+      '@type': 'Person',
+      '@id': `${SITE}/#stephen-thompson`,
+      name: 'Stephen Thompson',
+      honorificSuffix: 'DC, DACM, FAIHM',
+      url: `${SITE}/about`,
+      jobTitle: 'Founder, The Founded Project',
+      knowsAbout: ['Human Enterprise Theory', 'personal governance', 'trauma-informed care', 'somatic practice', 'civic media literacy'],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE}/#website`,
+      url: SITE,
+      name: 'The Founded Project',
+      publisher: { '@id': `${SITE}/#organization` },
+    },
+  ],
+}
+
 export const metadata = {
-  title: 'The Founded Project | Dr. Stephen Thompson',
+  // metadataBase turns every relative URL in page metadata into an absolute one.
+  // Without it, share cards and canonical tags point nowhere useful.
+  metadataBase: new URL(SITE),
+  // No canonical here: a layout-level canonical is inherited by every page that
+  // doesn't set its own, which would mark the whole site a copy of the homepage.
+  // Each page declares its own canonical instead.
+  title: 'The Founded Project | Stephen Thompson',
   description: 'The Founded Project is the ecosystem of Dr. Stephen Thompson. Survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Books, platforms, civic tools, and healing infrastructure. All working to get humans organized and reinforced.',
   keywords: 'Human Enterprise Theory, Dr. Stephen Thompson, Founded Project, GroundedVote, trauma-informed, survivor scholar, Black healing, civic alignment',
   openGraph: {
@@ -15,6 +57,11 @@ export const metadata = {
     url: 'https://thefoundedproject.com',
     siteName: 'The Founded Project',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Founded Project',
+    description: 'Get humans organized and reinforced.',
   },
 }
 
@@ -31,6 +78,8 @@ function Nav() {
           <a href="/books" className="text-gray-300 hover:text-white text-sm transition-colors">Books</a>
           <a href="/projects" className="text-gray-300 hover:text-white text-sm transition-colors">Projects</a>
           <a href="/notes" className="text-gray-300 hover:text-white text-sm transition-colors">Field Notes</a>
+          <a href="/certification" className="text-gray-300 hover:text-white text-sm transition-colors">Certification</a>
+          <a href="/golden-eight" className="text-gray-300 hover:text-white text-sm transition-colors">Golden Eight</a>
           <a href="/store" className="text-gray-300 hover:text-white text-sm transition-colors">Store</a>
           <a href="/speaking" className="text-gray-300 hover:text-white text-sm transition-colors">Speaking</a>
           <a href="/contact" style={{ backgroundColor: '#E0A45B', color: '#17110B' }} className="px-4 py-2 text-sm font-semibold rounded hover:opacity-90 transition-opacity">
@@ -75,13 +124,15 @@ function Footer() {
             <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Services</div>
             <ul className="space-y-2 text-sm">
               <li><a href="https://greydoc.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GreyDoc Consulting</a></li>
+              <li><a href="/certification" className="hover:text-white transition-colors">Certification</a></li>
+              <li><a href="/golden-eight" className="hover:text-white transition-colors">Golden Eight</a></li>
               <li><a href="/speaking" className="hover:text-white transition-colors">Speaking</a></li>
               <li><a href="/books" className="hover:text-white transition-colors">Books</a></li>
               <li><a href="/store" className="hover:text-white transition-colors">Store</a></li>
             </ul>
           </div>
           <div>
-            <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Dr. Thompson</div>
+            <div className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Stephen Thompson</div>
             <ul className="space-y-2 text-sm">
               <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
               <li><a href="/projects" className="hover:text-white transition-colors">Projects</a></li>
@@ -98,13 +149,13 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-t border-gray-800 pt-6">
-          <p className="text-xs">© 2026 Dr. Stephen Thompson. All rights reserved.</p>
+          <p className="text-xs">© 2026 Stephen Thompson, DC, DACM. All rights reserved.</p>
           <p className="text-xs">The Founded Project · Stockheart Whole Health · GreyDoc Consulting · Odigo Properties</p>
         </div>
         <p className="text-xs text-gray-500 mt-4" style={{ fontSize: 10, opacity: 0.6, lineHeight: 1.6 }}>
           Photography via Unsplash: Alexander Grey, Melissa Askew.
           <br />
-          The Founded app screenshots, interaction patterns, and copy are proprietary work of Dr. Stephen Thompson. Unauthorized reproduction, reverse engineering, or derivative use is prohibited.
+          The Founded app screenshots, interaction patterns, and copy are proprietary work of Stephen Thompson. Unauthorized reproduction, reverse engineering, or derivative use is prohibited.
         </p>
       </div>
     </footer>
@@ -115,6 +166,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+        />
         <Nav />
         <main className="pt-16">
           {children}

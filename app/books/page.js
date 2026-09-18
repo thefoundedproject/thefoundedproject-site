@@ -7,6 +7,7 @@
  */
 
 export const metadata = {
+  alternates: { canonical: '/books' },
   title: 'Books | The Founded Project',
   description: 'Books by Dr. Stephen Thompson. Memoir, theory, somatic practice, civic analysis. Published, in-progress, and forthcoming titles from The Founded Project.',
 }

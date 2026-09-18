@@ -17,6 +17,14 @@ export function generateMetadata({ params }) {
   return {
     title: `${note.title} — The Founded Project`,
     description: note.excerpt || undefined,
+    alternates: { canonical: `/notes/${params.slug}` },
+    openGraph: {
+      type: 'article',
+      title: note.title,
+      description: note.excerpt || undefined,
+      publishedTime: note.date,
+      authors: ['Stephen Thompson'],
+    },
   }
 }
 

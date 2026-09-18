@@ -58,7 +58,12 @@ export default function NotesList({ notes }) {
       ) : (
         <div className="space-y-10">
           {shown.map((n) => (
-            <a key={n.slug} href={`/notes/${n.slug}`} className="block group">
+            <a
+              key={n.slug}
+              href={n.href || `/notes/${n.slug}`}
+              {...(n.href ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              className="block group"
+            >
               <article className="grid md:grid-cols-5 gap-6 items-start">
                 {n.type === 'vlog' && n.youtube ? (
                   <div className="md:col-span-2 relative rounded-lg overflow-hidden border border-black/10">
@@ -82,7 +87,7 @@ export default function NotesList({ notes }) {
                 ) : null}
                 <div className={n.type === 'vlog' && n.youtube ? 'md:col-span-3' : 'md:col-span-5'}>
                   <p className="text-xs font-bold tracking-[0.18em] uppercase mb-2" style={{ color: GOLD }}>
-                    {n.type === 'vlog' ? 'Video' : 'Written'} · {fmtDate(n.date)}
+                    {n.type === 'vlog' ? 'Video' : n.source === 'substack' ? 'Essay' : 'Written'} · {fmtDate(n.date)}
                   </p>
                   <h2
                     className="text-2xl font-semibold mb-2 group-hover:underline underline-offset-4"
@@ -94,7 +99,7 @@ export default function NotesList({ notes }) {
                     <p className="text-gray-600 leading-relaxed">{n.excerpt}</p>
                   ) : null}
                   <p className="text-sm font-semibold mt-3" style={{ color: GOLD }}>
-                    {n.type === 'vlog' ? 'Watch →' : 'Read →'}
+                    {n.type === 'vlog' ? 'Watch →' : n.source === 'substack' ? 'Read on Substack ↗' : 'Read →'}
                   </p>
                 </div>
               </article>
