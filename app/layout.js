@@ -45,6 +45,9 @@ export const metadata = {
   // metadataBase turns every relative URL in page metadata into an absolute one.
   // Without it, share cards and canonical tags point nowhere useful.
   metadataBase: new URL(SITE),
+  // iOS Smart App Banner: Safari on iPhone shows Apple's own Open/Get bar for
+  // the App Store listing. Mobile-first routing starts here.
+  itunes: { appId: '6786498112' },
   // No canonical here: a layout-level canonical is inherited by every page that
   // doesn't set its own, which would mark the whole site a copy of the homepage.
   // Each page declares its own canonical instead.
