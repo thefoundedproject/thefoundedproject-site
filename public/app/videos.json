@@ -1,9 +1,10 @@
 {
   "version": 1,
-  "_edit": "The Founded and Founded Emerging apps read this file. Add a video to selfCare.videos and it shows on the Self-care screen on every phone, no App Store update. youtubeId is the 11 characters after watch?v= in the YouTube link. audience: adult, youth, or all. learn maps a Learn module id to a youtubeId. channelUrl (adult app only) must be a youtube.com/@handle, channel, or playlist link. Leave videos empty and channelUrl null to hide the section.",
+  "_edit": "The Founded and Founded Emerging apps read this file. Add a video to selfCare.videos and it shows on the Self-care screen on every phone, no App Store update. youtubeId is the 11 characters after watch?v= in the YouTube link. audience: adult, youth, or all. learn maps a Learn module id to a youtubeId. channelUrl (adult app only) must be a youtube.com/@handle, channel, or playlist link. An entry with no youtubeId shows as Coming soon, with its title and description. comingSoon true shows the section with a coming-soon note before any video exists. Set comingSoon false, leave videos empty, and channelUrl null to hide the section.",
   "selfCare": {
     "heading": "Follow along",
     "intro": "Qigong and breathwork, one movement at a time. Press play and move with it.",
+    "comingSoon": true,
     "channelUrl": null,
     "videos": []
   },
