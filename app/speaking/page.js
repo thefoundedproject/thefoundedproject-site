@@ -52,7 +52,7 @@ export default function SpeakingPage() {
             blurb="Fifteen years of clinical work with patients whose bodies remembered what their charts never recorded. The clinical case for P/AIRS bodywork and somatic-first practice."
           />
           <TalkCard
-            title="The Algorithmic Plantation: Civic Agency in the Age of Extraction"
+            title="A Republic Possessed: Civic Agency in the Age of Extraction"
             audience="Civic · Political · Educational · HBCU"
             blurb="The South as proving ground for algorithmic extraction at scale. How belief, vote, and self-image get shaped, and the media literacy that protects against it. Draws from A Republic Possessed."
           />
