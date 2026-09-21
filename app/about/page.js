@@ -173,7 +173,7 @@ export default function About() {
             nodes={[
               { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', status: 'Live', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
               { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', status: 'Forthcoming', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.' },
-              { tag: 'Civic · History · Culture', name: 'The South Never Lost', status: 'In Progress', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known. An unfinished reckoning.' },
+              { tag: 'Civic · History · Culture', name: 'A Republic Possessed: How White Supremacy and Its American Hosts', status: 'In Progress', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.' },
               { tag: 'Governance · Theory · Framework', name: 'Founded: Human Enterprise Theory', status: 'Forthcoming', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.' },
               { tag: 'Coaching · Method · Practice', name: 'Thompson Coaching Method', status: 'In Progress', desc: 'The practitioner framework underneath the Founded apps. The manual is compiled and in active practice. The student edition and the certification course are in production now.' },
             ]}

@@ -101,13 +101,13 @@ export default function BooksPage() {
         />
 
         <BookCard
-          title="The South Never Lost"
+          title="A Republic Possessed: How White Supremacy and Its American Hosts"
           kind="Civic analysis"
           status="Drafted"
           year="Target 2026"
           percent={80}
           basis="Full draft complete. Revision and one added chapter pending."
-          blurb="The algorithmic dimension of American civic life, with the South as the proving ground. How extraction at scale shapes belief, vote, and self-image, and the literacy that protects against it."
+          blurb="How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, schools, and markets back toward the same hierarchy, and what it takes to recognize that pattern and interrupt it."
         />
 
         <BookCard

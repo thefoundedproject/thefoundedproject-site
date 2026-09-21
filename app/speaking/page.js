@@ -54,7 +54,7 @@ export default function SpeakingPage() {
           <TalkCard
             title="The Algorithmic Plantation: Civic Agency in the Age of Extraction"
             audience="Civic · Political · Educational · HBCU"
-            blurb="The South as proving ground for algorithmic extraction at scale. How belief, vote, and self-image get shaped, and the media literacy that protects against it. Draws from The South Never Lost."
+            blurb="The South as proving ground for algorithmic extraction at scale. How belief, vote, and self-image get shaped, and the media literacy that protects against it. Draws from A Republic Possessed."
           />
           <TalkCard
             title="Emerging Adult Governance: Before They Build Anything, They Need a Mission"

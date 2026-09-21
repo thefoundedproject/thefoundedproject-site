@@ -51,7 +51,7 @@ export default function ContactPage() {
 
         <Section title="Speaking, press, podcasts">
           <p>
-            For interviews, conference invitations, or podcast appearances for Dr. Stephen Thompson, clinician and author of The South Never Lost and Founded Emerging, use the email above with &quot;Press&quot; or &quot;Speaking&quot; in the subject line.
+            For interviews, conference invitations, or podcast appearances for Dr. Stephen Thompson, clinician and author of A Republic Possessed and Founded Emerging, use the email above with &quot;Press&quot; or &quot;Speaking&quot; in the subject line.
           </p>
         </Section>
 

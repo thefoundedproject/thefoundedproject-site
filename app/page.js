@@ -911,7 +911,7 @@ export default function Home() {
                 tools: [
                   { name: 'RhetoricalPoints', href: 'https://rhetoricalpoints.com' },
                   { name: 'GroundedVote', href: 'https://groundedvote.com' },
-                  { name: 'The South Never Lost', href: null },
+                  { name: 'A Republic Possessed', href: null },
                 ],
                 delay: 240,
               },
@@ -972,7 +972,7 @@ export default function Home() {
             {[
               { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY', nextLabel: 'Rooted Reclaimers community', nextHref: '/about#rooted', status: 'Live', delay: 0 },
               { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', delay: 80 },
-              { tag: 'Civic · History · Culture', name: 'The South Never Lost', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known. An unfinished reckoning.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', delay: 160 },
+              { tag: 'Civic · History · Culture', name: 'A Republic Possessed: How White Supremacy and Its American Hosts', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', delay: 160 },
               { tag: 'Governance · Community · Agency', name: 'The Founded: A Human Enterprise Project', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', delay: 240 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>
@@ -1166,7 +1166,7 @@ export default function Home() {
           {[
             { title: 'Journey from the Edge', status: 'Available on Amazon', statusColor: '#6D8B5F', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. The first volume in the Thompson Ecosystem.', link: { label: 'Buy on Amazon →', href: 'https://www.amazon.com/dp/B0GTXBZGJY' }, next: { label: 'Rooted Reclaimers', href: '/about#rooted' } },
             { title: 'P/AIRS Bodywork', status: 'Forthcoming 2026', statusColor: '#D9A441', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
-            { title: 'The South Never Lost', status: 'In Progress', statusColor: '#D9A441', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', desc: 'The algorithmic plantation, democratic integrity, and what the South has always known and protected. An unfinished reckoning in progress.', next: { label: 'GroundedVote', href: 'https://groundedvote.com' } },
+            { title: 'A Republic Possessed: How White Supremacy and Its American Hosts', status: 'In Progress', statusColor: '#D9A441', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.', next: { label: 'GroundedVote', href: 'https://groundedvote.com' } },
             { title: 'The Founded: A Human Enterprise Project', status: 'Forthcoming', statusColor: 'rgba(15,27,31,0.35)', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', desc: 'The governance framework. Structure for survivors ready to protect what they built.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
           ].map((book, i) => (
             <Reveal key={book.title} delay={i * 80}>
