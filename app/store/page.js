@@ -92,10 +92,17 @@ const COMING_SOON = [
   },
   {
     brand: 'Black Art Saves Lives',
-    name: 'Black Art Saves Lives Tee',
+    name: 'Black Art Saves Lives Flower Fist Tee',
     image: '/store/black-art-saves-lives-tee.png',
     imageBackground: '#111111',
-    note: 'A flowering Black power fist for the art, expression, and imagination that keep people alive.',
+    note: 'An old-gold flowering Black power fist for the art, expression, and imagination that keep people alive.',
+  },
+  {
+    brand: 'Rhetorical Points',
+    name: 'ESPRESSO YO SELF Tee',
+    image: '/store/espresso-yo-self-tee.png',
+    imageBackground: '#F2E7D3',
+    note: 'A warm illustrated coffee graphic with wit, presence, and enough caffeine to make the next point.',
   },
   {
     brand: 'The Founded',
@@ -120,7 +127,7 @@ const COMING_SOON = [
   },
   {
     brand: 'The Founded',
-    name: 'RECLAIMED / GOVERNED / DISCERNING',
+    name: 'RECLAIMED / GOVERNED / DISCERNING Tee',
     image: '/store/reclaimed-governed-discerning.png',
     imageBackground: '#F5F0E8',
     note: 'Three capacities at the center of reclaiming and governing a life.',
@@ -140,10 +147,10 @@ function ProductCard({ product }) {
         <h2 style={{ color: '#0F1B1F', fontSize: 20, lineHeight: 1.25, marginBottom: 10 }}>{product.name}</h2>
         <p style={{ color: 'rgba(15,27,31,0.62)', fontSize: 13, lineHeight: 1.65, marginBottom: 20, flex: 1 }}>{product.note}</p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-          <span style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 800 }}>{product.price || 'Coming soon'}</span>
-          <a href={product.href || ETSY_STORE} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '11px 18px', borderRadius: 6, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
-            {isComingSoon ? 'Visit Etsy →' : 'Buy on Etsy →'}
-          </a>
+          <span style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 800 }}>{isComingSoon ? (product.reviewStatus || 'Edition in review') : product.price}</span>
+          {!isComingSoon && <a href={product.href} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '11px 18px', borderRadius: 6, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
+            Buy on Etsy →
+          </a>}
         </div>
       </div>
     </article>
@@ -195,7 +202,7 @@ export default function Store() {
           <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>New designs</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap', marginBottom: 42 }}>
             <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15 }}>Coming into the collection.</h2>
-            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, maxWidth: 430 }}>These designs are in production. The Etsy store will carry each product as it clears final review.</p>
+            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, maxWidth: 430 }}>We are refining new editions of these designs. Artwork, garment colors, and product details are under review; these previews are not purchase listings. Visit the available collection above to shop current products.</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
             {COMING_SOON.map(product => <ProductCard key={product.name} product={product} />)}
