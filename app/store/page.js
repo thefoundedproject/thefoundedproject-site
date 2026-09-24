@@ -81,55 +81,69 @@ const PRODUCTS = [
   },
 ]
 
-const COMING_SOON = [
+const NEW_RELEASES = [
+  {
+    brand: 'Levity',
+    name: 'I Got the Hiccups Kids Tee',
+    price: '$24.99',
+    image: '/store/i-got-the-hiccups-kids-tee.jpg',
+    href: 'https://www.etsy.com/listing/4581457564/i-got-the-hiccups-kids-tee-funny-youth',
+    note: 'A tiny interruption with a big announcement: HOLLA IF YA HEAR ME.',
+  },
   {
     brand: 'Afro-Loon of Minnesota',
     name: 'Afro-Loon Embroidered Cap',
     price: '$44.99',
-    image: '/store/afro-loon-embroidered-cap.png',
-    imageBackground: '#121212',
+    image: '/store/afro-loon-embroidered-cap-live.jpg',
+    href: 'https://www.etsy.com/listing/4580117459/afro-loon-of-minnesota-embroidered-dad',
     note: 'A circular embroidered loon badge carrying Minnesota identity through a Black cultural lens.',
   },
   {
     brand: 'Black Art Saves Lives',
     name: 'Black Art Saves Lives Flower Fist Tee',
-    image: '/store/black-art-saves-lives-tee.png',
-    imageBackground: '#111111',
+    price: '$29.99',
+    image: '/store/black-art-saves-lives-live.jpg',
+    href: 'https://www.etsy.com/listing/4581444015/black-art-saves-lives-flower-fist-tee',
     note: 'An old-gold flowering Black power fist for the art, expression, and imagination that keep people alive.',
   },
   {
     brand: 'Rhetorical Points',
     name: 'ESPRESSO YO SELF Tee',
-    image: '/store/espresso-yo-self-tee.png',
-    imageBackground: '#F2E7D3',
+    price: '$29.99',
+    image: '/store/espresso-yo-self-live.jpg',
+    href: 'https://www.etsy.com/listing/4581443493/espresso-yo-self-tee-rhetorical-points',
     note: 'A warm illustrated coffee graphic with wit, presence, and enough caffeine to make the next point.',
   },
   {
     brand: 'The Founded',
     name: 'I AM AGENTIC Tee',
-    image: '/store/i-am-agentic-tee.png',
-    imageBackground: '#111111',
+    price: '$29.99',
+    image: '/store/i-am-agentic-tee-live.jpg',
+    href: 'https://www.etsy.com/listing/4581457034/i-am-agentic-tee-the-founded-classic',
     note: 'Agency is not a destination. It is a practice.',
   },
   {
     brand: 'Founded Emerging',
     name: 'EDUCATED & EMERGING Hoodie',
-    image: '/store/educated-emerging-hoodie.png',
-    imageBackground: '#103B31',
+    price: '$54.99',
+    image: '/store/educated-emerging-hoodie-live.jpg',
+    href: 'https://www.etsy.com/listing/4581457360/educated-emerging-hoodie-founded',
     note: 'Education creates the conditions; emergence makes growth visible.',
   },
   {
     brand: 'Rhetorical Points',
     name: 'RHETORICAL ORACLE Cap',
-    image: '/store/rhetorical-oracle-cap.png',
-    imageBackground: '#111111',
+    price: '$34.99',
+    image: '/store/rhetorical-oracle-cap-live.jpg',
+    href: 'https://www.etsy.com/listing/4581457130/rhetorical-oracle-dad-cap-rhetorical',
     note: 'For the person who asks the second question before accepting the first answer.',
   },
   {
     brand: 'The Founded',
     name: 'RECLAIMED / GOVERNED / DISCERNING Tee',
-    image: '/store/reclaimed-governed-discerning.png',
-    imageBackground: '#F5F0E8',
+    price: '$29.99',
+    image: '/store/reclaimed-governed-discerning-live.jpg',
+    href: 'https://www.etsy.com/listing/4581444127/reclaimed-governed-discerning-tee-the',
     note: 'Three capacities at the center of reclaiming and governing a life.',
   },
 ]
@@ -178,7 +192,7 @@ export default function Store() {
 
       <section style={{ backgroundColor: '#D8AB69', padding: '24px' }}>
         <div className="max-w-6xl mx-auto flex flex-wrap gap-6 justify-center md:justify-between">
-          {['Four ecosystem brands', 'Made to order', 'Secure Etsy checkout', 'Shipped to your door'].map(item => (
+          {['Seven creative lines', 'Made to order', 'Secure Etsy checkout', 'Shipped to your door'].map(item => (
             <span key={item} style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase' }}>◈ {item}</span>
           ))}
         </div>
@@ -199,13 +213,13 @@ export default function Store() {
 
       <section style={{ backgroundColor: '#E9E1D4', padding: '82px 24px' }}>
         <div className="max-w-6xl mx-auto">
-          <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>New designs</p>
+          <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>New releases</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap', marginBottom: 42 }}>
-            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15 }}>Coming into the collection.</h2>
-            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, maxWidth: 430 }}>We are refining new editions of these designs. Artwork, garment colors, and product details are under review; these previews are not purchase listings. Visit the available collection above to shop current products.</p>
+            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15 }}>Just added to the collection.</h2>
+            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, maxWidth: 430 }}>The latest releases from across the Founded ecosystem are available now. Each purchase is securely completed through The Founded Store on Etsy.</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
-            {COMING_SOON.map(product => <ProductCard key={product.name} product={product} />)}
+            {NEW_RELEASES.map(product => <ProductCard key={product.name} product={product} />)}
           </div>
         </div>
       </section>
