@@ -83,6 +83,46 @@ const PRODUCTS = [
 
 const NEW_RELEASES = [
   {
+    brand: 'Rhetorical Points',
+    name: 'Adjust Your Outrage Graphic Tee',
+    price: 'From $21.99',
+    image: '/store/adjust-your-outrage-tee.jpg',
+    href: 'https://www.etsy.com/listing/4583248637/adjust-your-outrage-graphic-tee',
+    note: 'A calibrated reminder to move from perspective to proportional response before maximum reaction.',
+  },
+  {
+    brand: 'GroundedVote',
+    name: 'Vote Grounded Graphic Tee',
+    price: 'From $21.99',
+    image: '/store/vote-grounded-tee.jpg',
+    href: 'https://www.etsy.com/listing/4583258048/vote-grounded-graphic-tee-groundedvote',
+    note: 'A rooted ballot and fingerprint connecting personal agency to informed civic participation.',
+  },
+  {
+    brand: 'Rhetorical Points',
+    name: 'ESPRESSO YO SELF Accent Mug',
+    price: '$21.99',
+    image: '/store/espresso-yo-self-mug.jpg',
+    href: 'https://www.etsy.com/listing/4583255660/espresso-yo-self-accent-mug-rhetorical',
+    note: 'Morning ritual, cultural style, and enough wit to make the next point.',
+  },
+  {
+    brand: 'Rhetorical Points',
+    name: 'Adjust Your Outrage Accent Mug',
+    price: '$21.99',
+    image: '/store/adjust-your-outrage-mug.jpg',
+    href: 'https://www.etsy.com/listing/4583254888/adjust-your-outrage-accent-mug',
+    note: 'Perspective first, proportional response next, maximum reaction only when the evidence calls for it.',
+  },
+  {
+    brand: 'GroundedVote',
+    name: 'Think. Verify. Vote. Accent Mug',
+    price: '$21.99',
+    image: '/store/think-verify-vote-mug.jpg',
+    href: 'https://www.etsy.com/listing/4583243009/think-verify-vote-accent-mug',
+    note: 'A three-step civic practice for the desk, classroom, and morning routine.',
+  },
+  {
     brand: 'Levity',
     name: 'I Got the Hiccups Kids Tee',
     price: '$24.99',
