@@ -83,6 +83,46 @@ const PRODUCTS = [
 
 const NEW_RELEASES = [
   {
+    brand: 'Rooted Reclaimers',
+    name: 'ROOTED Soy Candle',
+    price: 'From $19.99',
+    image: '/store/rooted-candle.jpg',
+    href: 'https://www.etsy.com/listing/4585811539/rooted-soy-candle-fresh-balsam-amber-jar',
+    note: 'Fresh balsam in an amber jar, made for returning to what holds you.',
+  },
+  {
+    brand: 'The Founded',
+    name: 'RESOURCED Soy Candle',
+    price: 'From $19.99',
+    image: '/store/resourced-candle.jpg',
+    href: 'https://www.etsy.com/listing/4585811829/resourced-soy-candle-eucalyptus-lavender',
+    note: 'Eucalyptus and lavender create a quiet ritual for restoring what the work requires.',
+  },
+  {
+    brand: 'The Founded',
+    name: 'CLEAR Soy Candle',
+    price: 'From $19.99',
+    image: '/store/clear-candle.jpg',
+    href: 'https://www.etsy.com/listing/4585817270/clear-soy-candle-pink-grapefruit-amber',
+    note: 'Pink grapefruit brightens the room and makes space for what is true.',
+  },
+  {
+    brand: 'Black Art Saves Lives',
+    name: 'Black Art Saves Lives Flower Fist Print',
+    price: 'From $29.99',
+    image: '/store/black-art-saves-lives-print.jpg',
+    href: 'https://www.etsy.com/listing/4584053397/black-art-saves-lives-flower-fist-print',
+    note: 'The old-gold flowering fist becomes wall art for the spaces where Black creativity lives.',
+  },
+  {
+    brand: 'Rhetorical Points',
+    name: 'Verify Before You Vilify Accent Mug',
+    price: '$21.99',
+    image: '/store/verify-before-vilify-mug.jpg',
+    href: 'https://www.etsy.com/listing/4583461357/verify-before-you-vilify-accent-mug',
+    note: 'A daily fact-check reminder for the desk, kitchen, and next hard conversation.',
+  },
+  {
     brand: 'Rhetorical Points',
     name: 'Adjust Your Outrage Graphic Tee',
     price: 'From $21.99',
