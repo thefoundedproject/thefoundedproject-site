@@ -1,250 +1,134 @@
 export const metadata = {
   alternates: { canonical: '/store' },
   title: 'Store | The Founded Project',
-  description: 'Shop apparel and goods from The Founded Project, Founded Emerging, Rhetorical Points, and GroundedVote.',
+  description: 'Shop apparel and goods organized by initiative across The Founded Project ecosystem.',
 }
 
 const ETSY_STORE = 'https://www.etsy.com/shop/TheFoundedStore'
 
-const PRODUCTS = [
+const INITIATIVES = [
   {
-    brand: 'The Founded',
-    name: 'AGENCY MATTERS Hoodie',
-    price: '$54.99',
-    image: '/store/agency-matters-hoodie.webp',
-    href: 'https://www.etsy.com/listing/4573022500/copy-of-facts-over-feelings-hoodie',
-    note: 'A declaration and a reminder: agency changes what comes next.',
+    id: 'the-founded',
+    name: 'The Founded',
+    eyebrow: 'Agency · governance · discernment',
+    description: 'Objects for the daily practice of reclaiming agency, governing a life, and choosing with clarity.',
+    nodeHref: 'https://thefounded.app',
+    nodeLabel: 'Explore The Founded app',
+    products: [
+      { brand: 'The Founded', name: 'I AM AGENTIC Tee', price: '$29.99', image: '/store/i-am-agentic-tee-live.jpg', href: 'https://www.etsy.com/listing/4581457034/i-am-agentic-tee-the-founded-classic', note: 'Agency is not a destination. It is a practice.' },
+      { brand: 'The Founded', name: 'RECLAIMED / GOVERNED / DISCERNING Tee', price: '$29.99', image: '/store/reclaimed-governed-discerning-live.jpg', href: 'https://www.etsy.com/listing/4581444127/reclaimed-governed-discerning-tee-the', note: 'Three capacities at the center of reclaiming and governing a life.' },
+      { brand: 'The Founded', name: 'The Founded Hardcover Journal', price: '$27.99', image: '/store/founded-journal.webp', href: 'https://www.etsy.com/listing/4571748263/the-founded-hardcover-journal-agency-and', note: 'A place to record decisions, direction, and the work of governing a life.' },
+      { brand: 'The Founded', name: 'RESOURCED Signature Water Bottle', price: '$49.99', image: '/store/resourced-signature-bottle.webp', href: 'https://www.etsy.com/listing/4570971603/resourced-water-bottle-the-founded-17-oz', note: 'The original stainless-steel RESOURCED bottle in black or white.' },
+      { brand: 'The Founded', name: 'RESOURCED Sport Water Bottle', price: '$29.99', image: '/store/resourced-sport-bottle.webp', href: 'https://www.etsy.com/listing/4571761584/resourced-sport-water-bottle-the-founded', note: 'A lighter everyday companion for movement, practice, and recovery.' },
+      { brand: 'The Founded', name: 'RESOURCED Soy Candle', price: 'From $19.99', image: '/store/resourced-candle.jpg', href: 'https://www.etsy.com/listing/4585811829/resourced-soy-candle-eucalyptus-lavender', note: 'Eucalyptus and lavender create a quiet ritual for restoring what the work requires.' },
+      { brand: 'The Founded', name: 'CLEAR Soy Candle', price: 'From $19.99', image: '/store/clear-candle.jpg', href: 'https://www.etsy.com/listing/4585817270/clear-soy-candle-pink-grapefruit-amber', note: 'Pink grapefruit brightens the room and makes space for what is true.' },
+    ],
   },
   {
-    brand: 'The Founded',
-    name: 'The Founded Hardcover Journal',
-    price: '$27.99',
-    image: '/store/founded-journal.webp',
-    href: 'https://www.etsy.com/listing/4571748263/the-founded-hardcover-journal-agency-and',
-    note: 'A place to record decisions, direction, and the work of governing a life.',
+    id: 'rooted-reclaimers',
+    name: 'Rooted Reclaimers',
+    eyebrow: 'Reclamation · community · healing',
+    description: 'A ritual object for returning to the body, the breath, and the community practices that hold us.',
+    nodeHref: '/about#rooted',
+    nodeLabel: 'Meet Rooted Reclaimers',
+    products: [
+      { brand: 'Rooted Reclaimers', name: 'ROOTED Soy Candle', price: 'From $19.99', image: '/store/rooted-candle.jpg', href: 'https://www.etsy.com/listing/4585811539/rooted-soy-candle-fresh-balsam-amber-jar', note: 'Fresh balsam in an amber jar, made for returning to what holds you.' },
+    ],
   },
   {
-    brand: 'The Founded',
-    name: 'RESOURCED Signature Water Bottle',
-    price: '$49.99',
-    image: '/store/resourced-signature-bottle.webp',
-    href: 'https://www.etsy.com/listing/4570971603/resourced-water-bottle-the-founded-17-oz',
-    note: 'The original stainless-steel RESOURCED bottle in black or white.',
+    id: 'founded-emerging',
+    name: 'Founded Emerging',
+    eyebrow: 'Youth · governance · becoming',
+    description: 'For young people learning to recognize their capacity, direct their growth, and become harder to overlook.',
+    nodeHref: 'https://thefoundedemerging.app',
+    nodeLabel: 'Explore Founded Emerging',
+    products: [
+      { brand: 'Founded Emerging', name: 'EDUCATED & EMERGING Hoodie', price: '$54.99', image: '/store/educated-emerging-hoodie-live.jpg', href: 'https://www.etsy.com/listing/4581457360/educated-emerging-hoodie-founded', note: 'Education creates the conditions; emergence makes growth visible.' },
+      { brand: 'Founded Emerging', name: 'INEVITABLE Blossoming Hoodie', price: 'From $46.99', image: '/store/inevitable-blossoming-hoodie.jpg', href: 'https://www.etsy.com/listing/4573745685/inevitable-blossoming-hoodie-founded', note: 'A blossoming declaration for young people becoming visible on their own terms.' },
+      { brand: 'Founded Emerging', name: 'INEVITABLE Flat Bill Cap', price: '$34.26', image: '/store/inevitable-cap.webp', href: 'https://www.etsy.com/listing/4571764698/inevitable-embroidered-flat-bill-cap', note: 'Educated. Emerging. Becoming harder to overlook.' },
+      { brand: 'Levity', name: 'I Got the Hiccups Kids Tee', price: '$24.99', image: '/store/i-got-the-hiccups-kids-tee.jpg', href: 'https://www.etsy.com/listing/4581457564/i-got-the-hiccups-kids-tee-funny-youth', note: 'A tiny interruption with a big announcement: HOLLA IF YA HEAR ME.' },
+    ],
   },
   {
-    brand: 'The Founded',
-    name: 'RESOURCED Sport Water Bottle',
-    price: '$29.99',
-    image: '/store/resourced-sport-bottle.webp',
-    href: 'https://www.etsy.com/listing/4571761584/resourced-sport-water-bottle-the-founded',
-    note: 'A lighter everyday companion for movement, practice, and recovery.',
+    id: 'rhetorical-points',
+    name: 'Rhetorical Points',
+    eyebrow: 'Media literacy · evidence · discourse',
+    description: 'Wearable prompts for slowing the verdict, checking the claim, and hearing what an argument is actually doing.',
+    nodeHref: 'https://rhetoricalpoints.com',
+    nodeLabel: 'Open Rhetorical Points',
+    products: [
+      { brand: 'Rhetorical Points', name: 'Facts Over Feelings Hoodie', price: '$54.99', image: '/store/facts-over-feelings-hoodie.webp', href: 'https://www.etsy.com/listing/4571743211/facts-over-feelings-hoodie-rhetorical', note: 'Emotion carries information. Evidence still has to carry the claim.' },
+      { brand: 'Rhetorical Points', name: 'Verify Before You Vilify Hoodie', price: '$52.96', image: '/store/verify-before-vilify-hoodie.webp', href: 'https://www.etsy.com/listing/4573057271/verify-before-you-vilify-hoodie', note: 'Slow the verdict down long enough to check the claim.' },
+      { brand: 'Rhetorical Points', name: 'Verify Before You Vilify Accent Mug', price: '$21.99', image: '/store/verify-before-vilify-mug.jpg', href: 'https://www.etsy.com/listing/4583461357/verify-before-you-vilify-accent-mug', note: 'A daily fact-check reminder for the desk, kitchen, and next hard conversation.' },
+      { brand: 'Rhetorical Points', name: 'Adjust Your Outrage Graphic Tee', price: 'From $21.99', image: '/store/adjust-your-outrage-tee.jpg', href: 'https://www.etsy.com/listing/4583248637/adjust-your-outrage-graphic-tee', note: 'A calibrated reminder to move from perspective to proportional response before maximum reaction.' },
+      { brand: 'Rhetorical Points', name: 'Adjust Your Outrage Accent Mug', price: '$14.99', image: '/store/adjust-your-outrage-mug.jpg', href: 'https://www.etsy.com/listing/4583254888/adjust-your-outrage-accent-mug', note: 'Perspective first, proportional response next, maximum reaction only when the evidence calls for it.' },
+      { brand: 'Rhetorical Points', name: 'ESPRESSO YO SELF Tee', price: '$29.99', image: '/store/espresso-yo-self-live.jpg', href: 'https://www.etsy.com/listing/4581443493/espresso-yo-self-tee-rhetorical-points', note: 'A warm illustrated coffee graphic with wit, presence, and enough caffeine to make the next point.' },
+      { brand: 'Rhetorical Points', name: 'ESPRESSO YO SELF Accent Mug', price: '$14.99', image: '/store/espresso-yo-self-mug.jpg', href: 'https://www.etsy.com/listing/4583255660/espresso-yo-self-accent-mug-rhetorical', note: 'Morning ritual, cultural style, and enough wit to make the next point.' },
+      { brand: 'Rhetorical Points', name: 'RHETORICAL ORACLE Cap', price: '$34.99', image: '/store/rhetorical-oracle-cap-live.jpg', href: 'https://www.etsy.com/listing/4581457130/rhetorical-oracle-dad-cap-rhetorical', note: 'For the person who asks the second question before accepting the first answer.' },
+    ],
   },
   {
-    brand: 'Founded Emerging',
-    name: 'INEVITABLE Flat Bill Cap',
-    price: '$34.99',
-    image: '/store/inevitable-cap.webp',
-    href: 'https://www.etsy.com/listing/4571764698/inevitable-embroidered-flat-bill-cap',
-    note: 'Educated. Emerging. Becoming harder to overlook.',
+    id: 'groundedvote',
+    name: 'GroundedVote',
+    eyebrow: 'Civic agency · alignment · participation',
+    description: 'Civic objects that keep policy, verification, and values alignment closer than party reflex.',
+    nodeHref: 'https://groundedvote.com',
+    nodeLabel: 'Visit GroundedVote',
+    products: [
+      { brand: 'GroundedVote', name: 'Vote Grounded Graphic Tee', price: 'From $21.99', image: '/store/vote-grounded-tee.jpg', href: 'https://www.etsy.com/listing/4583258048/vote-grounded-graphic-tee-groundedvote', note: 'A rooted ballot and fingerprint connecting personal agency to informed civic participation.' },
+      { brand: 'GroundedVote', name: 'Think. Verify. Vote. Accent Mug', price: '$14.99', image: '/store/think-verify-vote-mug.jpg', href: 'https://www.etsy.com/listing/4583243009/think-verify-vote-accent-mug', note: 'A three-step civic practice for the desk, classroom, and morning routine.' },
+      { brand: 'GroundedVote', name: 'Policy Over Party Crewneck', price: '$40.99', image: '/store/policy-over-party-crewneck.webp', href: 'https://www.etsy.com/listing/4573079316/policy-over-party-crewneck-groundedvote', note: 'Ask what the policy does before asking which team proposed it.' },
+      { brand: 'GroundedVote', name: 'Policy Over Party Long Sleeve Tee', price: '$30.99', image: '/store/policy-over-party-long-sleeve.jpg', href: 'https://www.etsy.com/listing/4573065717/policy-over-party-long-sleeve-tee', note: 'The Policy Over Party equation on a lighter long-sleeve layer.' },
+    ],
   },
   {
-    brand: 'Rhetorical Points',
-    name: 'Facts Over Feelings Hoodie',
-    price: '$54.99',
-    image: '/store/facts-over-feelings-hoodie.webp',
-    href: 'https://www.etsy.com/listing/4571743211/facts-over-feelings-hoodie-rhetorical',
-    note: 'Emotion carries information. Evidence still has to carry the claim.',
+    id: 'black-art-saves-lives',
+    name: 'Black Art Saves Lives',
+    eyebrow: 'Culture · expression · imagination',
+    description: 'The flowering fist carries one idea across two forms: Black creative expression is sustaining work.',
+    nodeHref: '/projects',
+    nodeLabel: 'See the ecosystem',
+    products: [
+      { brand: 'Black Art Saves Lives', name: 'Black Art Saves Lives Flower Fist Tee', price: '$29.99', image: '/store/black-art-saves-lives-live.jpg', href: 'https://www.etsy.com/listing/4581444015/black-art-saves-lives-flower-fist-tee', note: 'An old-gold flowering Black power fist for the art, expression, and imagination that keep people alive.' },
+      { brand: 'Black Art Saves Lives', name: 'Black Art Saves Lives Flower Fist Print', price: 'From $29.99', image: '/store/black-art-saves-lives-print.jpg', href: 'https://www.etsy.com/listing/4584053397/black-art-saves-lives-flower-fist-print', note: 'The old-gold flowering fist becomes wall art for the spaces where Black creativity lives.' },
+    ],
   },
   {
-    brand: 'Rhetorical Points',
-    name: 'Verify Before You Vilify Hoodie',
-    price: '$54.99',
-    image: '/store/verify-before-vilify-hoodie.webp',
-    href: 'https://www.etsy.com/listing/4573057271/verify-before-you-vilify-hoodie',
-    note: 'Slow the verdict down long enough to check the claim.',
-  },
-  {
-    brand: 'GroundedVote',
-    name: 'Policy Over Party Crewneck',
-    price: '$40.99',
-    image: '/store/policy-over-party-crewneck.webp',
-    href: 'https://www.etsy.com/listing/4573079316/policy-over-party-crewneck-groundedvote',
-    note: 'Ask what the policy does before asking which team proposed it.',
-  },
-  {
-    brand: 'GroundedVote',
-    name: 'Policy Over Party Long Sleeve Tee',
-    price: '$30.99',
-    image: '/store/policy-over-party-long-sleeve.jpg',
-    href: 'https://www.etsy.com/listing/4573065717/policy-over-party-long-sleeve-tee',
-    note: 'The Policy Over Party equation on a lighter long-sleeve layer.',
+    id: 'afro-loon',
+    name: 'Afro-Loon of Minnesota',
+    eyebrow: 'Minnesota · Black identity · belonging',
+    description: 'A regional symbol redrawn through a Black cultural lens, built for people who know belonging can be both local and self-defined.',
+    nodeHref: '/projects',
+    nodeLabel: 'See the ecosystem',
+    products: [
+      { brand: 'Afro-Loon of Minnesota', name: 'Afro-Loon Embroidered Cap', price: '$44.99', image: '/store/afro-loon-embroidered-cap-live.jpg', href: 'https://www.etsy.com/listing/4580117459/afro-loon-of-minnesota-embroidered-dad', note: 'A circular embroidered loon badge carrying Minnesota identity through a Black cultural lens.' },
+      { brand: 'Afro-Loon of Minnesota', name: 'Afro-Loon Zip Hoodie', price: 'From $79.12', image: '/store/afro-loon-zip-hoodie.jpg', href: 'https://www.etsy.com/listing/4574107794/afro-loon-of-minnesota-zip-hoodie', note: 'The Afro-Loon across the back with RESISTANCE IS NIGH over the heart.' },
+    ],
   },
 ]
 
-const NEW_RELEASES = [
-  {
-    brand: 'Rooted Reclaimers',
-    name: 'ROOTED Soy Candle',
-    price: 'From $19.99',
-    image: '/store/rooted-candle.jpg',
-    href: 'https://www.etsy.com/listing/4585811539/rooted-soy-candle-fresh-balsam-amber-jar',
-    note: 'Fresh balsam in an amber jar, made for returning to what holds you.',
-  },
-  {
-    brand: 'The Founded',
-    name: 'RESOURCED Soy Candle',
-    price: 'From $19.99',
-    image: '/store/resourced-candle.jpg',
-    href: 'https://www.etsy.com/listing/4585811829/resourced-soy-candle-eucalyptus-lavender',
-    note: 'Eucalyptus and lavender create a quiet ritual for restoring what the work requires.',
-  },
-  {
-    brand: 'The Founded',
-    name: 'CLEAR Soy Candle',
-    price: 'From $19.99',
-    image: '/store/clear-candle.jpg',
-    href: 'https://www.etsy.com/listing/4585817270/clear-soy-candle-pink-grapefruit-amber',
-    note: 'Pink grapefruit brightens the room and makes space for what is true.',
-  },
-  {
-    brand: 'Black Art Saves Lives',
-    name: 'Black Art Saves Lives Flower Fist Print',
-    price: 'From $29.99',
-    image: '/store/black-art-saves-lives-print.jpg',
-    href: 'https://www.etsy.com/listing/4584053397/black-art-saves-lives-flower-fist-print',
-    note: 'The old-gold flowering fist becomes wall art for the spaces where Black creativity lives.',
-  },
-  {
-    brand: 'Rhetorical Points',
-    name: 'Verify Before You Vilify Accent Mug',
-    price: '$21.99',
-    image: '/store/verify-before-vilify-mug.jpg',
-    href: 'https://www.etsy.com/listing/4583461357/verify-before-you-vilify-accent-mug',
-    note: 'A daily fact-check reminder for the desk, kitchen, and next hard conversation.',
-  },
-  {
-    brand: 'Rhetorical Points',
-    name: 'Adjust Your Outrage Graphic Tee',
-    price: 'From $21.99',
-    image: '/store/adjust-your-outrage-tee.jpg',
-    href: 'https://www.etsy.com/listing/4583248637/adjust-your-outrage-graphic-tee',
-    note: 'A calibrated reminder to move from perspective to proportional response before maximum reaction.',
-  },
-  {
-    brand: 'GroundedVote',
-    name: 'Vote Grounded Graphic Tee',
-    price: 'From $21.99',
-    image: '/store/vote-grounded-tee.jpg',
-    href: 'https://www.etsy.com/listing/4583258048/vote-grounded-graphic-tee-groundedvote',
-    note: 'A rooted ballot and fingerprint connecting personal agency to informed civic participation.',
-  },
-  {
-    brand: 'Rhetorical Points',
-    name: 'ESPRESSO YO SELF Accent Mug',
-    price: '$21.99',
-    image: '/store/espresso-yo-self-mug.jpg',
-    href: 'https://www.etsy.com/listing/4583255660/espresso-yo-self-accent-mug-rhetorical',
-    note: 'Morning ritual, cultural style, and enough wit to make the next point.',
-  },
-  {
-    brand: 'Rhetorical Points',
-    name: 'Adjust Your Outrage Accent Mug',
-    price: '$21.99',
-    image: '/store/adjust-your-outrage-mug.jpg',
-    href: 'https://www.etsy.com/listing/4583254888/adjust-your-outrage-accent-mug',
-    note: 'Perspective first, proportional response next, maximum reaction only when the evidence calls for it.',
-  },
-  {
-    brand: 'GroundedVote',
-    name: 'Think. Verify. Vote. Accent Mug',
-    price: '$21.99',
-    image: '/store/think-verify-vote-mug.jpg',
-    href: 'https://www.etsy.com/listing/4583243009/think-verify-vote-accent-mug',
-    note: 'A three-step civic practice for the desk, classroom, and morning routine.',
-  },
-  {
-    brand: 'Levity',
-    name: 'I Got the Hiccups Kids Tee',
-    price: '$24.99',
-    image: '/store/i-got-the-hiccups-kids-tee.jpg',
-    href: 'https://www.etsy.com/listing/4581457564/i-got-the-hiccups-kids-tee-funny-youth',
-    note: 'A tiny interruption with a big announcement: HOLLA IF YA HEAR ME.',
-  },
-  {
-    brand: 'Afro-Loon of Minnesota',
-    name: 'Afro-Loon Embroidered Cap',
-    price: '$44.99',
-    image: '/store/afro-loon-embroidered-cap-live.jpg',
-    href: 'https://www.etsy.com/listing/4580117459/afro-loon-of-minnesota-embroidered-dad',
-    note: 'A circular embroidered loon badge carrying Minnesota identity through a Black cultural lens.',
-  },
-  {
-    brand: 'Black Art Saves Lives',
-    name: 'Black Art Saves Lives Flower Fist Tee',
-    price: '$29.99',
-    image: '/store/black-art-saves-lives-live.jpg',
-    href: 'https://www.etsy.com/listing/4581444015/black-art-saves-lives-flower-fist-tee',
-    note: 'An old-gold flowering Black power fist for the art, expression, and imagination that keep people alive.',
-  },
-  {
-    brand: 'Rhetorical Points',
-    name: 'ESPRESSO YO SELF Tee',
-    price: '$29.99',
-    image: '/store/espresso-yo-self-live.jpg',
-    href: 'https://www.etsy.com/listing/4581443493/espresso-yo-self-tee-rhetorical-points',
-    note: 'A warm illustrated coffee graphic with wit, presence, and enough caffeine to make the next point.',
-  },
-  {
-    brand: 'The Founded',
-    name: 'I AM AGENTIC Tee',
-    price: '$29.99',
-    image: '/store/i-am-agentic-tee-live.jpg',
-    href: 'https://www.etsy.com/listing/4581457034/i-am-agentic-tee-the-founded-classic',
-    note: 'Agency is not a destination. It is a practice.',
-  },
-  {
-    brand: 'Founded Emerging',
-    name: 'EDUCATED & EMERGING Hoodie',
-    price: '$54.99',
-    image: '/store/educated-emerging-hoodie-live.jpg',
-    href: 'https://www.etsy.com/listing/4581457360/educated-emerging-hoodie-founded',
-    note: 'Education creates the conditions; emergence makes growth visible.',
-  },
-  {
-    brand: 'Rhetorical Points',
-    name: 'RHETORICAL ORACLE Cap',
-    price: '$34.99',
-    image: '/store/rhetorical-oracle-cap-live.jpg',
-    href: 'https://www.etsy.com/listing/4581457130/rhetorical-oracle-dad-cap-rhetorical',
-    note: 'For the person who asks the second question before accepting the first answer.',
-  },
-  {
-    brand: 'The Founded',
-    name: 'RECLAIMED / GOVERNED / DISCERNING Tee',
-    price: '$29.99',
-    image: '/store/reclaimed-governed-discerning-live.jpg',
-    href: 'https://www.etsy.com/listing/4581444127/reclaimed-governed-discerning-tee-the',
-    note: 'Three capacities at the center of reclaiming and governing a life.',
-  },
-]
+const ALL_PRODUCTS = INITIATIVES.flatMap(initiative => initiative.products)
+const LISTING_URLS = ALL_PRODUCTS.map(product => product.href)
+
+if (new Set(LISTING_URLS).size !== LISTING_URLS.length) {
+  throw new Error('Duplicate Etsy listing detected in the store catalog.')
+}
 
 function ProductCard({ product }) {
-  const isComingSoon = !product.href
-
   return (
     <article style={{ backgroundColor: '#FFFFFF', border: '1px solid rgba(15,27,31,0.09)', borderRadius: 12, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ backgroundColor: product.imageBackground || '#EFEAE1', aspectRatio: '1 / 1', overflow: 'hidden', padding: isComingSoon ? 24 : 0 }}>
-        <img src={product.image} alt={product.name} style={{ width: '100%', height: '100%', objectFit: isComingSoon ? 'contain' : 'cover', display: 'block' }} />
+      <div style={{ backgroundColor: product.imageBackground || '#EFEAE1', aspectRatio: '1 / 1', overflow: 'hidden', padding: 0 }}>
+        <img src={product.image} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
       </div>
       <div style={{ padding: 24, display: 'flex', flexDirection: 'column', flex: 1 }}>
         <p style={{ color: '#9A7135', fontSize: 9, fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 8 }}>{product.brand}</p>
         <h2 style={{ color: '#0F1B1F', fontSize: 20, lineHeight: 1.25, marginBottom: 10 }}>{product.name}</h2>
         <p style={{ color: 'rgba(15,27,31,0.62)', fontSize: 13, lineHeight: 1.65, marginBottom: 20, flex: 1 }}>{product.note}</p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-          <span style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 800 }}>{isComingSoon ? (product.reviewStatus || 'Edition in review') : product.price}</span>
-          {!isComingSoon && <a href={product.href} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '11px 18px', borderRadius: 6, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
+          <span style={{ color: '#0F1B1F', fontSize: 18, fontWeight: 800 }}>{product.price}</span>
+          <a href={product.href} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '11px 18px', borderRadius: 6, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
             Buy on Etsy →
-          </a>}
+          </a>
         </div>
       </div>
     </article>
@@ -271,38 +155,44 @@ export default function Store() {
       </section>
 
       <section style={{ backgroundColor: '#D8AB69', padding: '24px' }}>
-        <div className="max-w-6xl mx-auto flex flex-wrap gap-6 justify-center md:justify-between">
-          {['Seven creative lines', 'Made to order', 'Secure Etsy checkout', 'Shipped to your door'].map(item => (
-            <span key={item} style={{ color: '#0F1B1F', fontSize: 11, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase' }}>◈ {item}</span>
+        <nav aria-label="Shop by initiative" className="max-w-6xl mx-auto flex flex-wrap gap-3 justify-center">
+          {INITIATIVES.map(initiative => (
+            <a key={initiative.id} href={`#${initiative.id}`} style={{ color: '#0F1B1F', border: '1px solid rgba(15,27,31,0.24)', borderRadius: 999, padding: '9px 14px', fontSize: 10, fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none' }}>
+              {initiative.name}
+            </a>
           ))}
-        </div>
+        </nav>
       </section>
 
-      <section id="shop" style={{ backgroundColor: '#F5F0E8', padding: '82px 24px' }}>
+      <section id="shop" style={{ backgroundColor: '#F5F0E8', padding: '76px 24px 34px' }}>
         <div className="max-w-6xl mx-auto">
-          <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>Available now</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap', marginBottom: 42 }}>
-            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15 }}>The first Founded collection.</h2>
-            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13 }}>Purchases are securely completed on Etsy.</p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
-            {PRODUCTS.map(product => <ProductCard key={product.name} product={product} />)}
+          <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>Shop by initiative</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap' }}>
+            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15, maxWidth: 720 }}>Each object carries you into a larger body of work.</h2>
+            <p style={{ color: 'rgba(15,27,31,0.58)', fontSize: 13, lineHeight: 1.65, maxWidth: 390 }}>Every live Etsy listing appears once. Explore the initiative behind it, or continue directly to secure checkout on Etsy.</p>
           </div>
         </div>
       </section>
 
-      <section style={{ backgroundColor: '#E9E1D4', padding: '82px 24px' }}>
-        <div className="max-w-6xl mx-auto">
-          <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>New releases</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap', marginBottom: 42 }}>
-            <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.15 }}>Just added to the collection.</h2>
-            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, maxWidth: 430 }}>The latest releases from across the Founded ecosystem are available now. Each purchase is securely completed through The Founded Store on Etsy.</p>
+      {INITIATIVES.map((initiative, index) => (
+        <section key={initiative.id} id={initiative.id} style={{ backgroundColor: index % 2 === 0 ? '#F5F0E8' : '#E9E1D4', padding: '58px 24px 82px', scrollMarginTop: 90 }}>
+          <div className="max-w-6xl mx-auto">
+            <p style={{ color: '#9A7135', fontSize: 10, fontWeight: 800, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 11 }}>{initiative.eyebrow}</p>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 28, flexWrap: 'wrap', marginBottom: 34 }}>
+              <div style={{ maxWidth: 720 }}>
+                <h2 style={{ color: '#0F1B1F', fontSize: 'clamp(30px, 4vw, 46px)', fontWeight: 300, lineHeight: 1.12, marginBottom: 14 }}>{initiative.name}</h2>
+                <p style={{ color: 'rgba(15,27,31,0.64)', fontSize: 15, lineHeight: 1.7 }}>{initiative.description}</p>
+              </div>
+              <a href={initiative.nodeHref} target={initiative.nodeHref.startsWith('http') ? '_blank' : undefined} rel={initiative.nodeHref.startsWith('http') ? 'noopener noreferrer' : undefined} style={{ color: '#0F1B1F', borderBottom: '1px solid rgba(15,27,31,0.35)', paddingBottom: 3, fontSize: 12, fontWeight: 800, textDecoration: 'none' }}>
+                {initiative.nodeLabel} →
+              </a>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
+              {initiative.products.map(product => <ProductCard key={product.href} product={product} />)}
+            </div>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 22 }}>
-            {NEW_RELEASES.map(product => <ProductCard key={product.name} product={product} />)}
-          </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       <section style={{ backgroundColor: '#0F1B1F', padding: '76px 24px' }}>
         <div className="max-w-4xl mx-auto text-center">
