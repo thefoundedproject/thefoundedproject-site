@@ -19,19 +19,19 @@ export default function AocPage() {
       intro={
         <>
           <P>
-            In March, you and Senator Sanders introduced the AI Data Center Moratorium Act. You said Congress has to &ldquo;choose
-            humanity over profit.&rdquo; The bill asks two questions: who gets the gains from AI, and who gets a say in where
-            it&apos;s built.
+            In March, you and Senator Sanders introduced the AI Data Center Moratorium Act, and you said Congress must &ldquo;choose
+            humanity over profit.&rdquo; The bill pauses new AI data centers until safeguards are in place for workers, consumers,
+            and the communities that host them. It also puts a direct question on the table: who gets the economic gains from AI?
           </P>
           <P>
-            Those are questions about power. I&apos;m Stephen Thompson, a clinician and educator in Minnesota, and I run The Founded
-            Project: a theory of human flourishing, plus working tools that help a person, a family, and a community govern
-            themselves.
+            I&apos;m Stephen Thompson, a clinician and educator in Minnesota. I run The Founded Project, a theory of human flourishing
+            and a set of working tools that help a person run her own life, a family run its household, and a voter check what
+            candidates say.
           </P>
           <P>
-            Policy decides who owns the gains. A worker who just lost her shifts to software still has to decide what Monday looks
-            like, keep her family&apos;s risks in view, and figure out which candidate means what he says. That&apos;s the part
-            we&apos;ve built for.
+            Your bill works on who owns the gains. Our tools work on the person living through the change. A warehouse worker whose
+            shifts went to software has to rebuild her week, keep her family&apos;s bills and risks in view, and decide which
+            candidate means what he says. We built the tools for her.
           </P>
         </>
       }
@@ -41,9 +41,9 @@ export default function AocPage() {
           <>
             <Steps
               items={[
-                'Your office picks one community organization in the Bronx or Queens: a workforce program, a tenant association, a union local.',
-                'Its members get The Founded free for 90 days, plus a workshop on running a household as a governed enterprise.',
-                'Members opt in. We report results only in aggregate, to the partner and to your office, and no reported group falls under 50 people.',
+                'Your office picks one community organization in the Bronx or Queens, such as a workforce program, a tenant association, or a union local.',
+                'Its members get The Founded free for 90 days, plus a workshop, in person or by video, where they set a mission, start a decision log, and schedule a monthly check-in.',
+                'Members opt in. We report results only as totals, to the partner and to your office, and every group we report on has at least 50 people.',
               ]}
             />
             <P>I&apos;m not asking the office to endorse anything.</P>

@@ -30,44 +30,50 @@ const ECOSYSTEM = [
     body: (
       <>
         On iPhone since September 16, and on the web at{' '}
-        <a href="https://thefounded.app" style={{ color: GOLD_TEXT }}>thefounded.app</a>. A personal board, a decision log, a
-        daily and evening ritual, and a journal. We designed it for people who already feel overwhelmed, so every screen does one
-        thing and the order never changes.
+        <a href="https://thefounded.app" style={{ color: GOLD_TEXT }}>thefounded.app</a>. A person sets a mission for her life,
+        appoints a personal board of advisors, logs her decisions, and runs a short morning and evening ritual with a journal. We
+        built it for people who already feel overwhelmed, so every screen does one job and the screens always come in the same
+        order.
       </>
     ),
   },
   {
     name: 'Founded Emerging',
     href: 'https://apps.apple.com/us/app/emerging/id6786498515',
-    body: 'The same structure for teenagers on iPhone. A parent consents before the app collects anything, crisis support sits one tap away, and journals stay on the device.',
+    body: "The same structure, built for teenagers, on iPhone. A parent gives consent before the app collects anything, crisis support is one tap away, and a teenager's journal stays on the phone.",
   },
   {
     name: 'GroundedVote',
     href: 'https://groundedvote.com',
-    body: "A voter compares her priorities with candidates in 31 federal races, and sees where an incumbent's legislative record and public statements part ways.",
+    body: 'A voter answers questions about her priorities and sees which candidates in 31 federal races match them. For incumbents, it compares the bills they sponsored with what they say in public.',
   },
   {
     name: 'RhetoricalPoints',
     href: 'https://rhetoricalpoints.com',
-    body: 'You paste in a claim from any speaker, and RhetoricalPoints checks it against the same standard it uses for everyone else.',
+    body: 'You paste in a claim, and RhetoricalPoints checks it against the evidence, using the same standard for every speaker.',
   },
   {
     name: 'Consider Otherwise',
     href: 'https://www.youtube.com/@considerotherwise',
-    body: 'A live show where people who disagree talk it through. RhetoricalPoints checks every claim on air, mine included.',
+    body: 'A live show where I talk with callers and guests who disagree with me and with each other. RhetoricalPoints checks every claim on air, including mine.',
   },
   {
     name: 'The book',
     body: (
       <>
-        <em>The Founded Project: A Theory of Human Flourishing</em>, 45 chapters, now in line edits. Part I opens with The System
-        Is Breaking Down, The Crisis of Agency, and Why Humans Drift Toward Extremes.
+        <em>The Founded Project: A Theory of Human Flourishing</em>, 45 chapters, now in line edits. It argues that flourishing is
+        the goal, and that self-governance, the structure a person builds to run her own life, is how she gets there. Part I opens
+        with The System Is Breaking Down, The Crisis of Agency, and Why Humans Drift Toward Extremes.
       </>
     ),
   },
   {
-    name: 'Founded Family and Rooted Reclaimers',
-    body: 'Family governance, in private testing, and a hands-on arm for the person who needs more than a plan.',
+    name: 'Founded Family',
+    body: 'A monthly meeting structure for a household. The family reviews its risks, learns one lesson, makes one decision, and records one action. In private testing.',
+  },
+  {
+    name: 'Rooted Reclaimers',
+    body: 'The community side: trauma-informed education, movement, breathwork, and nutrition, done as a group, including the 21-day Rooted Reset.',
   },
 ]
 
@@ -152,9 +158,9 @@ export default function Proposal({ recipient, title, date, intro, alignment, pro
 
           <H2>Where we are</H2>
           <p style={{ color: SOFT, fontSize: 17, lineHeight: 1.7, margin: 0, maxWidth: 640, borderLeft: `3px solid ${GOLD}`, paddingLeft: 18 }}>
-            The apps went live on September 16. Revenue is zero, and the web app has five users. For now, the iPhone app&apos;s AI
-            features ask people to bring their own key. The book is in edits. The theory and the tools are further along than the
-            business, and I&apos;d rather you hear that from me first.
+            The apps went live on September 16. Revenue is zero, and the web app had five users at the last count. For now, the
+            iPhone app&apos;s AI features ask people to supply their own AI account key. The book is in edits. The theory and the
+            tools are further along than the business, and I want you to hear that from me first.
           </p>
 
           <H2>{project.heading}</H2>

@@ -20,15 +20,15 @@ export default function CornelWestPage() {
         <>
           <P>Brother West,</P>
           <P>
-            At BYU in January, you said you love Robert George &ldquo;even when he&apos;s wrong.&rdquo; <em>Truth Matters</em> argues
-            that two men who disagree can still search for the truth together. You called the deeper work &ldquo;soulcraft, character
-            formation.&rdquo;
+            At BYU in January, you said you love Robert George &ldquo;even when he&apos;s wrong.&rdquo; The book the two of you wrote,{' '}
+            <em>Truth Matters</em>, argues that two men who disagree can still search for the truth together. In the same
+            conversation, you called the deeper work &ldquo;soulcraft, character formation.&rdquo;
           </P>
           <P>
-            I&apos;m Stephen Thompson, a clinician and educator in Minnesota and a fellow Alpha. I run The Founded Project: a theory of
-            human flourishing, plus working tools that help a person, a family, and a community govern themselves. Soulcraft is the
-            closest word I&apos;ve found for what we&apos;re building. A young man who can govern himself can sit across from a man he
-            disagrees with and keep telling the truth.
+            I&apos;m Stephen Thompson, a clinician and educator in Minnesota, and a fellow Alpha. I run The Founded Project, a theory of
+            human flourishing and a set of working tools that help a person run his own life, a family run its household, and a voter
+            check what candidates say. Soulcraft is the closest word I&apos;ve found for what the tools are for. I&apos;m trying to
+            build character formation into a daily habit.
           </P>
         </>
       }
@@ -37,10 +37,10 @@ export default function CornelWestPage() {
           <H2>Where your work and ours meet</H2>
           <Pairs
             items={[
-              ['Truth Matters', 'RhetoricalPoints checks every speaker’s claim against the same standard, and Consider Otherwise seats two people who disagree at one table.'],
-              ['Character formation', 'The Founded and Founded Emerging turn it into a daily practice. Each morning, a person decides what the day is for, and each evening, she looks at what she did with it.'],
-              ['Democratic decay', 'GroundedVote shows a voter where an incumbent’s record and public statements part ways.'],
-              ['The fraternity', 'I’ve prepared the Emerging framework for Alpha chapters, so a chapter can teach governance of self before governance of anything bigger.'],
+              ['Truth Matters', 'RhetoricalPoints checks every speaker’s claim against the same standard. Consider Otherwise puts two people who disagree on the same live show and lets them work it out.'],
+              ['Character formation', 'The Founded and Founded Emerging make it a daily habit. Each morning, a young man decides what the day is for. Each evening, he reviews what he actually did with it.'],
+              ['Democracy', 'GroundedVote shows a voter which candidates match her priorities, and compares an incumbent’s sponsored bills with his public statements.'],
+              ['The fraternity', 'I’ve prepared the Emerging framework for Alpha chapters. A chapter can use it to teach its younger brothers to set a mission, log their decisions, and review them each month.'],
             ]}
           />
         </>
@@ -49,13 +49,13 @@ export default function CornelWestPage() {
         heading: 'A first project',
         body: (
           <P>
-            One hour on Consider Otherwise, with a guest you choose: a friend you love and disagree with. RhetoricalPoints checks every
-            claim on air, yours and mine included. Afterward, we cut the conversation into a teaching session that Alpha chapters can
-            run.
+            One hour on Consider Otherwise, with a guest you choose: a friend you love and disagree with, the way you and Robert George
+            do it. Afterward, we edit the conversation into a
+            teaching session that Alpha chapters can run at a chapter meeting.
           </P>
         ),
       }}
-      ask="The hour, or thirty minutes by phone first, if you'd rather meet the work before the camera."
+      ask="The hour on the show, or a thirty-minute phone call first if you want to look at the tools before you agree to be on camera."
     />
   )
 }
