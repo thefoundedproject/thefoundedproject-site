@@ -1,0 +1,1193 @@
+[
+ {
+  "term": "Access",
+  "working_definition": "Access means the level of influence, information, emotional proximity, decision authority, or emergency permission a person has in someone’s life. Human Enterprise treats access as something to define, review, and govern.",
+  "what_it_is_not": "Access does not equal intimacy, love, history, title, or family role. A person can matter deeply and still need limited access to certain decisions, information, or parts of life.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise governance layer. Founded App architecture. Founded Emerging youth adaptation.",
+  "plain_language": "Access means deciding who gets to be close to what parts of your life and why.",
+  "id": "FP-T-access",
+  "mechanism_ids": [
+   "access"
+  ],
+  "chapter_ids": [
+   "FP-CH19",
+   "FP-CH22",
+   "FP-CH27",
+   "FP-CH31",
+   "FP-CH33",
+   "FP-CH39",
+   "FP-CH40",
+   "FP-CH42"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Adaptive Equilibrium",
+  "working_definition": "Adaptive equilibrium means a living system can adjust competing forces in response to reality while still supporting flourishing. It describes regulated balance that changes as conditions change.",
+  "what_it_is_not": "Adaptive equilibrium is not permanent middle ground, neutrality, or staying calm while harm continues. It requires movement, judgment, and moral boundaries.",
+  "where_it_appears": "CT01 - Dynamic Balance Principle. CT06 - Freedom Foundation. Canon Addendum v1.1.",
+  "plain_language": "Adaptive equilibrium means adjusting what life needs now without losing the larger purpose.",
+  "id": "FP-T-adaptive-equilibrium",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Agency",
+  "working_definition": "Agency is the practiced capacity to participate intentionally in the shaping of one’s life, relationships, environment, and future. Agency requires awareness, capacity, choice, responsibility, and action.",
+  "what_it_is_not": "Agency is not total control, blame, unlimited freedom, or rugged individualism. Agency exists inside limits shaped by body, history, family, economy, institutions, technology, law, and culture.",
+  "where_it_appears": "Founded Canon v1.0. CT02 - Agency. CT08 - The Founded Model. Continuity Packet v1.0.",
+  "plain_language": "Agency means you can participate in your own life instead of only reacting to what happens.",
+  "id": "FP-T-agency",
+  "mechanism_ids": [
+   "awareness",
+   "capacity",
+   "choice",
+   "responsibility",
+   "action"
+  ],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH03",
+   "FP-CH08",
+   "FP-CH15",
+   "FP-CH21",
+   "FP-CH22",
+   "FP-CH32",
+   "FP-CH33",
+   "FP-CH35",
+   "FP-CH36",
+   "FP-CH37",
+   "FP-CH41",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "AI Literacy",
+  "working_definition": "AI literacy means the ability to understand, question, use, and govern artificial intelligence tools without surrendering human judgment. It includes awareness of hallucination, bias, synthetic content, data risk, automation bias, and persuasion systems.",
+  "what_it_is_not": "AI literacy is not blind adoption, fear of all technology, prompt tricks, or dependence on machines to decide for the human.",
+  "where_it_appears": "CT04 - Discernment. CT06 - Freedom Foundation. CT09 - Ecosystem Integration. Founded Emerging. Founded App.",
+  "plain_language": "AI literacy means knowing how to use AI without letting AI think for you.",
+  "id": "FP-T-ai-literacy",
+  "mechanism_ids": [
+   "ai-synthetic-reality"
+  ],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "App, The Founded App",
+  "working_definition": "The Founded App is the operational layer of The Founded Project. It turns personal governance, agency, board input, values, decisions, self-care, risk, and reflection into a practical digital environment.",
+  "what_it_is_not": "The app is not a habit tracker, surveillance tool, productivity trap, social feed, data extraction system, or replacement for human judgment.",
+  "where_it_appears": "CT03 - Governance. CT08 - The Founded Model. CT09 - Ecosystem Integration. Human Enterprise app architecture.",
+  "plain_language": "The app gives your life structure without making your life belong to the app.",
+  "id": "FP-T-app-the-founded-app",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "BLACC",
+  "working_definition": "BLACC refers to Black Longevity and Community Care. Inside the ecosystem, BLACC Retreats supports embodied community healing, trust restoration, leadership, and culturally grounded wellness, especially for Black men and Black communities.",
+  "what_it_is_not": "BLACC is not generic wellness branding, retreat aesthetics, or trauma performance. It should remain relational, embodied, culturally grounded, and community-centered.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Contribution layer. Community healing and leadership layer.",
+  "plain_language": "BLACC creates spaces where Black community care, healing, leadership, and trust can be practiced together.",
+  "id": "FP-T-blacc",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Board, Personal",
+  "working_definition": "A personal board is a structured circle of trusted advisors who inform decisions, reflect blind spots, support accountability, and help a person govern life with more wisdom. The person remains the final decision-maker.",
+  "what_it_is_not": "A board is not a replacement for personal judgment, a popularity council, a group chat, or a way to outsource responsibility. The CEO decides. The board informs. The AI organizes.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Founded App. Agent Build Instructions v1.0.",
+  "plain_language": "A personal board is a trusted group that helps you think clearly without taking over your life.",
+  "id": "FP-T-board-personal",
+  "mechanism_ids": [
+   "personal-board"
+  ],
+  "chapter_ids": [
+   "FP-CH22",
+   "FP-CH26",
+   "FP-CH31",
+   "FP-CH39",
+   "FP-CH43"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Boundaries",
+  "working_definition": "Boundaries define what a person can allow, refuse, share, carry, decide, or continue while protecting agency, dignity, capacity, and values. Boundaries help governance become practical.",
+  "what_it_is_not": "Boundaries are not punishment, cruelty, avoidance, control, or emotional withdrawal. A boundary protects life from confusion, extraction, and harmful access.",
+  "where_it_appears": "CT03 - Governance. CT05 - Contribution. CT06 - Freedom Foundation. Human Enterprise.",
+  "plain_language": "Boundaries help you protect what you can carry and what you can’t.",
+  "id": "FP-T-boundaries",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "CEO of Self",
+  "working_definition": "CEO of Self is a Human Enterprise metaphor that names the person as the responsible decision-maker of their own life. It emphasizes agency, mission, counsel, and governance.",
+  "what_it_is_not": "CEO of Self does not mean a human being is a corporation. It does not mean hustle culture, domination, self-optimization, or individualism without responsibility.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Founded App. Agent Build Instructions v1.0.",
+  "plain_language": "CEO of Self means you are responsible for your life’s direction, even when you need help and counsel.",
+  "id": "FP-T-ceo-of-self",
+  "mechanism_ids": [
+   "ceo-of-self"
+  ],
+  "chapter_ids": [
+   "FP-CH22",
+   "FP-CH23"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "ChatWithMe Debates",
+  "working_definition": "ChatWithMe Debates is a public media and demonstration layer connected primarily to Rhetorical Points. It uses debate formats to show claims, opposing arguments, moderation, and civil disagreement.",
+  "what_it_is_not": "ChatWithMe Debates is not the full Founded theory, not GroundedVote, and not the core discernment platform. It demonstrates public reasoning.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Discernment layer. Rhetorical Points adjacent media.",
+  "plain_language": "ChatWithMe Debates shows arguments in motion so people can practice watching claims get tested.",
+  "id": "FP-T-chatwithme-debates",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Civic Agency",
+  "working_definition": "Civic agency means the capacity to participate in public life with discernment, responsibility, and meaningful influence. It connects personal agency to institutions, community, leadership, voting, accountability, and public trust.",
+  "what_it_is_not": "Civic agency is not partisan loyalty, political performance, outrage consumption, or treating politics as identity theater.",
+  "where_it_appears": "CT04 - Discernment. CT05 - Contribution. CT09 - Ecosystem Integration. GroundedVote.",
+  "plain_language": "Civic agency means you can participate in public life without being used by it.",
+  "id": "FP-T-civic-agency",
+  "mechanism_ids": [
+   "civic-agency"
+  ],
+  "chapter_ids": [
+   "FP-CH32",
+   "FP-CH36"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Civic Literacy",
+  "working_definition": "Civic literacy is the practical understanding of civic systems, institutions, policies, rights, responsibilities, public claims, voting processes, and accountability pathways. It helps agency become responsible public participation.",
+  "what_it_is_not": "Civic literacy is not political propaganda, party education, culture-war performance, or memorizing facts without judgment.",
+  "where_it_appears": "CT04 - Discernment. CT09 - Ecosystem Integration. GroundedVote. Founded Emerging.",
+  "plain_language": "Civic literacy means knowing enough about public systems to participate with clarity.",
+  "id": "FP-T-civic-literacy",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Collapse and Reorganization",
+  "working_definition": "Collapse and reorganization describes the process of returning to structure after a life system fails, overloads, or becomes unmanageable. Human Enterprise treats collapse as a condition that needs care, support, review, and renewed governance.",
+  "what_it_is_not": "Collapse is not proof of permanent failure or moral weakness. Reorganization is not pretending the collapse never happened.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Story Library categories.",
+  "plain_language": "Collapse and reorganization means life can fall apart and still be rebuilt with structure and support.",
+  "id": "FP-T-collapse-and-reorganization",
+  "mechanism_ids": [
+   "collapse-reorganization"
+  ],
+  "chapter_ids": [
+   "FP-CH22",
+   "FP-CH30"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Common Good",
+  "working_definition": "The common good refers to conditions that support shared human flourishing across people, families, communities, and institutions. The Founded Project connects individual agency to the common good through contribution and civic responsibility.",
+  "what_it_is_not": "The common good is not forced sameness, domination by the majority, or erasure of individual dignity.",
+  "where_it_appears": "CT05 - Contribution. CT06 - Freedom Foundation. CT08 - The Founded Model.",
+  "plain_language": "The common good means building conditions where more people can live with dignity and agency.",
+  "id": "FP-T-common-good",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Community",
+  "working_definition": "Community is a relational system of shared life, responsibility, trust, memory, care, conflict, repair, and participation. The Founded Project treats community as necessary for stable human flourishing.",
+  "what_it_is_not": "Community is not an audience, market segment, brand identity, or emotional extraction system.",
+  "where_it_appears": "CT05 - Contribution. CT07 - Human Flourishing. CT09 - Ecosystem Integration. Root and Branch model.",
+  "plain_language": "Community means people share enough life and responsibility to help each other become more human.",
+  "id": "FP-T-community",
+  "mechanism_ids": [
+   "individual-community"
+  ],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH09",
+   "FP-CH10",
+   "FP-CH11",
+   "FP-CH22",
+   "FP-CH30",
+   "FP-CH37",
+   "FP-CH41",
+   "FP-CH43"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Complexity",
+  "working_definition": "Complexity refers to the increasing number of systems, decisions, forces, technologies, relationships, risks, institutions, and information streams people must navigate. Complexity intensifies the need for agency, governance, discernment, and support.",
+  "what_it_is_not": "Complexity is not the same as confusion. Confusion can come from poor structure, manipulation, missing information, or overload inside complexity.",
+  "where_it_appears": "Founded Canon v1.0. CT08 - The Founded Model. Book Architecture v1.0. Continuity Packet v1.0.",
+  "plain_language": "Complexity means life has more moving parts than most people were trained to govern.",
+  "id": "FP-T-complexity",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH01"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Compromise",
+  "working_definition": "Compromise is an agreement that adjusts competing interests, needs, or priorities to preserve a larger purpose. Healthy compromise can serve flourishing when the forces involved are legitimate and morally bounded.",
+  "what_it_is_not": "Compromise is not the same as balance. Compromise should not legitimize harm, lies, abuse, exploitation, or dehumanization.",
+  "where_it_appears": "CT01 - Dynamic Balance Principle. CT10 - Contrarian Review. Moral Boundary Principle.",
+  "plain_language": "Compromise can help people work together, but it can’t make harm acceptable.",
+  "id": "FP-T-compromise",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Contribution",
+  "working_definition": "Contribution is agency expressed beyond the self. It is the use of restored, governed, and protected agency in service of family, community, culture, institutions, civic life, future generations, and human flourishing.",
+  "what_it_is_not": "Contribution is not self-erasure, martyrdom, productivity for approval, sacrifice without boundaries, or being endlessly useful.",
+  "where_it_appears": "Founded Canon v1.0. CT05 - Contribution. CT08 - The Founded Model. Part VI of the book architecture.",
+  "plain_language": "Contribution means using your life to strengthen something beyond yourself without disappearing into it.",
+  "id": "FP-T-contribution",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH21",
+   "FP-CH35",
+   "FP-CH38",
+   "FP-CH39",
+   "FP-CH44",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Control",
+  "working_definition": "Control means the attempt to direct, restrict, or determine outcomes, people, information, behavior, or systems. Some control can protect safety, but control becomes harmful when it overrides dignity, agency, consent, truth, or appropriate responsibility.",
+  "what_it_is_not": "Control is not governance. Governance creates structure in service of agency. Control often tries to replace agency with command.",
+  "where_it_appears": "CT03 - Governance. CT06 - Freedom Foundation. CT10 - Contrarian Review.",
+  "plain_language": "Control tries to run life from the outside. Governance helps life become organized from the inside.",
+  "id": "FP-T-control",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH15",
+   "FP-CH22"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Data Governance",
+  "working_definition": "Data governance means the structures, rights, consent practices, privacy choices, and accountability rules that determine how personal information gets created, stored, used, shared, protected, or deleted.",
+  "what_it_is_not": "Data governance is not corporate data capture, hidden surveillance, or user consent buried inside unread terms.",
+  "where_it_appears": "CT04 - Discernment. CT06 - Freedom Foundation. Founded App. Founded Emerging.",
+  "plain_language": "Data governance means people should understand and control what happens to their information.",
+  "id": "FP-T-data-governance",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Discernment",
+  "working_definition": "Discernment is the practiced capacity to distinguish truth from falsehood, signal from noise, evidence from assertion, wisdom from certainty, persuasion from manipulation, and complexity from confusion. Discernment protects agency.",
+  "what_it_is_not": "Discernment is not cynicism, elitism, reflexive distrust, arrogance, or treating every claim as equally valid.",
+  "where_it_appears": "Founded Canon v1.0. CT04 - Discernment. CT08 - The Founded Model. Rhetorical Points. GroundedVote.",
+  "plain_language": "Discernment means knowing what to trust, why to trust it, and when to change your mind.",
+  "id": "FP-T-discernment",
+  "mechanism_ids": [
+   "practice-of-discernment"
+  ],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH08",
+   "FP-CH21",
+   "FP-CH31",
+   "FP-CH35",
+   "FP-CH36",
+   "FP-CH37",
+   "FP-CH38",
+   "FP-CH39",
+   "FP-CH40",
+   "FP-CH43",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Disinformation",
+  "working_definition": "Disinformation means false or misleading information spread deliberately to deceive, manipulate, control perception, gain advantage, or damage trust. It violates the conditions needed for agency and civic life.",
+  "what_it_is_not": "Disinformation is not the same as error, uncertainty, disagreement, or developing evidence.",
+  "where_it_appears": "CT04 - Discernment. CT10 - Contrarian Review. Moral Boundary Principle.",
+  "plain_language": "Disinformation means false information spread on purpose to shape what people believe or do.",
+  "id": "FP-T-disinformation",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH14",
+   "FP-CH36"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Dynamic Balance",
+  "working_definition": "Dynamic Balance is the active regulation of necessary competing forces in service of human flourishing within moral boundaries. It recognizes that human systems require tension between forces such as freedom and responsibility, identity and openness, competition and cooperation, innovation and stability, individual and community, security and adaptability.",
+  "what_it_is_not": "Dynamic Balance is not moderation, neutrality, compromise for its own sake, false equivalence, or moral relativism.",
+  "where_it_appears": "CT01 - Dynamic Balance Principle. CT06 - Freedom Foundation. CT08 - The Founded Model. Canon Addendum v1.1.",
+  "plain_language": "Dynamic Balance means keeping important forces in the right relationship so life can stay healthy and humane.",
+  "id": "FP-T-dynamic-balance",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH06",
+   "FP-CH14",
+   "FP-CH21"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Dynamic Balance Principle",
+  "working_definition": "The Dynamic Balance Principle states that human systems remain healthy when necessary competing forces are regulated in productive relationship inside clear moral boundaries. It is the foundational theory of the ecosystem.",
+  "what_it_is_not": "The Dynamic Balance Principle does not apply to inherently immoral acts. It does not balance dignity with dehumanization, truth with lies, or safety with intentional harm.",
+  "where_it_appears": "Founded Canon v1.0. CT01 - Dynamic Balance Principle. CT08 - The Founded Model.",
+  "plain_language": "The Dynamic Balance Principle means healthy life requires regulated tension, clear boundaries, and a purpose larger than winning one side.",
+  "id": "FP-T-dynamic-balance-principle",
+  "mechanism_ids": [
+   "dynamic-balance"
+  ],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Ecosystem",
+  "working_definition": "The ecosystem is the integrated set of projects, tools, books, curricula, software, media, and community initiatives that serve The Founded Project’s mission. Each node restores, structures, protects, teaches, expresses, or extends agency.",
+  "what_it_is_not": "The ecosystem is not a random collection of ventures, a project catalog, or a branding umbrella without theory.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Continuity Packet v1.0. Agent Build Instructions v1.0.",
+  "plain_language": "The ecosystem is the full set of tools and projects built to help people reclaim, govern, protect, and contribute agency.",
+  "id": "FP-T-ecosystem",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Embodiment",
+  "working_definition": "Embodiment means the body participates in agency, decision-making, stress, memory, attention, trust, and flourishing. The Founded Project treats the body as part of the governance field.",
+  "what_it_is_not": "Embodiment is not vague wellness language, aesthetic spirituality, or a claim that the body replaces evidence and judgment.",
+  "where_it_appears": "CT02 - Agency. CT07 - Human Flourishing. Journey From the Edge. Rooted Reclaimers.",
+  "plain_language": "Embodiment means your body shapes how you think, choose, relate, and recover.",
+  "id": "FP-T-embodiment",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Emerging Adult",
+  "working_definition": "An emerging adult is a young person moving into greater independence, identity formation, digital visibility, responsibility, civic participation, and future planning. Founded Emerging adapts agency, governance, discernment, and contribution for this developmental stage.",
+  "what_it_is_not": "An emerging adult is not a child to control or a fully formed adult to abandon. This stage needs stewardship, practice, privacy, and supported agency.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Founded Emerging. Founded App youth version.",
+  "plain_language": "An emerging adult is a young person learning how to govern life before life gets harder to reorganize.",
+  "id": "FP-T-emerging-adult",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Extraction",
+  "working_definition": "Extraction occurs when a person, system, relationship, institution, platform, workplace, ideology, or environment consistently takes more than it returns in value, dignity, safety, meaning, growth, compensation, or mutual care. Extraction reduces agency and undermines flourishing.",
+  "what_it_is_not": "Extraction is not the same as effort, sacrifice, service, work, responsibility, or fair exchange. Extraction becomes visible through imbalance, depletion, coercion, manipulation, or lack of return.",
+  "where_it_appears": "CT07 - Human Flourishing. CT10 - Contrarian Review. Book Architecture v1.0. Power and Extraction future canvas.",
+  "plain_language": "Extraction means something keeps taking from you without enough return, repair, dignity, or choice.",
+  "id": "FP-T-extraction",
+  "mechanism_ids": [
+   "theft-of-agency",
+   "extraction"
+  ],
+  "chapter_ids": [
+   "FP-CH04",
+   "FP-CH10",
+   "FP-CH24",
+   "FP-CH42"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Faith",
+  "working_definition": "Faith may appear as a person’s source of meaning, sacredness, moral orientation, community, and endurance. The Founded Project leaves room for faith while remaining nonsectarian.",
+  "what_it_is_not": "Faith is not required for the model. The project is not a religious doctrine, and it does not use faith to avoid evidence, responsibility, or repair.",
+  "where_it_appears": "CT07 - Human Flourishing. Freedom Foundation. Philosophical Boundaries in the Canon.",
+  "plain_language": "Faith can be one way people name what gives life meaning and direction.",
+  "id": "FP-T-faith",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH02"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "False Equivalence",
+  "working_definition": "False equivalence treats two claims, positions, or actions as equally valid when evidence, morality, or reality does not support equal standing. The Founded Project rejects false equivalence because truth comes before balance.",
+  "what_it_is_not": "False equivalence is not the same as fairness, listening, humility, or engaging an opposing view honestly.",
+  "where_it_appears": "CT04 - Discernment. CT10 - Contrarian Review. Moral Boundary Principle.",
+  "plain_language": "False equivalence means acting like two sides are equal when truth or harm clearly separates them.",
+  "id": "FP-T-false-equivalence",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Flourishing",
+  "working_definition": "Flourishing is the lived experience of having enough agency, nourishment, meaning, support, dignity, and freedom to thrive according to what a person experiences as sacred, life-giving, and abundant. It is the destination of The Founded Project.",
+  "what_it_is_not": "Flourishing is not success, comfort, status, productivity, happiness, or wealth defined only by money.",
+  "where_it_appears": "CT07 - Human Flourishing. CT08 - The Founded Model. Founded Canon v1.0.",
+  "plain_language": "Flourishing means having enough of what helps you live, grow, belong, and thrive.",
+  "id": "FP-T-flourishing",
+  "mechanism_ids": [
+   "flourishing"
+  ],
+  "chapter_ids": [
+   "FP-CH14"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Founded Emerging",
+  "working_definition": "Founded Emerging is the youth and emerging adult development layer of The Founded Project. It teaches agency, governance, discernment, AI literacy, digital reputation, self-leadership, civic responsibility, and future planning.",
+  "what_it_is_not": "Founded Emerging is not parental surveillance, behavior control, or an adult governance system pasted onto young people. Parents guide. Young people practice agency.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Founded App youth version. Agent Build Instructions v1.0.",
+  "plain_language": "Founded Emerging helps young people learn how to govern themselves before the world starts defining them.",
+  "id": "FP-T-founded-emerging",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Founded Model",
+  "working_definition": "The Founded Model is the organizing framework of The Founded Project. It describes the movement from reclamation to agency, from agency to governance, from governance to discernment, and from discernment to contribution.",
+  "what_it_is_not": "The Founded Model is not a rigid ladder, motivational sequence, productivity funnel, or app flow. It provides orientation across individual, family, community, institutional, and societal life.",
+  "where_it_appears": "CT08 - The Founded Model. Book Architecture v1.0. Continuity Packet v1.0.",
+  "plain_language": "The Founded Model shows how people move from survival toward protected agency and meaningful contribution.",
+  "id": "FP-T-founded-model",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Freedom",
+  "working_definition": "Freedom is the practiced capacity to live with agency, responsibility, discernment, and dignity inside reality. Freedom requires foundation, moral boundaries, truth, governance, and contribution.",
+  "what_it_is_not": "Freedom is not license, domination, escape from responsibility, or the absence of all limits.",
+  "where_it_appears": "CT06 - Freedom Foundation. Freedom Foundation layer. Canon Addendum v1.1.",
+  "plain_language": "Freedom means you can participate in your life with dignity, responsibility, and real choice.",
+  "id": "FP-T-freedom",
+  "mechanism_ids": [
+   "freedom-responsibility"
+  ],
+  "chapter_ids": [
+   "FP-CH08"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Freedom Foundation",
+  "working_definition": "Freedom Foundation is the philosophical layer of The Founded Project. It defines the conditions that allow freedom to become sustainable through balance, responsibility, dignity, truth, governance, and contribution.",
+  "what_it_is_not": "Freedom Foundation is not partisan ideology, libertarian escape, vague centrism, or abstract philosophy disconnected from lived experience.",
+  "where_it_appears": "CT06 - Freedom Foundation. CT09 - Ecosystem Integration. Continuity Packet v1.0.",
+  "plain_language": "Freedom Foundation explains what freedom needs so it doesn’t collapse into chaos or control.",
+  "id": "FP-T-freedom-foundation",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "GroundedVote",
+  "working_definition": "GroundedVote is the civic literacy layer of The Founded Project ecosystem. It supports informed, non-partisan civic participation, public accountability, and better understanding of civic systems.",
+  "what_it_is_not": "GroundedVote is not a political party tool, partisan media project, or ideological weapon.",
+  "where_it_appears": "CT04 - Discernment. CT09 - Ecosystem Integration. Part V of Book Architecture.",
+  "plain_language": "GroundedVote helps people understand public systems so they can participate without getting manipulated.",
+  "id": "FP-T-groundedvote",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH32",
+   "FP-CH36",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Governance",
+  "working_definition": "Governance is the intentional organization of decisions, resources, relationships, boundaries, responsibilities, risks, and commitments in service of a chosen future. Governance creates continuity between values and actions.",
+  "what_it_is_not": "Governance is not control, bureaucracy, surveillance, rigid optimization, or managing the human into a machine.",
+  "where_it_appears": "Founded Canon v1.0. CT03 - Governance. Human Enterprise. Founded App.",
+  "plain_language": "Governance means giving your life enough structure to protect what you value and choose more clearly.",
+  "id": "FP-T-governance",
+  "mechanism_ids": [
+   "governance-creates-space"
+  ],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH04",
+   "FP-CH21",
+   "FP-CH22",
+   "FP-CH25",
+   "FP-CH27",
+   "FP-CH31",
+   "FP-CH35",
+   "FP-CH37",
+   "FP-CH43",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Human Enterprise",
+  "working_definition": "Human Enterprise is the governance layer inside The Founded Project. It provides practical architecture for mission, values, personal capital, assets, liabilities, board, access, decision-making, relationship maps, self-care, risk, and long-term strategy.",
+  "what_it_is_not": "Human Enterprise is not the entire theory. It does not claim that humans are corporations. It should never become hustle culture, sovereign citizen logic, or productivity capture.",
+  "where_it_appears": "CT03 - Governance. CT09 - Ecosystem Integration. Continuity Packet v1.0.",
+  "plain_language": "Human Enterprise gives people life architecture without turning them into businesses.",
+  "id": "FP-T-human-enterprise",
+  "mechanism_ids": [
+   "human-enterprise"
+  ],
+  "chapter_ids": [
+   "FP-CH22",
+   "FP-CH31",
+   "FP-CH39"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Human Flourishing",
+  "working_definition": "Human flourishing is the desired outcome of The Founded Project. It means people, families, communities, institutions, and societies can support agency, nourishment, dignity, meaning, trust, contribution, and freedom.",
+  "what_it_is_not": "Human flourishing is not private success, individual comfort, public status, endless growth, or productivity.",
+  "where_it_appears": "CT07 - Human Flourishing. CT08 - The Founded Model. Book Architecture v1.0.",
+  "plain_language": "Human flourishing means people and communities have the conditions they need to live well and contribute.",
+  "id": "FP-T-human-flourishing",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Identity",
+  "working_definition": "Identity gives rootedness, memory, culture, story, belonging, and continuity. The Founded Project treats identity as a necessary force that must remain in productive relationship with openness and shared humanity.",
+  "what_it_is_not": "Identity is not supremacy, dehumanization, tribal closure, or permanent grievance. Openness should not erase identity.",
+  "where_it_appears": "CT01 - Dynamic Balance Principle. CT06 - Freedom Foundation. Part II of Book Architecture.",
+  "plain_language": "Identity helps people know who they are without making other people less human.",
+  "id": "FP-T-identity",
+  "mechanism_ids": [
+   "identity-openness"
+  ],
+  "chapter_ids": [
+   "FP-CH03",
+   "FP-CH09",
+   "FP-CH34",
+   "FP-CH39"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Intellectual Humility",
+  "working_definition": "Intellectual humility means remaining correctable while pursuing truth. It allows a person to revise beliefs when evidence, reality, or moral clarity requires revision.",
+  "what_it_is_not": "Intellectual humility is not weakness, indecision, false equivalence, or surrendering truth to whoever speaks loudest.",
+  "where_it_appears": "CT04 - Discernment. CT10 - Contrarian Review. Rhetorical Points.",
+  "plain_language": "Intellectual humility means you care enough about truth to change your mind when you need to.",
+  "id": "FP-T-intellectual-humility",
+  "mechanism_ids": [
+   "intellectual-humility"
+  ],
+  "chapter_ids": [
+   "FP-CH32",
+   "FP-CH38"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Journey From the Edge",
+  "working_definition": "Journey From the Edge is the reclamation layer that explains how trauma, burnout, survival adaptation, shame, disconnection, and chronic stress reduce agency. It gives language to the movement from survival back toward self-trust.",
+  "what_it_is_not": "Journey From the Edge is not the entire Founded Project. It is not the governance layer, civic layer, or full ecosystem.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Reclamation stage. Part III of Book Architecture.",
+  "plain_language": "Journey From the Edge helps people understand how survival shaped them and how agency can return.",
+  "id": "FP-T-journey-from-the-edge",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH15",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "License",
+  "working_definition": "License means acting on desire without enough regard for truth, consequence, relationship, responsibility, or harm. Freedom Foundation distinguishes license from mature freedom.",
+  "what_it_is_not": "License is not freedom. Freedom requires agency, responsibility, discernment, dignity, and reality.",
+  "where_it_appears": "CT06 - Freedom Foundation.",
+  "plain_language": "License says “I do what I want.” Freedom asks what kind of life a person can govern responsibly.",
+  "id": "FP-T-license",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Manipulation",
+  "working_definition": "Manipulation uses emotion, information, timing, identity, fear, shame, belonging, or power to influence people without full honesty, consent, or respect for agency. Manipulation narrows the field of choice.",
+  "what_it_is_not": "Manipulation is not the same as persuasion. Persuasion can respect truth, dignity, consent, and accountability.",
+  "where_it_appears": "CT04 - Discernment. Rhetorical Points. GroundedVote. CT10 - Contrarian Review.",
+  "plain_language": "Manipulation means someone shapes your choices while hiding what they’re doing or why.",
+  "id": "FP-T-manipulation",
+  "mechanism_ids": [
+   "rhetoric-manipulation"
+  ],
+  "chapter_ids": [
+   "FP-CH32",
+   "FP-CH34"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Misinformation",
+  "working_definition": "Misinformation means false or inaccurate information that spreads regardless of intent. It can still harm agency, trust, and public reasoning even when the person sharing it does not intend harm.",
+  "what_it_is_not": "Misinformation is not the same as disinformation. Disinformation involves deliberate deception.",
+  "where_it_appears": "CT04 - Discernment. CT10 - Contrarian Review. Rhetorical Points. GroundedVote.",
+  "plain_language": "Misinformation means wrong information that spreads and shapes what people believe.",
+  "id": "FP-T-misinformation",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Moderation",
+  "working_definition": "Moderation usually means avoiding extremes or choosing a middle position. The Founded Project may use moderation in ordinary contexts, but Dynamic Balance does not depend on moderation as its central idea.",
+  "what_it_is_not": "Moderation is not Dynamic Balance. The right response may require strong movement toward one force, clear refusal, or decisive boundary.",
+  "where_it_appears": "CT01 - Dynamic Balance Principle. CT10 - Contrarian Review.",
+  "plain_language": "Moderation means staying near the middle. Dynamic Balance means adjusting to what life, truth, and flourishing require.",
+  "id": "FP-T-moderation",
+  "mechanism_ids": [
+   "balance-not-moderation"
+  ],
+  "chapter_ids": [
+   "FP-CH07"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Moral Boundary Principle",
+  "working_definition": "The Moral Boundary Principle states that Dynamic Balance does not apply to inherently immoral acts. Slavery, genocide, torture, child abuse, intentional cruelty, murder, exploitation for exploitation’s sake, deliberate disinformation, and suffering inflicted for suffering’s sake are violations, not forces to balance.",
+  "what_it_is_not": "The Moral Boundary Principle is not moral grandstanding, partisan purity, or refusal to think. It protects the theory from false equivalence and moral relativism.",
+  "where_it_appears": "Canon Addendum v1.1. CT01 - Dynamic Balance Principle. CT10 - Contrarian Review. Book Architecture v1.0.",
+  "plain_language": "Some things don’t need balance. They need refusal.",
+  "id": "FP-T-moral-boundary-principle",
+  "mechanism_ids": [
+   "moral-boundary"
+  ],
+  "chapter_ids": [
+   "FP-CH03",
+   "FP-CH07",
+   "FP-CH14",
+   "FP-CH38"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Moral Relativism",
+  "working_definition": "Moral relativism treats moral claims as so dependent on perspective that clear violations can lose their force. The Founded Project rejects moral relativism when dignity, truth, safety, and intentional harm are at stake.",
+  "what_it_is_not": "Moral relativism is not intellectual humility, cultural awareness, or careful interpretation.",
+  "where_it_appears": "CT01 - Dynamic Balance Principle. CT10 - Contrarian Review. Moral Boundary Principle.",
+  "plain_language": "Moral relativism says everything depends on viewpoint. Founded says some harms are still harms.",
+  "id": "FP-T-moral-relativism",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH14"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Nourishment",
+  "working_definition": "Nourishment includes what restores, feeds, steadies, and strengthens a person’s life. It can include food, rest, safety, affection, truth, touch, learning, movement, beauty, belonging, purpose, culture, and time.",
+  "what_it_is_not": "Nourishment is not indulgence, luxury, or consumption without discernment. It refers to what helps life replenish and flourish.",
+  "where_it_appears": "CT07 - Human Flourishing. Rooted Reclaimers. Contribution.",
+  "plain_language": "Nourishment means what gives enough back to help you live and grow.",
+  "id": "FP-T-nourishment",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Optimization",
+  "working_definition": "Optimization means adjusting a system to maximize a chosen outcome. The Founded Project treats optimization carefully because maximizing one outcome can damage the larger human system.",
+  "what_it_is_not": "Optimization is not governance. Governance serves agency and flourishing, while optimization can serve output, speed, efficiency, or extraction without respecting the whole person.",
+  "where_it_appears": "CT03 - Governance. CT10 - Contrarian Review. Voice and Style Rules.",
+  "plain_language": "Optimization tries to get more of one thing. Governance asks whether that “more” still serves life.",
+  "id": "FP-T-optimization",
+  "mechanism_ids": [
+   "optimization"
+  ],
+  "chapter_ids": [
+   "FP-CH03",
+   "FP-CH05"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Organized Human Flourishing",
+  "working_definition": "Organized human flourishing means people and communities build enough structure, support, discernment, and moral clarity to thrive inside complexity. It names the larger aim of the ecosystem.",
+  "what_it_is_not": "Organized human flourishing is not rigid control, institutional sameness, forced morality, or productivity culture.",
+  "where_it_appears": "CT08 - The Founded Model. Book Architecture v1.0. Continuity Packet v1.0.",
+  "plain_language": "Organized human flourishing means building the conditions that help people live well together.",
+  "id": "FP-T-organized-human-flourishing",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Personal Bylaws",
+  "working_definition": "Personal bylaws are self-governance rules that clarify values, boundaries, decision principles, commitments, and conduct before stress, fear, scarcity, or social pressure takes over.",
+  "what_it_is_not": "Personal bylaws are not rigid commandments, perfection rules, or self-punishment. They create guidance when life becomes difficult.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Founded App.",
+  "plain_language": "Personal bylaws are rules you make while clear so you don’t betray yourself while stressed.",
+  "id": "FP-T-personal-bylaws",
+  "mechanism_ids": [
+   "bylaws"
+  ],
+  "chapter_ids": [
+   "FP-CH29"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Personal Capital",
+  "working_definition": "Personal capital refers to the forms of value a person carries, develops, protects, and contributes. It includes financial, health, time, skill, relational, reputation, cultural, spiritual, philosophical, creative, and community capital.",
+  "what_it_is_not": "Personal capital is not only money, market value, status, or personal branding. It should not reduce a human being to economic utility.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Continuity Packet v1.0.",
+  "plain_language": "Personal capital means the many kinds of value in your life, not just money.",
+  "id": "FP-T-personal-capital",
+  "mechanism_ids": [
+   "personal-capital"
+  ],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Power",
+  "working_definition": "Power is the capacity to shape choices, conditions, access, perception, resources, rules, consequences, or possible futures. The Founded Project needs power analysis because agency always exists inside systems where power already operates.",
+  "what_it_is_not": "Power is not inherently corrupt, and it is not limited to politics or money. Power becomes dangerous when it escapes accountability, dignity, truth, and reciprocal responsibility.",
+  "where_it_appears": "CT10 - Contrarian Review. Future CT11 - Power and Extraction. Book Architecture v1.0.",
+  "plain_language": "Power means the ability to shape what people can see, choose, access, or become.",
+  "id": "FP-T-power",
+  "mechanism_ids": [
+   "institutions-power-repair"
+  ],
+  "chapter_ids": [
+   "FP-CH12",
+   "FP-CH14",
+   "FP-CH36",
+   "FP-CH42"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Productivity Capture",
+  "working_definition": "Productivity capture happens when tools, language, habits, or systems that claim to support agency get absorbed into output, performance, hustle, optimization, and market value. It is a major risk for Human Enterprise language.",
+  "what_it_is_not": "Productivity capture is not the same as useful planning, discipline, or follow-through. The issue is when output becomes the highest good.",
+  "where_it_appears": "CT10 - Contrarian Review. Voice and Style Rules. Human Enterprise guardrails.",
+  "plain_language": "Productivity capture means a tool meant to help you live starts using you to produce more.",
+  "id": "FP-T-productivity-capture",
+  "mechanism_ids": [
+   "attention-economy"
+  ],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Protected Agency",
+  "working_definition": "Protected agency is agency supported by structure, discernment, boundaries, counsel, self-knowledge, regulation, and moral clarity. It is agency defended against manipulation, extraction, overwhelm, scarcity, and drift.",
+  "what_it_is_not": "Protected agency is not isolation, control, privilege, selfishness, or total safety from all risk.",
+  "where_it_appears": "CT02 - Agency. CT08 - The Founded Model. CT09 - Ecosystem Integration. Continuity Packet v1.0.",
+  "plain_language": "Protected agency means your ability to choose has support, structure, and defense around it.",
+  "id": "FP-T-protected-agency",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Public Ledger",
+  "working_definition": "Public Ledger refers to the visible or discoverable record a person creates through digital behavior, public identity, reputation, posts, comments, affiliations, creative work, conflicts, and data trails. It matters especially for youth and emerging adults.",
+  "what_it_is_not": "Public Ledger is not moral panic about technology. It is not a reason for surveillance or control. It is a reason for education, agency, and digital self-governance.",
+  "where_it_appears": "Founded Emerging. Founded App youth version. CT09 - Ecosystem Integration.",
+  "plain_language": "Public Ledger means the record your digital life creates before you fully realize it’s a record.",
+  "id": "FP-T-public-ledger",
+  "mechanism_ids": [
+   "honest-accounting"
+  ],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Reclamation",
+  "working_definition": "Reclamation is the process of recovering agency from trauma, burnout, survival adaptation, disconnection, shame, chronic stress, and overwhelm. It restores access to choice and self-trust.",
+  "what_it_is_not": "Reclamation is not denial of the past, instant healing, self-help motivation, or pretending survival patterns were useless.",
+  "where_it_appears": "Founded Canon v1.0. CT08 - The Founded Model. Journey From the Edge. Rooted Reclaimers. Part III.",
+  "plain_language": "Reclamation means getting back the parts of your agency that survival, stress, or harm pushed out of reach.",
+  "id": "FP-T-reclamation",
+  "mechanism_ids": [
+   "self-trust"
+  ],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH15",
+   "FP-CH17",
+   "FP-CH18",
+   "FP-CH19",
+   "FP-CH20",
+   "FP-CH21",
+   "FP-CH31",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Regulation",
+  "working_definition": "Regulation refers to the body and mind’s ability to adjust activation, attention, emotion, stress response, and behavior in relationship to reality. Regulation supports agency because state affects choice.",
+  "what_it_is_not": "Regulation is not suppression, numbness, constant calm, or compliance.",
+  "where_it_appears": "CT02 - Agency. CT03 - Governance. CT07 - Human Flourishing. Journey From the Edge. Rooted Reclaimers.",
+  "plain_language": "Regulation means your body and mind can return to enough steadiness to choose.",
+  "id": "FP-T-regulation",
+  "mechanism_ids": [
+   "nervous-system"
+  ],
+  "chapter_ids": [
+   "FP-CH06",
+   "FP-CH07",
+   "FP-CH17",
+   "FP-CH19",
+   "FP-CH33",
+   "FP-CH39"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Rhetorical Points",
+  "working_definition": "Rhetorical Points is the discernment layer that teaches argument evaluation, rhetorical accountability, claim testing, opposing viewpoints, evidence review, emotional activation awareness, and manipulation detection.",
+  "what_it_is_not": "Rhetorical Points is not GroundedVote, not Human Enterprise, not partisan commentary, and not the entire Founded Project. It remains a distinct project unless the ecosystem connection is explicit.",
+  "where_it_appears": "CT04 - Discernment. CT09 - Ecosystem Integration. Part V of Book Architecture.",
+  "plain_language": "Rhetorical Points helps people test arguments before they trust or repeat them.",
+  "id": "FP-T-rhetorical-points",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH32",
+   "FP-CH35",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Root and Branch",
+  "working_definition": "Root and Branch is the change model that connects individual agency with societal conditions. Problems that appear individual often grow from societal conditions, and problems that appear societal often live through individual behavior.",
+  "what_it_is_not": "Root and Branch is not rugged individualism or systems fatalism. It refuses to let either the person or the system disappear.",
+  "where_it_appears": "CT05 - Contribution. CT08 - The Founded Model. CT10 - Contrarian Review. Book Architecture v1.0.",
+  "plain_language": "Root and Branch means we work on people and systems because each shapes the other.",
+  "id": "FP-T-root-and-branch",
+  "mechanism_ids": [
+   "root-and-branch"
+  ],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Rooted Reclaimers",
+  "working_definition": "Rooted Reclaimers is the recovery and implementation layer that helps people practice reclamation through community, education, regulation, identity repair, rootedness, and sustained support.",
+  "what_it_is_not": "Rooted Reclaimers is not generic wellness branding, oversimplified self-help, or trauma language without practice.",
+  "where_it_appears": "CT09 - Ecosystem Integration. Reclamation layer. Part III.",
+  "plain_language": "Rooted Reclaimers helps people practice healing, trust, and agency in community.",
+  "id": "FP-T-rooted-reclaimers",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Self-Care as Governance",
+  "working_definition": "Self-care as governance means care for the body, mind, relationships, schedule, energy, and environment becomes part of responsible agency. Self-care supports the person’s ability to decide, relate, work, heal, and contribute.",
+  "what_it_is_not": "Self-care is not indulgence, branding, avoidance, or a substitute for structural repair.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Founded App.",
+  "plain_language": "Self-care as governance means caring for yourself helps you make better decisions and stay available for life.",
+  "id": "FP-T-self-care-as-governance",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Self-Erasure",
+  "working_definition": "Self-erasure happens when a person loses access to their own needs, limits, values, identity, body, or future in the process of serving, pleasing, protecting, or belonging. It often hides inside praised roles.",
+  "what_it_is_not": "Self-erasure is not the same as generosity, love, sacrifice, service, or responsibility.",
+  "where_it_appears": "CT05 - Contribution. CT10 - Contrarian Review. Part VI of Book Architecture.",
+  "plain_language": "Self-erasure means helping, loving, or serving in a way that makes you disappear.",
+  "id": "FP-T-self-erasure",
+  "mechanism_ids": [
+   "contribution-without-self-erasure"
+  ],
+  "chapter_ids": [
+   "FP-CH39",
+   "FP-CH40"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Self-Governance",
+  "working_definition": "Self-governance is the practice of organizing one’s decisions, values, responsibilities, resources, relationships, body, information, and future with intentionality. It is agency expressed through structure.",
+  "what_it_is_not": "Self-governance is not self-control alone, rigid discipline, isolation, or refusing help.",
+  "where_it_appears": "CT02 - Agency. CT03 - Governance. Human Enterprise. Freedom Foundation.",
+  "plain_language": "Self-governance means learning how to guide your life instead of letting stress or outside systems guide it for you.",
+  "id": "FP-T-self-governance",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH04"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Sequence, The Five Stages",
+  "working_definition": "The five-stage sequence is Reclamation → Agency → Governance → Discernment → Contribution. It describes how The Founded Project moves from survival recovery toward protected agency and meaningful participation.",
+  "what_it_is_not": "The sequence is not a rigid staircase, moral ranking, or single path everyone follows perfectly.",
+  "where_it_appears": "Founded Canon v1.0. CT08 - The Founded Model. Continuity Packet v1.0. Book Architecture v1.0.",
+  "plain_language": "The sequence shows how people move from getting agency back to using it wisely for life beyond themselves.",
+  "id": "FP-T-sequence-the-five-stages",
+  "mechanism_ids": [
+   "five-stage-sequence"
+  ],
+  "chapter_ids": [
+   "FP-CH20",
+   "FP-CH30"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Signal and Noise",
+  "working_definition": "Signal refers to information that meaningfully helps a person understand reality, decide, govern, or contribute. Noise refers to information, emotion, distraction, repetition, or confusion that makes clarity harder.",
+  "what_it_is_not": "Signal is not whatever feels certain. Noise is not whatever feels uncomfortable.",
+  "where_it_appears": "CT04 - Discernment. Rhetorical Points. GroundedVote.",
+  "plain_language": "Signal helps you see clearly. Noise makes it harder to know what deserves attention.",
+  "id": "FP-T-signal-and-noise",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Soil of Safety",
+  "working_definition": "Soil of Safety refers to the conditions that allow agency, trust, regulation, learning, repair, and growth to take root. It is especially important in trauma recovery, community healing, and youth development.",
+  "what_it_is_not": "Soil of Safety is not comfort at any cost, avoidance of challenge, or protection from all discomfort.",
+  "where_it_appears": "Part III of Book Architecture. Journey From the Edge. Rooted Reclaimers. Black Men’s Health workshop framework.",
+  "plain_language": "Soil of Safety means people grow better when the conditions around them support trust, repair, and honest effort.",
+  "id": "FP-T-soil-of-safety",
+  "mechanism_ids": [
+   "soil-of-safety"
+  ],
+  "chapter_ids": [
+   "FP-CH19"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Sovereignty",
+  "working_definition": "Sovereignty can refer to the capacity of a person or community to exercise legitimate self-direction within moral, relational, civic, and legal reality. Use the term carefully because public meanings vary.",
+  "what_it_is_not": "Sovereignty is not sovereign citizen ideology, escape from law, anti-government extremism, or refusal of responsibility.",
+  "where_it_appears": "Philosophical Boundaries in the Canon. Freedom Foundation. Human Enterprise guardrails.",
+  "plain_language": "Sovereignty means real self-direction with responsibility, not pretending rules and relationships don’t exist.",
+  "id": "FP-T-sovereignty",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Stewardship",
+  "working_definition": "Stewardship is responsible care for what a person has influence over, including body, family, resources, relationships, community, institutions, ideas, culture, technology, and future. Stewardship connects agency to contribution.",
+  "what_it_is_not": "Stewardship is not ownership as domination, saviorism, self-erasure, or control.",
+  "where_it_appears": "CT05 - Contribution. CT06 - Freedom Foundation. CT07 - Human Flourishing. Part VI.",
+  "plain_language": "Stewardship means caring responsibly for what your life touches.",
+  "id": "FP-T-stewardship",
+  "mechanism_ids": [
+   "family-stewardship"
+  ],
+  "chapter_ids": [
+   "FP-CH40",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Structure",
+  "working_definition": "Structure is the organized form that helps values, decisions, relationships, responsibilities, and commitments become livable. Structure gives agency a place to operate.",
+  "what_it_is_not": "Structure is not control, rigidity, bureaucracy, or dead formality. Humane structure creates space.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Book Architecture v1.0.",
+  "plain_language": "Structure means life has a form that helps you breathe, choose, and follow through.",
+  "id": "FP-T-structure",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH04",
+   "FP-CH05",
+   "FP-CH19",
+   "FP-CH21",
+   "FP-CH22",
+   "FP-CH29",
+   "FP-CH31",
+   "FP-CH42",
+   "FP-CH45"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Survival",
+  "working_definition": "Survival describes the body and mind’s adaptation to threat, instability, harm, chronic stress, or unsafe conditions. Survival patterns can protect life and later restrict agency when they keep governing after conditions change.",
+  "what_it_is_not": "Survival is not weakness, pathology, identity, or proof that a person failed.",
+  "where_it_appears": "CT02 - Agency. CT08 - The Founded Model. Journey From the Edge. Part III.",
+  "plain_language": "Survival means the ways you learned to get through danger, stress, or instability.",
+  "id": "FP-T-survival",
+  "mechanism_ids": [
+   "survival"
+  ],
+  "chapter_ids": [
+   "FP-CH02",
+   "FP-CH16",
+   "FP-CH17",
+   "FP-CH21"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Survival Plasticity",
+  "working_definition": "Survival plasticity refers to the body and mind’s capacity to adapt around threat, chronic stress, trauma, burnout, and instability. It explains how protective patterns become practiced pathways.",
+  "what_it_is_not": "Survival plasticity is not permanent damage or destiny. It does not mean a person can change instantly through willpower.",
+  "where_it_appears": "Journey From the Edge. CT02 - Agency. CT08 - The Founded Model. Part III.",
+  "plain_language": "Survival plasticity means your body and mind can learn survival patterns, and they can also learn new patterns with the right conditions.",
+  "id": "FP-T-survival-plasticity",
+  "mechanism_ids": [
+   "trauma-burnout",
+   "survival-plasticity"
+  ],
+  "chapter_ids": [
+   "FP-CH16"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Theory Architecture",
+  "working_definition": "Theory Architecture is the organized structure that keeps The Founded Project’s concepts, sequence, moral boundaries, project roles, and manuscript logic coherent. It governs how ideas relate before they become chapters, products, or public language.",
+  "what_it_is_not": "Theory Architecture is not a Table of Contents, outline decoration, or bureaucratic file system.",
+  "where_it_appears": "Agent Build Instructions v1.0. Book Architecture v1.0. Continuity Packet v1.0. CT08 - The Founded Model.",
+  "plain_language": "Theory Architecture means the ideas have a structure strong enough to guide the work.",
+  "id": "FP-T-theory-architecture",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Trust",
+  "working_definition": "Trust is the relational confidence that a person, system, institution, body, community, or source can be engaged with some degree of safety, truth, consistency, accountability, and repair. The Founded Project treats trust as a condition for agency and collective life.",
+  "what_it_is_not": "Trust is not blind belief, forced forgiveness, innocence, or ignoring evidence of harm.",
+  "where_it_appears": "CT07 - Human Flourishing. CT09 - Ecosystem Integration. Future CT12 - Trust. Rooted Reclaimers. BLACC Retreats.",
+  "plain_language": "Trust means enough safety and truth exist for people to participate without constant defense.",
+  "id": "FP-T-trust",
+  "mechanism_ids": [
+   "community-trust"
+  ],
+  "chapter_ids": [
+   "FP-CH10",
+   "FP-CH12",
+   "FP-CH13",
+   "FP-CH21",
+   "FP-CH24",
+   "FP-CH29",
+   "FP-CH41"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Truth",
+  "working_definition": "Truth refers to what best corresponds to reality through evidence, disciplined inquiry, correction, and humility. The Founded Project places truth before balance.",
+  "what_it_is_not": "Truth is not certainty, popularity, identity comfort, tribal agreement, algorithmic repetition, or personal preference.",
+  "where_it_appears": "CT04 - Discernment. CT10 - Contrarian Review. Moral Boundary Principle.",
+  "plain_language": "Truth means we try to match what we believe to what is real, even when we need correction.",
+  "id": "FP-T-truth",
+  "mechanism_ids": [
+   "truth-before-balance"
+  ],
+  "chapter_ids": [
+   "FP-CH32",
+   "FP-CH43"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Values",
+  "working_definition": "Values are chosen commitments that guide decisions, boundaries, relationships, sacrifice, repair, and contribution. Governance gives values practical form.",
+  "what_it_is_not": "Values are not decorative words, branding statements, or feelings that disappear under stress.",
+  "where_it_appears": "CT03 - Governance. Human Enterprise. Founded App.",
+  "plain_language": "Values tell you what your choices should protect when life gets hard.",
+  "id": "FP-T-values",
+  "mechanism_ids": [
+   "values-under-stress"
+  ],
+  "chapter_ids": [
+   "FP-CH09",
+   "FP-CH22",
+   "FP-CH23",
+   "FP-CH28",
+   "FP-CH31",
+   "FP-CH39",
+   "FP-CH40",
+   "FP-CH43",
+   "FP-CH44"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Wealth",
+  "working_definition": "Wealth is what the perceiver experiences as sacred and abundant. It can include money, time, health, books, family, land, community, beauty, wisdom, learning, freedom, faith, creativity, peace, or a regulated nervous system.",
+  "what_it_is_not": "Wealth is not only financial capital, status, assets, or income.",
+  "where_it_appears": "CT07 - Human Flourishing. Human Enterprise personal capital. Book Architecture v1.0.",
+  "plain_language": "Wealth means having enough of what you experience as deeply valuable.",
+  "id": "FP-T-wealth",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH24"
+  ],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Whole Person Health",
+  "working_definition": "Whole Person Health understands health through the body, mind, relationships, environment, meaning, community, systems, and social conditions. In Stephen’s framework, whole person health also implies the social determinants of wellbeing.",
+  "what_it_is_not": "Whole Person Health is not generic wellness, symptom chasing, individual behavior alone, or a rejection of evidence-based care.",
+  "where_it_appears": "Journey From the Edge. Rooted Reclaimers. BLACC Retreats. GreyDoc Consulting. CT07 - Human Flourishing.",
+  "plain_language": "Whole Person Health means health includes the whole life a person lives inside.",
+  "id": "FP-T-whole-person-health",
+  "mechanism_ids": [],
+  "chapter_ids": [],
+  "source": "Founded Glossary v1.0"
+ },
+ {
+  "term": "Wisdom",
+  "working_definition": "Wisdom is the capacity to apply knowledge, discernment, experience, humility, timing, and moral judgment in service of life. It helps governance remain humane.",
+  "what_it_is_not": "Wisdom is not certainty, cleverness, information, age by itself, or institutional authority by itself.",
+  "where_it_appears": "CT03 - Governance. CT04 - Discernment. Personal Board. Contribution.",
+  "plain_language": "Wisdom means knowing how to use what you know in a way that serves life.",
+  "id": "FP-T-wisdom",
+  "mechanism_ids": [],
+  "chapter_ids": [
+   "FP-CH26"
+  ],
+  "source": "Founded Glossary v1.0"
+ }
+]

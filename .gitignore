@@ -40,3 +40,7 @@ next-env.d.ts
 
 # Lockfile (committed if the repo uses npm; remove this line to commit it)
 package-lock.json
+atlas-data/atlas-copy.md
+
+# Local editor/agent config
+.claude/

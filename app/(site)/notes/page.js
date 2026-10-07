@@ -7,8 +7,8 @@
  * git push) and Substack essays from its public feed, which link out to
  * Substack as the canonical home.
  */
-import { getNotes } from '../../lib/notes'
-import { getSubstackPosts } from '../../lib/substack'
+import { getNotes } from '../../../lib/notes'
+import { getSubstackPosts } from '../../../lib/substack'
 import NotesList from './NotesList'
 import NotesSubscribe from './NotesSubscribe'
 

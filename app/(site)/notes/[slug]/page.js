@@ -3,7 +3,7 @@
  * A single Field Note: written notes render markdown; vlogs embed the
  * YouTube player above any written companion text.
  */
-import { getNote, getNotes, renderMarkdown } from '../../../lib/notes'
+import { getNote, getNotes, renderMarkdown } from '../../../../lib/notes'
 
 export const dynamic = 'force-static'
 
