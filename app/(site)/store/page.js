@@ -1,12 +1,29 @@
 export const metadata = {
   alternates: { canonical: '/store' },
   title: 'Store | The Founded Project',
-  description: 'Shop apparel and goods organized by initiative across The Founded Project ecosystem.',
+  description: 'Shop apparel, Community Gems, and goods organized across The Founded Project ecosystem.',
 }
 
 const ETSY_STORE = 'https://www.etsy.com/shop/TheFoundedStore'
 
 const INITIATIVES = [
+  {
+    id: 'community-gems',
+    name: 'Community Gems',
+    eyebrow: 'Community care · survival programs · shared history',
+    description: 'Wearable reminders that food, health, education, elder care, and collective safety have always been community work.',
+    nodeHref: '/projects',
+    nodeLabel: 'Explore the ecosystem',
+    products: [
+      { brand: 'Community Gems', name: 'Black Panther Free Breakfast for Schoolchildren Tee', price: '$34.57', image: '/store/community-gems-free-breakfast.jpg', href: 'https://www.etsy.com/listing/4601927382/black-panther-free-breakfast-for', note: 'Remembering the daily work of feeding children before the school day began.' },
+      { brand: 'Community Gems', name: 'Black Panther People’s Free Food Program Tee', price: '$34.57', image: '/store/community-gems-free-food.jpg', href: 'https://www.etsy.com/listing/4603059851/black-panther-peoples-free-food-program', note: 'Food justice carried through organized care, mutual aid, and survival.' },
+      { brand: 'Community Gems', name: 'Black Panther People’s Free Medical Clinics Tee', price: '$34.99', image: '/store/community-gems-free-medical-clinics.jpg', href: 'https://www.etsy.com/listing/4594992394/black-panther-peoples-free-medical', note: 'Community health care built through access, service, and collective responsibility.' },
+      { brand: 'Community Gems', name: 'Black Panther Sickle Cell Screening Tee', price: '$34.99', image: '/store/community-gems-sickle-cell-screening.jpg', href: 'https://www.etsy.com/listing/4603062359/black-panther-sickle-cell-screening-tee', note: 'A tribute to community-led screening, prevention, and public-health advocacy.' },
+      { brand: 'Community Gems', name: 'Black Panther Community Acupuncture Tee', price: '$34.99', image: '/store/community-gems-community-acupuncture.jpg', href: 'https://www.etsy.com/listing/4596070835/black-panther-party-community', note: 'A wearable reminder that healing becomes power when care is shared.' },
+      { brand: 'Community Gems', name: 'Black Panther SAFE Seniors Program Tee', price: '$34.99', image: '/store/community-gems-safe-seniors.jpg', href: 'https://www.etsy.com/listing/4603084656/black-panther-safe-seniors-program-tee', note: 'Honoring organized care, accompaniment, and protection for elders.' },
+      { brand: 'Community Gems', name: 'Black Panther Community Watch Vintage Tee', price: '$34.57', image: '/store/community-gems-community-watch.jpg', href: 'https://www.etsy.com/listing/4603059217/copy-of-black-panther-community-watch', note: 'An archival-style reminder that collective safety begins with people looking out for one another.' },
+    ],
+  },
   {
     id: 'the-founded',
     name: 'The Founded',
