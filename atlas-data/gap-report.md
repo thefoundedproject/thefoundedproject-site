@@ -1,6 +1,6 @@
 # Evidentiary gap report — The Founded Project
 
-*Generated 2026-10-07 from 228 claims, 145 sources, 317 challenge records.*
+*Generated 2026-11-11 from 228 claims, 145 sources, 317 challenge records.*
 
 Priorities run from P1 (fix before anything else) to P5 (housekeeping). Every line names the record ID so it can be found in the atlas.
 
@@ -263,19 +263,19 @@ Priorities run from P1 (fix before anything else) to P5 (housekeeping). Every li
 
 ### editor-flags-pending (3)
 
-- CH01 draft carries 18 [[FLAG]] editor markers (stripped from the atlas; resolve in the manuscript)
-- CH02 draft carries 19 [[FLAG]] editor markers (stripped from the atlas; resolve in the manuscript)
+- CH01 draft carries 2 [[FLAG]] editor markers (stripped from the atlas; resolve in the manuscript)
+- CH02 draft carries 1 [[FLAG]] editor markers (stripped from the atlas; resolve in the manuscript)
 - CH03 draft carries 10 [[FLAG]] editor markers (stripped from the atlas; resolve in the manuscript)
 
 ### no-competing-explanation (136)
 
-- FP-CH01-C002: no competing explanation mapped to this specific claim
+- FP-CH01-C017: no competing explanation mapped to this specific claim
 - FP-CH01-C003: no competing explanation mapped to this specific claim
 - FP-CH01-C004: no competing explanation mapped to this specific claim
 - FP-CH01-C005: no competing explanation mapped to this specific claim
-- FP-CH01-C006: no competing explanation mapped to this specific claim
+- FP-CH01-C018: no competing explanation mapped to this specific claim
 - FP-CH01-C007: no competing explanation mapped to this specific claim
-- FP-CH01-C008: no competing explanation mapped to this specific claim
+- FP-CH01-C019: no competing explanation mapped to this specific claim
 - FP-CH01-C009: no competing explanation mapped to this specific claim
 - FP-CH01-C010: no competing explanation mapped to this specific claim
 - FP-CH01-C011: no competing explanation mapped to this specific claim

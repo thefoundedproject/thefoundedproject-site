@@ -46,7 +46,7 @@
   "pages_or_sections": null,
   "points_to": null,
   "claims_supported": [
-   "FP-CH01-C002",
+   "FP-CH01-C017",
    "FP-CH01-C009",
    "FP-CH01-C016"
   ],
@@ -280,7 +280,7 @@
   "pages_or_sections": null,
   "points_to": null,
   "claims_supported": [
-   "FP-CH01-C006",
+   "FP-CH01-C018",
    "FP-CH01-C014"
   ],
   "claims_qualified": [],
@@ -427,7 +427,7 @@
   "pages_or_sections": null,
   "points_to": null,
   "claims_supported": [
-   "FP-CH01-C008",
+   "FP-CH01-C019",
    "FP-CH01-C013"
   ],
   "claims_qualified": [],

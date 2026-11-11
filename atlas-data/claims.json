@@ -71,10 +71,10 @@
   "part": "I"
  },
  {
-  "id": "FP-CH01-C002",
+  "id": "FP-CH01-C017",
   "chapter_id": "FP-CH01",
   "chapter_number": 1,
-  "text": "The job now asks for availability across the whole day, retirement now self-funded, side income is needed to cover what the average wage doesn't, and the unpaid emotional labor is never accounted for by the employer.",
+  "text": "The job now asks for availability across the whole day, the worker funds their own retirement, a side income covers what the average wage doesn't, and the employer never counts the unpaid emotional labor.",
   "text_origin": "draft-sentence",
   "type": "fact",
   "type_basis": "cites a source the Research Map lists under Empirical Claims",
@@ -95,7 +95,7 @@
   "review_status": "unreviewed",
   "location": {
    "section": "The Inheritance",
-   "paragraph": 3,
+   "paragraph": 2,
    "section_index": 3,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
    "draft_date": "2026-08-28"
@@ -110,7 +110,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "The American job market your grandparents grew up understanding came with insurance, a pension, paid time off, and a predictable schedule. Underneath all of it sat a promise: decades of work would buy decades of stability, and the children raised on that stability would inherit something slightly better. Most employers have since withdrawn that arrangement from most jobs. The job now asks for availability across the whole day, retirement now self-funded, side income is needed to cover what the average wage doesn't, and the unpaid emotional labor is never accounted for by the employer.[^nirs-retirement] The conditions settled into a status quo. The demand keeps climbing as productivity increases. Workers pay those costs twice, first through flat wages and then through dysregulated sleep, attention, and health, and they pay it for years before understanding what it's costing them.",
+  "context": "The American job market your grandparents grew up understanding came with insurance, a pension, paid time off, and a predictable schedule. Underneath all of it sat a promise: decades of work would buy decades of stability, and the children raised on that stability would inherit something slightly better. Most employers have since withdrawn that arrangement from most jobs. The job now asks for availability across the whole day, the worker funds their own retirement, a side income covers what the average wage doesn't, and the employer never counts the unpaid emotional labor.[^nirs-retirement] Workers pay those costs twice, first in flat wages and then in dysregulated sleep, attention, and health, and most workers do not notice the second payment for years.",
   "footnote_keys": [
    "nirs-retirement"
   ]
@@ -154,7 +154,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "Doctors and hospital systems in the modern era of healthcare are now optimized for episodic illness, for short visits with clean diagnoses, and discrete interventions. Healthcare now manages a country where chronic disease is a baseline and mental health crises are commonplace. The billing has grown so complicated that no patient finds out what a visit costs before the visit happens. The clinicians inside the building are leaving those professions in numbers that should be a national emergency.[^physician-burnout] Imagine a patient walks into a clinic for a routine visit, learns at the front desk that insurance won't completely cover the services so they have to pay money they were not prepared to pay, and then gets fifteen minutes to address conditions they've been trying to manage for fifteen years. Most Americans believe the system is broken, and the rising amount of clinician burnout supports this.",
+  "context": "Doctors and hospital systems built healthcare for episodic illness: short visits, clean diagnoses, and discrete interventions. Healthcare now manages a country where chronic disease is a baseline and mental health crises are commonplace. The billing has grown so complicated that no patient finds out what a visit costs before the visit happens. The clinicians inside the building are leaving those professions in numbers that should be a national emergency.[^physician-burnout] A patient walks in for a routine visit, learns at the front desk that insurance will not cover all of it, pays money they had not planned to spend, and then gets fifteen minutes for conditions they have been managing for fifteen years.",
   "footnote_keys": [
    "physician-burnout"
   ]
@@ -202,7 +202,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "The designers of public education in this country set it up to teach the same set of skills to roughly the same kind of student at roughly the same ages, in a country whose civic, economic, and family conditions the designers expected to stay relatively stable. Now, teachers run classrooms that include trauma, language difference, learning difference, food insecurity, housing instability, mental health crisis, social media, parental absence, parental over-involvement, gun-violence drills, district underfunding, and a school calendar built for the agrarian century their great-grandparents worked. The teachers stay because the children matter. And then those same teachers leave because the conditions burn through them and turn them cynical about the whole enterprise.[^rand-teachers] Parents reach the pick-up line already used up by the rest of the day, and the school itself takes in whatever the wider world has been exposing the children to since breakfast. All of these scenarios leave the learner in a more complicated and obstructive path to a quality baseline education.",
+  "context": "The designers of public education in this country set it up to teach the same set of skills to roughly the same kind of student at roughly the same ages, in a country whose civic, economic, and family conditions the designers expected to stay relatively stable. Now, teachers run classrooms that include trauma, language difference, learning difference, food insecurity, housing instability, mental health crisis, social media, parental absence, parental over-involvement, gun-violence drills, district underfunding, and a school calendar built for the farming year the students' great-grandparents worked. The teachers stay because the children matter. And then those same teachers leave because the conditions burn through them and turn them cynical about the whole enterprise.[^rand-teachers] Parents reach the pick-up line already used up by the rest of the day, and the school itself takes in whatever the wider world has been exposing the children to since breakfast. The child gets whatever attention is left after the teacher has dealt with all of that.",
   "footnote_keys": [
    "rand-teachers"
   ]
@@ -248,16 +248,16 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "Then there is the information environment, which has changed faster than any of them. A generation ago it consisted of two or three local newspapers, three national networks, public radio, a handful of magazines, and a few hours of news a day. Today the platform on an adult's phone adjusts what it shows that adult according to how they reacted to the last thing it showed them, and it tracks the reaction and updates the next item minute by minute. It measures one thing, whether the scroll continues, and accuracy never enters the calculation.[^hari-stolen-focus] The reading skills your school taught assumed you would decide what to read next. Platform engineers built the feed to make that decision for you first. Twenty years ago most adults kept a desktop at work, a laptop at home, and a phone in the bag, and children reached almost none of it. Now one handheld device mediates work, banking, calendars, relationships, news, dating, healthcare tracking, school portals, and increasingly, private conversations with AI systems that know you better than your friends.",
+  "context": "Then there is the information environment, which has changed faster than any of them. A generation ago it consisted of two or three local newspapers, three national networks, public radio, a handful of magazines, and a few hours of news a day. Today the platform on your phone adjusts what it shows you according to how you reacted to the last thing it showed you, and it tracks that reaction and updates the next item minute by minute. It measures one thing, whether the scroll continues, and accuracy never enters the calculation.[^hari-stolen-focus] The reading skills your school taught assumed you would decide what to read next. Platform engineers built the feed to make that decision for you first. Twenty years ago most adults kept a desktop at work, a laptop at home, and a phone in the bag, and children reached almost none of it. Now one handheld device mediates work, banking, calendars, relationships, news, dating, healthcare tracking, school portals, and increasingly, private conversations with AI systems.",
   "footnote_keys": [
    "hari-stolen-focus"
   ]
  },
  {
-  "id": "FP-CH01-C006",
+  "id": "FP-CH01-C018",
   "chapter_id": "FP-CH01",
   "chapter_number": 1,
-  "text": "Americans are reading the distance between what the institution promises and what the institution delivers, and they are reading it accurately.",
+  "text": "They are reading the distance between what the institution promises and what it delivers, and they are reading it accurately.",
   "text_origin": "draft-sentence",
   "type": "fact",
   "type_basis": "cites a source the Research Map lists under Empirical Claims",
@@ -279,7 +279,7 @@
   "verification_detail": "A footnote sits on this sentence in the current draft.",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+   "section": "Every System Runs on People Who Have Run Out",
    "paragraph": 2,
    "section_index": 5,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
@@ -296,7 +296,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "Americans watching those departures trust the institutions less each year, and they have good reason. Trust in hospitals, schools, courts, agencies, and the press falls year over year. Americans are reading the distance between what the institution promises and what the institution delivers, and they are reading it accurately.[^gallup-pew-trust] Some of the decline tracks the institution's actual performance and some of it tracks the partisan-media diet of the person doing the reading. Both are real. An institution loses the authority the promise once earned, and each year of that loss makes the next year worse. If an institution's own people distrust it, they can't do the work that would win the trust back.",
+  "context": "Americans watching those departures trust the hospitals, schools, courts, agencies, and the press less each year, and they have good reason. They are reading the distance between what the institution promises and what it delivers, and they are reading it accurately.[^gallup-pew-trust] Some of the decline tracks the institution's actual performance and some of it tracks the partisan-media diet of the person doing the reading. Both are real. An institution that loses the authority its promise once earned gets weaker each year, and once its own people distrust it, they can't do the work that would win the trust back.",
   "footnote_keys": [
    "gallup-pew-trust"
   ]
@@ -327,7 +327,7 @@
   "verification_detail": "A footnote sits on this sentence in the current draft.",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+   "section": "Every System Runs on People Who Have Run Out",
    "paragraph": 3,
    "section_index": 5,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
@@ -342,16 +342,16 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "Neighborhoods empty out the same way, one commitment at a time. Volunteer rosters shrink because the members hold full-time jobs on top of the volunteering, get no funding for the work, and burn out before the job is done. Block associations lose their block captains. Mutual-aid groups start strong and flame out by year two. Clergy, union stewards, and tenant organizers meet more grief and more crisis than a human being was built to absorb, year after year, with less support and less rest. Friend groups disperse because rent in the old city became impossible, most of the group is working two jobs and commuting, and is too exhausted at the end of the day with little left to build a friendship from scratch. What people call the social fabric is a set of small standing commitments, and each one gets dropped by a person who has run out of margin to keep it.[^putnam-bowling]",
+  "context": "Neighborhoods empty out the same way, one commitment at a time. Volunteer rosters shrink because the members hold full-time jobs on top of the volunteering, get no funding for the work, and burn out before the job is done. Block associations lose their block captains. Mutual-aid groups start strong and flame out by year two. Clergy, union stewards, and tenant organizers meet more grief and more crisis than a human being was built to absorb, year after year, with less support and less rest. Friend groups disperse because rent in the old city became impossible, and the friends who stayed work two jobs, commute, and get home with nothing left to build a friendship from. What people call the social fabric is a set of small standing commitments, and each one gets dropped by a person who has run out of margin to keep it.[^putnam-bowling]",
   "footnote_keys": [
    "putnam-bowling"
   ]
  },
  {
-  "id": "FP-CH01-C008",
+  "id": "FP-CH01-C019",
   "chapter_id": "FP-CH01",
   "chapter_number": 1,
-  "text": "The labor market already straining under these conditions is about to be reorganized by artificial intelligence and robotics on a timeline no institution is prepared for.",
+  "text": "Artificial intelligence and robotics are about to reorganize a labor market already straining under these conditions, on a timeline no institution is prepared for.",
   "text_origin": "draft-sentence",
   "type": "fact",
   "type_basis": "cites a source the Research Map lists under Empirical Claims",
@@ -373,7 +373,7 @@
   "verification_detail": "A footnote sits on this sentence in the current draft.",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+   "section": "Every System Runs on People Who Have Run Out",
    "paragraph": 5,
    "section_index": 5,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
@@ -392,7 +392,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "One more societal pressure is coming, and this book returns to it before it closes. The labor market already straining under these conditions is about to be reorganized by artificial intelligence and robotics on a timeline no institution is prepared for.[^mckinsey-ai] The forecasters paid to be optimistic project net job creation, and they may be right. Either way, whole industries will be rebuilt and very large numbers of workers will lose the jobs they have, and the institutions that would retrain those workers for different work are the same ones already breaking down. The same systems failing today are the ones the country will ask to absorb that shock tomorrow.",
+  "context": "One more pressure is coming, and this book returns to it before it closes. Artificial intelligence and robotics are about to reorganize a labor market already straining under these conditions, on a timeline no institution is prepared for.[^mckinsey-ai] The forecasters paid to be optimistic project net job creation, and they may be right. Either way, whole industries will be rebuilt, very large numbers of workers will lose the jobs they have, and the institutions that would retrain them are the same ones already breaking down.",
   "footnote_keys": [
    "mckinsey-ai"
   ]
@@ -427,15 +427,15 @@
   "review_status": "unreviewed",
   "location": {
    "section": "The Inheritance",
-   "paragraph": 3,
+   "paragraph": 2,
    "section_index": 3,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
    "draft_date": "2026-08-28"
   },
-  "location_basis": "keyword match to a draft paragraph (4 shared terms); unreviewed",
+  "location_basis": "keyword match to a draft paragraph (3 shared terms); unreviewed",
   "section_hint": "The Inheritance: work",
   "related_claim_ids": [
-   "FP-CH01-C002"
+   "FP-CH01-C017"
   ],
   "mechanisms": [],
   "last_reviewed": null,
@@ -627,16 +627,16 @@
   "verification_detail": "The Research Map links this claim to a source bucket, and that source is cited inline in the draft (see related claim).",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+   "section": "Every System Runs on People Who Have Run Out",
    "paragraph": 5,
    "section_index": 5,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
    "draft_date": "2026-08-28"
   },
-  "location_basis": "keyword match to a draft paragraph (5 shared terms); unreviewed",
+  "location_basis": "keyword match to a draft paragraph (4 shared terms); unreviewed",
   "section_hint": "The Inheritance: AI emergence",
   "related_claim_ids": [
-   "FP-CH01-C008"
+   "FP-CH01-C019"
   ],
   "mechanisms": [
    "collapse-reorganization",
@@ -681,16 +681,16 @@
   "verification_detail": "The Research Map links this claim to a source bucket, and that source is cited inline in the draft (see related claim).",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+   "section": "Every System Runs on People Who Have Run Out",
    "paragraph": 2,
    "section_index": 5,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
    "draft_date": "2026-08-28"
   },
-  "location_basis": "keyword match to a draft paragraph (4 shared terms); unreviewed",
+  "location_basis": "keyword match to a draft paragraph (3 shared terms); unreviewed",
   "section_hint": "How the Breakdown Travels: institutional trust",
   "related_claim_ids": [
-   "FP-CH01-C006"
+   "FP-CH01-C018"
   ],
   "mechanisms": [
    "community-trust",
@@ -732,7 +732,7 @@
   "verification_detail": "The Research Map links this claim to a source bucket, and that source is cited inline in the draft (see related claim).",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+   "section": "Every System Runs on People Who Have Run Out",
    "paragraph": 3,
    "section_index": 5,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
@@ -783,16 +783,16 @@
   "verification_detail": "The Research Map links this claim to a source bucket, and that source is cited inline in the draft (see related claim).",
   "review_status": "unreviewed",
   "location": {
-   "section": "Every System Runs on People Who Unwillingly Burn Out for Progress",
-   "paragraph": 6,
-   "section_index": 5,
+   "section": "The Inheritance",
+   "paragraph": 2,
+   "section_index": 3,
    "draft_version": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
    "draft_date": "2026-08-28"
   },
-  "location_basis": "keyword match to a draft paragraph (3 shared terms); unreviewed",
+  "location_basis": "the footnoted sentence FP-CH01-C017 cites the same source; unreviewed",
   "section_hint": "How the Breakdown Travels: harm concentrates at thinnest margin",
   "related_claim_ids": [
-   "FP-CH01-C002"
+   "FP-CH01-C017"
   ],
   "mechanisms": [],
   "last_reviewed": null,
@@ -912,7 +912,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "Survival is the most immediate of the three forces. The nervous system runs a threat-response hierarchy, fight and flight and freeze and fawn, and those responses have kept human beings alive through danger for as long as there have been human beings.[^porges-polyvagal] A system organized around threat works from a shorter list of options, because a shorter list is faster, and speed is what threat rewards. Regulated, you can see a dozen moves. Threatened, you see only the handful of moves that once saved a life. The nervous system reads most environments correctly and spends as little time processing as it can. Once the danger passes, it is supposed to return to the longer list. Often it does not, and you keep operating from the short list for years, inside conditions that may no longer be dangerous, because the nervous system never received the repeated evidence it needs to widen the list again.",
+  "context": "Survival is the most immediate of the three forces. The nervous system runs a threat-response hierarchy, fight and flight and freeze and fawn, and those responses have kept human beings alive through danger for as long as there have been human beings.[^porges-polyvagal] A system organized around threat works from a shorter list of options, because a shorter list is faster, and speed is what threat rewards. The nervous system reads most environments correctly and spends as little time processing as it can. Once the danger passes, it is supposed to return to the longer list. Often it does not, and you keep operating from the short list for years, inside conditions that may no longer be dangerous, because the nervous system never got the repeated evidence it needs to widen the list again.",
   "footnote_keys": [
    "porges-polyvagal"
   ]
@@ -960,7 +960,7 @@
   "last_reviewed": null,
   "stage": "diagnosis",
   "part": "I",
-  "context": "Reactive choosing finishes the pattern, and it starts before you are fully awake. The second the phone wakes, the messages are already waiting. Then the meeting request, then the news. By mid-morning, with the nervous system already lit, the feeds take over and hand you a steady supply of other people's outrage and other people's staged lives.[^zuboff-surveillance] Each item asks for a response, and most of them get one. From the outside, all that responding looks like a productive day. From the inside, it feels like a treadmill, where the work is real and the ground never moves. Answering well is a genuine skill, and it spends the same hours and attention that building something would have taken. A response also ends inside the day, which makes it register as progress, while the things you actually want out of a life have to be returned to again and again over months before they amount to anything. Those are the ones that keep getting postponed.",
+  "context": "Reactive choosing finishes the pattern, and it starts before you are fully awake. The second the phone wakes, the messages are already waiting. Then the meeting request, then the news. By mid-morning, with the nervous system already lit, the feeds take over and hand you a steady supply of other people's outrage and other people's staged lives.[^zuboff-surveillance] Each item asks for a response, and most of them get one. From the outside, responding to all of the notifications looks productive, but internally, like a treadmill, work is being done without any forward movement. Answering well is a genuine skill, and it spends the same hours and attention that building something would have taken. A response also ends inside the day, which makes it register as progress, while the things you actually want out of a life have to be returned to again and again over months before they amount to anything. Those are the ones that keep getting postponed.",
   "footnote_keys": [
    "zuboff-surveillance"
   ]
@@ -1105,7 +1105,7 @@
    "draft_version": "Draft 2.3 — X-before-Y clause cut from the closing 2026-09-21",
    "draft_date": "2026-09-21"
   },
-  "location_basis": "the footnoted sentence FP-CH02-C003 cites the same source; unreviewed",
+  "location_basis": "keyword match to a draft paragraph (3 shared terms); unreviewed",
   "section_hint": null,
   "related_claim_ids": [
    "FP-CH02-C003"

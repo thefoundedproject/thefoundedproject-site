@@ -1,6 +1,6 @@
 # The Founded Project: A Theory of Human Flourishing — Research Atlas Master Dossier
 
-*Private author edition 0.1 · generated 2026-10-07 · 45 chapters, 228 claims, 145 sources, 317 challenge records*
+*Private author edition 0.1 · generated 2026-11-11 · 45 chapters, 228 claims, 145 sources, 317 challenge records*
 
 ## Central thesis
 
@@ -82,7 +82,7 @@ Every record is extracted by rule from the manuscript's own files: the Draft (te
 
 # CH01 — The System is Breaking Down
 
-*Part I: Age of Extremes · Stage: diagnosis · Draft: Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02 (2026-08-28) · 2802 words*
+*Part I: Age of Extremes · Stage: diagnosis · Draft: Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02 (2026-08-28) · 2532 words*
 
 ## Thesis (Overview › Core Claim)
 
@@ -108,29 +108,29 @@ Americans built the systems they inherit at birth (work, healthcare, school, fin
 
 ## Mechanisms
 
-trauma-burnout, legacy, civic-agency, ai-synthetic-reality, institutions-power-repair
+legacy, civic-agency, ai-synthetic-reality, institutions-power-repair
 
 ## Draft architecture
 
 - (opening) (1 ¶, 15 words)
-- Who This Book Is For (5 ¶, 458 words)
-- The Inheritance (9 ¶, 988 words, notes: hari-stolen-focus, nirs-retirement, physician-burnout, rand-teachers)
-- The Mismatch (6 ¶, 415 words)
-- Every System Runs on People Who Unwillingly Burn Out for Progress (6 ¶, 653 words, notes: gallup-pew-trust, mckinsey-ai, putnam-bowling)
-- One Life at a Time (4 ¶, 273 words)
+- Who This Book Is For (4 ¶, 441 words)
+- The Inheritance (9 ¶, 915 words, notes: hari-stolen-focus, nirs-retirement, physician-burnout, rand-teachers)
+- The Mismatch (4 ¶, 348 words)
+- Every System Runs on People Who Have Run Out (6 ¶, 578 words, notes: gallup-pew-trust, mckinsey-ai, putnam-bowling)
+- One Life at a Time (3 ¶, 235 words)
 
 ## Claims
 
 | ID | Origin | Type | Importance | Status | Sources | Claim |
 |---|---|---|---|---|---|---|
 | FP-CH01-C001 | overview-core-claim | synthesis | load-bearing | argued | FP-S0001, FP-S0002, FP-S0003, FP-S0004, FP-S0005, FP-S0006, FP-S0007, FP-S0008, FP-S0009, FP-S0010, FP-S0011, FP-S0012, FP-S0013, FP-S0014, FP-S0015, FP-S0016, FP-S0017, FP-S0018, FP-S0019, FP-S0020, FP-S0021, FP-S0022 | Americans built the systems they inherit at birth (work, healthcare, school, finance, civic life, media, and technology, with AI now arriving on top) for a set of conditions that has since changed. Each now demands more  |
-| FP-CH01-C002 | draft-sentence | fact | supporting | cited | FP-S0001 | The job now asks for availability across the whole day, retirement now self-funded, side income is needed to cover what the average wage doesn't, and the unpaid emotional labor is never accounted for by the employer. |
+| FP-CH01-C017 | draft-sentence | fact | supporting | cited | FP-S0001 | The job now asks for availability across the whole day, the worker funds their own retirement, a side income covers what the average wage doesn't, and the employer never counts the unpaid emotional labor. |
 | FP-CH01-C003 | draft-sentence | unverified | supporting | cited | FP-S0002 | The clinicians inside the building are leaving those professions in numbers that should be a national emergency. |
 | FP-CH01-C004 | draft-sentence | fact | supporting | cited | FP-S0003 | And then those same teachers leave because the conditions burn through them and turn them cynical about the whole enterprise. |
 | FP-CH01-C005 | draft-sentence | fact | supporting | cited | FP-S0004 | It measures one thing, whether the scroll continues, and accuracy never enters the calculation. |
-| FP-CH01-C006 | draft-sentence | fact | supporting | cited | FP-S0005 | Americans are reading the distance between what the institution promises and what the institution delivers, and they are reading it accurately. |
+| FP-CH01-C018 | draft-sentence | fact | supporting | cited | FP-S0005 | They are reading the distance between what the institution promises and what it delivers, and they are reading it accurately. |
 | FP-CH01-C007 | draft-sentence | fact | supporting | cited | FP-S0006 | What people call the social fabric is a set of small standing commitments, and each one gets dropped by a person who has run out of margin to keep it. |
-| FP-CH01-C008 | draft-sentence | fact | supporting | cited | FP-S0007 | The labor market already straining under these conditions is about to be reorganized by artificial intelligence and robotics on a timeline no institution is prepared for. |
+| FP-CH01-C019 | draft-sentence | fact | supporting | cited | FP-S0007 | Artificial intelligence and robotics are about to reorganize a labor market already straining under these conditions, on a timeline no institution is prepared for. |
 | FP-CH01-C009 | research-map | fact | supporting | mapped | FP-S0001, FP-S0008, FP-S0009, FP-S0010 | Pensions vanished; 401(k) burden shifted to individual; income flat, demands rising |
 | FP-CH01-C010 | research-map | fact | supporting | mapped | FP-S0011, FP-S0012, FP-S0013, FP-S0014 | Chronic disease is baseline; clinician exodus is real; billing complexity makes care opaque |
 | FP-CH01-C011 | research-map | fact | supporting | mapped | FP-S0003, FP-S0015, FP-S0016 | Teachers leaving in numbers that should be a national emergency; classrooms managing trauma, food insecurity, etc. |
@@ -335,7 +335,7 @@ Applied to: Draft 1.2 (citation pass + counter-evidence integration, 2026-06-24)
 
 # CH02 — The Crisis of Agency
 
-*Part I: Age of Extremes · Stage: diagnosis · Draft: Draft 2.3 — X-before-Y clause cut from the closing 2026-09-21 (2026-09-21) · 2443 words*
+*Part I: Age of Extremes · Stage: diagnosis · Draft: Draft 2.3 — X-before-Y clause cut from the closing 2026-09-21 (2026-09-21) · 2335 words*
 
 ## Thesis (Overview › Core Claim)
 
@@ -368,11 +368,11 @@ capacity, choice, survival, shrinking-horizon, reactive-choosing, civic-agency, 
 ## Draft architecture
 
 - (opening) (1 ¶, 34 words)
-- The Nurse on Wednesday (3 ¶, 316 words)
-- What Agency Is (8 ¶, 608 words)
-- How It Erodes (5 ¶, 623 words, notes: porges-polyvagal, zuboff-surveillance)
-- What the Erosion Costs (6 ¶, 398 words)
-- Why the Book Begins Here (4 ¶, 464 words)
+- The Nurse on Wednesday (3 ¶, 314 words)
+- What Agency Is (8 ¶, 610 words)
+- How It Erodes (5 ¶, 538 words, notes: porges-polyvagal, zuboff-surveillance)
+- What the Erosion Costs (6 ¶, 360 words)
+- Why the Book Begins Here (4 ¶, 479 words)
 
 ## Claims
 

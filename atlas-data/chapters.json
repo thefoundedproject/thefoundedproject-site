@@ -21,8 +21,8 @@
    "status": "Draft 1.6, voice-rule audit fix (contractions, passives, contrast statement, micro-marches), 2026-09-02",
    "date": "2026-08-28",
    "revised_date": null,
-   "word_count": 2802,
-   "editor_flags_stripped": 18,
+   "word_count": 2532,
+   "editor_flags_stripped": 2,
    "sections": [
     {
      "heading": "(opening)",
@@ -32,14 +32,14 @@
     },
     {
      "heading": "Who This Book Is For",
-     "paragraphs": 5,
-     "words": 458,
+     "paragraphs": 4,
+     "words": 441,
      "footnotes": []
     },
     {
      "heading": "The Inheritance",
      "paragraphs": 9,
-     "words": 988,
+     "words": 915,
      "footnotes": [
       "hari-stolen-focus",
       "nirs-retirement",
@@ -49,14 +49,14 @@
     },
     {
      "heading": "The Mismatch",
-     "paragraphs": 6,
-     "words": 415,
+     "paragraphs": 4,
+     "words": 348,
      "footnotes": []
     },
     {
-     "heading": "Every System Runs on People Who Unwillingly Burn Out for Progress",
+     "heading": "Every System Runs on People Who Have Run Out",
      "paragraphs": 6,
-     "words": 653,
+     "words": 578,
      "footnotes": [
       "gallup-pew-trust",
       "mckinsey-ai",
@@ -65,8 +65,8 @@
     },
     {
      "heading": "One Life at a Time",
-     "paragraphs": 4,
-     "words": 273,
+     "paragraphs": 3,
+     "words": 235,
      "footnotes": []
     }
    ]
@@ -88,10 +88,6 @@
    "the self as the only system a person actually governs"
   ],
   "mechanisms": [
-   {
-    "id": "trauma-burnout",
-    "basis": "title, headings, or core claim"
-   },
    {
     "id": "legacy",
     "basis": "title, headings, or core claim"
@@ -352,13 +348,13 @@
   },
   "claim_ids": [
    "FP-CH01-C001",
-   "FP-CH01-C002",
+   "FP-CH01-C017",
    "FP-CH01-C003",
    "FP-CH01-C004",
    "FP-CH01-C005",
-   "FP-CH01-C006",
+   "FP-CH01-C018",
    "FP-CH01-C007",
-   "FP-CH01-C008",
+   "FP-CH01-C019",
    "FP-CH01-C009",
    "FP-CH01-C010",
    "FP-CH01-C011",
@@ -441,8 +437,8 @@
    "status": "Draft 2.3 — X-before-Y clause cut from the closing 2026-09-21",
    "date": "2026-09-21",
    "revised_date": null,
-   "word_count": 2443,
-   "editor_flags_stripped": 19,
+   "word_count": 2335,
+   "editor_flags_stripped": 1,
    "sections": [
     {
      "heading": "(opening)",
@@ -453,19 +449,19 @@
     {
      "heading": "The Nurse on Wednesday",
      "paragraphs": 3,
-     "words": 316,
+     "words": 314,
      "footnotes": []
     },
     {
      "heading": "What Agency Is",
      "paragraphs": 8,
-     "words": 608,
+     "words": 610,
      "footnotes": []
     },
     {
      "heading": "How It Erodes",
      "paragraphs": 5,
-     "words": 623,
+     "words": 538,
      "footnotes": [
       "porges-polyvagal",
       "zuboff-surveillance"
@@ -474,13 +470,13 @@
     {
      "heading": "What the Erosion Costs",
      "paragraphs": 6,
-     "words": 398,
+     "words": 360,
      "footnotes": []
     },
     {
      "heading": "Why the Book Begins Here",
      "paragraphs": 4,
-     "words": 464,
+     "words": 479,
      "footnotes": []
     }
    ]
