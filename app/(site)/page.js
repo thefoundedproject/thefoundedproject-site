@@ -235,7 +235,7 @@ function AppMockup() {
         ))}
         <a href="https://thefounded.app" target="_blank" rel="noopener noreferrer"
           style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '10px 20px', borderRadius: 6, fontSize: 12, fontWeight: 700, textDecoration: 'none', textAlign: 'center', marginTop: 8, display: 'block' }}>
-          Get The Founded App →
+          Get The Founded →
         </a>
       </div>
     </div>
@@ -696,7 +696,7 @@ export default function Home() {
             <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, marginTop: 16, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Dr. Stephen Thompson</p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-start' }}>
-            <a href="https://thefounded.app" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '14px 32px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Go to The Founded App</a>
+            <a href="https://thefounded.app" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '14px 32px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Go to The Founded</a>
             <a href="#ecosystem" style={{ color: 'rgba(15,27,31,0.6)', fontSize: 13, textDecoration: 'none', fontWeight: 600 }}>Explore the full ecosystem ↓</a>
           </div>
         </div>
@@ -877,7 +877,7 @@ export default function Home() {
                 body: 'Your body has been through a lifetime of struggles, stressors, big and little T traumas, many of which have not been dealt with. You may have noticed your body responding to environments before your brain has the opportunity to catch up. Like when you get a headache every Sunday night before the work week begins, or when your stomach turns when you get a certain email or notification. Our goal is to call out those adaptations, establish boundaries, and build some structure to better navigate your life.',
                 tools: [
                   { name: 'Journey from the Edge', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
-                  { name: 'The Founded App', href: 'https://thefounded.app' },
+                  { name: 'The Founded', href: 'https://thefounded.app' },
                   { name: 'P/AIRS Bodywork', href: null },
                 ],
                 delay: 0,
@@ -898,7 +898,7 @@ export default function Home() {
                 title: 'Trust in your people.',
                 body: 'Your groups and boards have been through years of side conversations, dominant voices, fake urgency, and decisions you ended up making alone anyway. You may have noticed yourself agreeing in the moment before you know whether you actually agreed. Like when a meeting ends and the real conversation happens in the parking lot, or when an advisor says yes when you needed the hard answer. Our goal is to call out those dynamics, find advisors who push back when it matters, and build governance that protects the people in it.',
                 tools: [
-                  { name: 'The Founded App', href: 'https://thefounded.app' },
+                  { name: 'The Founded', href: 'https://thefounded.app' },
                   { name: 'Founded Emerging', href: 'https://thefoundedemerging.app' },
                   { name: 'GreyDoc Consulting', href: 'https://greydoc.com' },
                 ],
@@ -971,9 +971,9 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
               { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY', nextLabel: 'Rooted Reclaimers community', nextHref: '/about#rooted', status: 'Live', delay: 0 },
-              { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', delay: 80 },
+              { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', nextLabel: 'The Founded', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', delay: 80 },
               { tag: 'Civic · History · Culture', name: 'A Republic Possessed: How White Supremacy and Its American Hosts', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', delay: 160 },
-              { tag: 'Governance · Community · Agency', name: 'The Founded: A Human Enterprise Project', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', delay: 240 },
+              { tag: 'Governance · Community · Agency', name: 'The Founded: A Human Enterprise Project', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.', nextLabel: 'The Founded', nextHref: 'https://thefounded.app', status: 'Forthcoming', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', delay: 240 },
             ].map(node => (
               <Reveal key={node.name} delay={node.delay}>
                 <NodeCard {...node} />
@@ -989,8 +989,8 @@ export default function Home() {
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
-              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded App', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', nextLabel: 'The Founded on the App Store', nextHref: 'https://apps.apple.com/us/app/the-founded/id6786498112', status: 'Live', delay: 0 },
-              { tag: 'Civic Agency · Vote · Alignment', name: 'GroundedVote', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
+              { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Board. Decisions. Continuity. Built around the life you\'re actually living. This is the destination.', href: 'https://thefounded.app', nextLabel: 'The Founded on the App Store', nextHref: 'https://apps.apple.com/us/app/the-founded/id6786498112', status: 'Live', delay: 0 },
+              { tag: 'Civic Agency · Vote · Alignment', name: 'GroundedVote', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com', nextLabel: 'The Founded', nextHref: 'https://thefounded.app', status: 'Live', delay: 80 },
               { tag: 'Civic Agency · Signal · Discourse', name: 'RhetoricalPoints', desc: 'Public discourse runs on disorientation. Four AI models score political speech in real time. Hear what people are actually saying. Signal restored.', href: 'https://rhetoricalpoints.com', nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'Live', delay: 160 },
               { tag: 'Conversation · Media Literacy · Public', name: 'Consider Otherwise: Life Conversations', desc: 'Conversations with the public about the questions The Founded Project asks, about politics, and about whatever the day put in front of all of us. Everybody gets time. When a claim comes up that we can check, RhetoricalPoints checks it live, and the standard is the same for the host\u2019s claims as for yours. When a conversation needs more structure, it moves to the debate room.', href: null, nextLabel: 'GroundedVote', nextHref: 'https://groundedvote.com', status: 'In Progress', percent: 60, basis: 'Production package built and rigged. First episode not yet aired.', delay: 240 },
               { tag: 'Civic Agency · AI · Media Literacy', name: 'Rhetorical Points: Bot vs Bot', desc: 'Two AI models take opposite sides of a real question and talk it out while the RhetoricalPoints engine scores both of them live. Watch where each one stretches, dodges, or wins the point. Notice which one you believed before the scores came up. That gap is the whole lesson.', href: null, nextLabel: 'RhetoricalPoints', nextHref: 'https://rhetoricalpoints.com', status: 'In Progress', percent: 15, basis: 'Format defined and the four-model scoring engine already runs on rhetoricalpoints.com. Channel, production build, and first episode remain.', delay: 320 },
@@ -1009,7 +1009,7 @@ export default function Home() {
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16, marginBottom: 60 }}>
             {[
-              { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.', nextLabel: 'The Founded App', nextHref: 'https://thefounded.app', status: 'Live', delay: 0 },
+              { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.', nextLabel: 'The Founded', nextHref: 'https://thefounded.app', status: 'Live', delay: 0 },
               { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', desc: 'Human Enterprise Theory applied to high school and college students. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app', nextLabel: 'Emerging on the App Store', nextHref: 'https://apps.apple.com/us/app/emerging/id6786498515', status: 'Live', delay: 80 },
               { tag: 'Youth · AI Literacy · Nonprofit', name: 'Youth AI Training', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.', status: 'In Progress', nextLabel: 'Founded Emerging', nextHref: 'https://thefoundedemerging.app', percent: 45, basis: 'Digital identity curriculum built and teachable inside Founded Emerging. A dedicated AI literacy track and the nonprofit filing remain.', delay: 160 },
             ].map(node => (
@@ -1032,7 +1032,7 @@ export default function Home() {
                 name="GreyDoc Consulting"
                 desc="Corporate wellness, integrative health consulting, and AI training for organizations. Burnout avoidance, moral distress, professional sustainability, and responsible AI deployment."
                 href="https://greydoc.com"
-                nextLabel="The Founded App"
+                nextLabel="The Founded"
                 nextHref="https://thefounded.app"
                 status="Live"
               />
@@ -1082,18 +1082,18 @@ export default function Home() {
             <p style={{ color: '#D8AB69', fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16 }}>The Arc</p>
             <h2 style={{ color: '#F5F0E8', fontSize: 'clamp(28px, 4vw, 52px)', fontWeight: 300, letterSpacing: '-0.025em', marginBottom: 12 }}>Every road leads here.</h2>
             <p style={{ color: 'rgba(245,240,232,0.45)', fontSize: 17, lineHeight: 1.7, maxWidth: 560, marginBottom: 60 }}>
-              Whether you enter through a book, a civic tool, a debate, or a consulting engagement, the arc is the same. Name the survival. Reclaim the agency. Build the governance. The Founded App is where the governance lives.
+              Whether you enter through a book, a civic tool, a debate, or a consulting engagement, the arc is the same. Name the survival. Reclaim the agency. Build the governance. The Founded is where the governance lives.
             </p>
           </Reveal>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 1, backgroundColor: 'rgba(216,171,105,0.1)' }}>
             {[
               { from: 'Journey from the Edge', to: 'Rooted Reclaimers', arrow: 'Name it. Find your people.', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
-              { from: 'Rooted Reclaimers', to: 'The Founded App', arrow: 'Find your people. Build your governance.', href: 'https://thefounded.app' },
+              { from: 'Rooted Reclaimers', to: 'The Founded', arrow: 'Find your people. Build your governance.', href: 'https://thefounded.app' },
               { from: 'RhetoricalPoints', to: 'GroundedVote', arrow: 'Detect the noise. Find your alignment.', href: 'https://groundedvote.com' },
-              { from: 'GroundedVote', to: 'The Founded App', arrow: 'Know where you stand. Build from there.', href: 'https://thefounded.app' },
-              { from: 'Founded Emerging', to: 'The Founded App', arrow: 'Youth governance. Adult governance.', href: 'https://thefounded.app' },
-              { from: 'GreyDoc Consulting', to: 'The Founded App', arrow: 'Organizational wellness. Personal governance.', href: 'https://thefounded.app' },
+              { from: 'GroundedVote', to: 'The Founded', arrow: 'Know where you stand. Build from there.', href: 'https://thefounded.app' },
+              { from: 'Founded Emerging', to: 'The Founded', arrow: 'Youth governance. Adult governance.', href: 'https://thefounded.app' },
+              { from: 'GreyDoc Consulting', to: 'The Founded', arrow: 'Organizational wellness. Personal governance.', href: 'https://thefounded.app' },
             ].map((arc, i) => (
               <Reveal key={arc.from} delay={i * 60}>
                 <a href={arc.href} target="_blank" rel="noopener noreferrer" style={{ display: 'block', backgroundColor: '#0F1B1F', padding: '28px 24px', textDecoration: 'none', transition: 'background 0.2s' }}>
@@ -1108,7 +1108,7 @@ export default function Home() {
 
           <Reveal delay={400}>
             <div style={{ marginTop: 60, display: 'flex', gap: 20, flexWrap: 'wrap', justifyContent: 'center' }}>
-              <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '18px 48px', borderRadius: 6, fontSize: 15, fontWeight: 700, textDecoration: 'none' }}>Go to The Founded App</a>
+              <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '18px 48px', borderRadius: 6, fontSize: 15, fontWeight: 700, textDecoration: 'none' }}>Go to The Founded</a>
               <a href="/about" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.6)', padding: '18px 48px', borderRadius: 6, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.15)' }}>Meet Dr. Thompson</a>
             </div>
           </Reveal>
@@ -1165,9 +1165,9 @@ export default function Home() {
 
           {[
             { title: 'Journey from the Edge', status: 'Available on Amazon', statusColor: '#6D8B5F', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. The first volume in the Thompson Ecosystem.', link: { label: 'Buy on Amazon →', href: 'https://www.amazon.com/dp/B0GTXBZGJY' }, next: { label: 'Rooted Reclaimers', href: '/about#rooted' } },
-            { title: 'P/AIRS Bodywork', status: 'Forthcoming 2026', statusColor: '#D9A441', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
+            { title: 'P/AIRS Bodywork', status: 'Forthcoming 2026', statusColor: '#D9A441', percent: 70, basis: 'Chapters 2 through 13 written. Chapter 1 and illustrations remain.', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.', next: { label: 'The Founded', href: 'https://thefounded.app' } },
             { title: 'A Republic Possessed: How White Supremacy and Its American Hosts', status: 'In Progress', statusColor: '#D9A441', percent: 80, basis: 'Full draft complete. Revision and one added chapter pending.', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.', next: { label: 'GroundedVote', href: 'https://groundedvote.com' } },
-            { title: 'The Founded: A Human Enterprise Project', status: 'Forthcoming', statusColor: 'rgba(15,27,31,0.35)', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', desc: 'The governance framework. Structure for survivors ready to protect what they built.', next: { label: 'The Founded App', href: 'https://thefounded.app' } },
+            { title: 'The Founded: A Human Enterprise Project', status: 'Forthcoming', statusColor: 'rgba(15,27,31,0.35)', percent: 75, basis: 'All 45 chapters drafted and cited. Revision pass underway.', desc: 'The governance framework. Structure for survivors ready to protect what they built.', next: { label: 'The Founded', href: 'https://thefounded.app' } },
           ].map((book, i) => (
             <Reveal key={book.title} delay={i * 80}>
               <div style={{ borderTop: '1px solid rgba(15,27,31,0.1)', padding: '32px 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 24, alignItems: 'start' }}>
@@ -1217,7 +1217,7 @@ export default function Home() {
           <Reveal>
             <p style={{ color: 'rgba(245,240,232,0.3)', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 20 }}>The destination for every node in this ecosystem</p>
             <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '18px 56px', borderRadius: 6, fontSize: 16, fontWeight: 700, textDecoration: 'none', display: 'inline-block' }}>
-              The Founded App
+              The Founded
             </a>
           </Reveal>
         </div>
