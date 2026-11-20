@@ -9,7 +9,7 @@
 export const metadata = {
   alternates: { canonical: '/contact' },
   title: 'Contact | The Founded Project',
-  description: 'Reach The Founded Project for app support, partnerships, speaking, or anything else.',
+  description: 'Reach The Founded Project for app support, Golden Eight enrollment, partnerships, speaking, or general questions.',
 }
 
 function Section({ title, children }) {
@@ -36,7 +36,7 @@ export default function ContactPage() {
         <h1 style={{ color: '#0F1B1F' }} className="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-2">
           Get in touch.
         </h1>
-        <p style={{ color: 'rgba(15,27,31,0.55)' }} className="text-sm mb-12">Dr. Thompson reads what comes in. Replies usually arrive within 1–2 business days.</p>
+        <p style={{ color: 'rgba(15,27,31,0.55)' }} className="text-sm mb-12">Stephen Thompson reads what comes in. For Golden Eight enrollment, use the course address below. Replies usually arrive within 1–2 business days.</p>
 
         <Section title="Support for The Founded">
           <p>
@@ -49,9 +49,20 @@ export default function ContactPage() {
           </p>
         </Section>
 
+        <Section title="Golden Eight enrollment">
+          <p>
+            Have a question about Golden Eight, the live Baduanjin course, or want to hear when the next cohort opens in early 2027? Put “Golden Eight” in the subject line. We’ll confirm availability and send the schedule and terms before anything is paid.
+          </p>
+          <p>
+            <a href="mailto:docthompsondacmdc@gmail.com?subject=Golden%20Eight%20enrollment%20question" style={{ color: '#D8AB69' }} className="font-bold">
+              docthompsondacmdc@gmail.com
+            </a>
+          </p>
+        </Section>
+
         <Section title="Speaking, press, podcasts">
           <p>
-            For interviews, conference invitations, or podcast appearances for Dr. Stephen Thompson, clinician and author of A Republic Possessed and Founded Emerging, use the email above with &quot;Press&quot; or &quot;Speaking&quot; in the subject line.
+            For interviews, conference invitations, or podcast appearances for Stephen Thompson, clinician and author of A Republic Possessed and Founded Emerging, use the email above with &quot;Press&quot; or &quot;Speaking&quot; in the subject line.
           </p>
         </Section>
 
@@ -70,14 +81,14 @@ export default function ContactPage() {
         <Section title="Mailing address">
           <p style={{ color: 'rgba(15,27,31,0.6)' }}>
             The Founded Project<br />
-            c/o Dr. Stephen Thompson<br />
+            c/o Stephen Thompson<br />
             Minneapolis, MN, USA
           </p>
         </Section>
 
         <Section title="About">
           <p style={{ color: 'rgba(15,27,31,0.6)' }} className="italic">
-            Dr. Stephen Thompson<br />
+            Stephen Thompson<br />
             Founder, The Founded Project
           </p>
         </Section>
