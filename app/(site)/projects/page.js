@@ -6,7 +6,7 @@ export const metadata = {
 
 const PLATFORMS = [
   {
-    name: 'The Founded App',
+    name: 'The Founded',
     url: 'https://thefounded.app',
     domain: 'thefounded.app',
     tag: 'Human Enterprise · Personal Governance',
@@ -23,9 +23,9 @@ const PLATFORMS = [
     url: 'https://thefoundedemerging.app',
     domain: 'thefoundedemerging.app',
     tag: 'Youth Leadership · Emerging Adult Governance',
-    audience: 'High school & college students · Youth orgs · Leadership programs · Educators',
-    description: 'Human Enterprise Theory applied to emerging adults. For young people building serious lives without a map. Youth-safe and crisis-aware. Parental consent comes with it.',
-    features: ['Emerging adult governance curriculum', 'Youth program partnerships', 'Educator resources', 'Parental consent + youth safety', '988 crisis integration', 'Youth cohort enrollment'],
+    audience: 'High school & college students · Alpha Phi Alpha chapters · Youth orgs · Leadership programs · Educators',
+    description: 'Human Enterprise Theory applied to emerging adults, as an app and as a program. Six governance modules teach young people the structural tools that school never gets to, for high schoolers and college students building serious lives without a map. Youth-safe and crisis-aware. Parental consent comes with it.',
+    features: ['Six governance modules', 'Human Enterprise Theory for youth', 'HBCU chapter programs', 'Youth program partnerships', 'Educator resources', 'Youth cohort enrollment', 'Parental consent + youth safety', '988 crisis integration'],
     color: '#1A3A42',
     status: 'Live',
     statusColor: '#3D8B5E',
@@ -78,19 +78,8 @@ const COMMUNITY = [
     tag: 'Community · Healing · Reclamation',
     audience: 'Trauma survivors · People in reclamation · Black and Brown communities',
     description: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.',
-    features: ['Trauma-informed education', 'Movement + breathwork', 'Nutrition and wellness', 'Community connection', 'Rooted Reset 21-day program', 'Integration with The Founded App'],
+    features: ['Trauma-informed education', 'Movement + breathwork', 'Nutrition and wellness', 'Community connection', 'Rooted Reset 21-day program', 'Integration with The Founded'],
     color: '#1B2D1E',
-    status: 'Live',
-    statusColor: '#3D8B5E',
-  },
-  {
-    name: 'Founded Emerging (Youth Program)',
-    url: 'https://thefoundedemerging.app',
-    tag: 'Youth · Governance · Leadership',
-    audience: 'High school students · College students · Alpha Phi Alpha chapters · Youth orgs',
-    description: 'Six governance modules teaching young people the structural tools that school never gets to. Built for high schoolers and college students ready to govern serious lives.',
-    features: ['Six governance modules', 'Human Enterprise Theory for youth', 'Emerging adult stewardship', 'HBCU chapter programs', 'Youth leadership curriculum', 'Founded Emerging app access'],
-    color: '#2A5A66',
     status: 'Live',
     statusColor: '#3D8B5E',
   },
@@ -261,7 +250,7 @@ export default function Projects() {
             </p>
             <a href="https://thefounded.app" target="_blank" rel="noopener noreferrer"
               style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '16px 48px', borderRadius: 6, fontWeight: 700, fontSize: 14, textDecoration: 'none', display: 'inline-block' }}>
-              The Founded App →
+              The Founded →
             </a>
           </div>
         </div>
