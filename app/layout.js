@@ -55,8 +55,8 @@ export const metadata = {
   // doesn't set its own, which would mark the whole site a copy of the homepage.
   // Each page declares its own canonical instead.
   title: 'The Founded Project | Stephen Thompson',
-  description: 'The Founded Project is the ecosystem of Dr. Stephen Thompson. Survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Books, platforms, civic tools, and healing infrastructure. All working to get humans organized and reinforced.',
-  keywords: 'Human Enterprise Theory, Dr. Stephen Thompson, Founded Project, GroundedVote, trauma-informed, survivor scholar, Black healing, civic alignment',
+  description: 'The Founded Project is the ecosystem of Stephen Thompson. Survivor-scholar-clinician, author, and founder of Human Enterprise Theory. Books, platforms, civic tools, and healing infrastructure. All working to get humans organized and reinforced.',
+  keywords: 'Human Enterprise Theory, Stephen Thompson, Founded Project, GroundedVote, trauma-informed, survivor scholar, Black healing, civic alignment',
   openGraph: {
     title: 'The Founded Project',
     description: 'Get humans organized and reinforced.',

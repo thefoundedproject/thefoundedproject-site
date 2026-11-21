@@ -38,7 +38,7 @@ export function GET() {
   <channel>
     <title>Field Notes — The Founded Project</title>
     <link>${SITE}/notes</link>
-    <description>Essays and video from Dr. Stephen Thompson on personal governance, agency, and building The Founded Project in the open.</description>
+    <description>Essays and video from Stephen Thompson on personal governance, agency, and building The Founded Project in the open.</description>
     <language>en-us</language>
 ${items}
   </channel>

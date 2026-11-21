@@ -78,7 +78,7 @@ export default function NotePage({ params }) {
 
         <div className="mt-14 pt-8 border-t" style={{ borderColor: 'rgba(23,17,11,0.12)' }}>
           <p className="text-sm text-gray-500">
-            Dr. Stephen Thompson DC, DACM, BCTMB, FAIHM · The Founded Project
+            Stephen Thompson · The Founded Project
           </p>
         </div>
       </article>

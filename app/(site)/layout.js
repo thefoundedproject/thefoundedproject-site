@@ -64,7 +64,7 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-t border-gray-800 pt-6">
-          <p className="text-xs">© 2026 Stephen Thompson, DC, DACM. All rights reserved.</p>
+          <p className="text-xs">© 2026 Stephen Thompson. All rights reserved.</p>
           <p className="text-xs">The Founded Project · Stockheart Whole Health · GreyDoc Consulting · Odigo Properties</p>
         </div>
         <p className="text-xs text-gray-500 mt-4" style={{ fontSize: 10, opacity: 0.6, lineHeight: 1.6 }}>

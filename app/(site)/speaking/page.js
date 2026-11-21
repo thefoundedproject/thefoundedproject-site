@@ -9,7 +9,7 @@
 export const metadata = {
   alternates: { canonical: '/speaking' },
   title: 'Speaking | The Founded Project',
-  description: 'Dr. Stephen Thompson speaks on Human Enterprise Theory, body-first medicine, civic agency, and the architecture of self-governance. Conferences, keynotes, and institutional cohorts.',
+  description: 'Stephen Thompson speaks on Human Enterprise Theory, body-first medicine, civic agency, and the architecture of self-governance. Conferences, keynotes, and institutional cohorts.',
 }
 
 function TalkCard({ title, audience, blurb }) {
@@ -34,7 +34,7 @@ export default function SpeakingPage() {
           Bringing the work to your audience.
         </h1>
         <p style={{ color: 'rgba(15,27,31,0.6)', fontSize: 17, lineHeight: 1.65, maxWidth: 620 }} className="mb-16">
-          Dr. Stephen Thompson speaks at conferences, professional gatherings, institutional cohorts, and educational settings. The talks are clinical where the audience is clinical, philosophical where the audience is philosophical, and practical where the work has to land in someone&apos;s Monday morning.
+          Stephen Thompson speaks at conferences, professional gatherings, institutional cohorts, and educational settings. The talks are clinical where the audience is clinical, philosophical where the audience is philosophical, and practical where the work has to land in someone&apos;s Monday morning.
         </p>
 
         <section style={{ marginBottom: 64 }}>
@@ -72,7 +72,7 @@ export default function SpeakingPage() {
           <h2 style={{ color: '#0F1B1F', fontSize: 14, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Credentials</h2>
           <div style={{ backgroundColor: 'rgba(216,171,105,0.08)', borderLeft: '3px solid #9E6F2C', padding: '24px 28px', borderRadius: '0 8px 8px 0' }}>
             <p style={{ color: '#0F1B1F', fontSize: 16, lineHeight: 1.7, marginBottom: 8 }}>
-              <b>Dr. Stephen Thompson</b>
+              <b>Stephen Thompson</b>
             </p>
             <p style={{ color: 'rgba(15,27,31,0.7)', fontSize: 14, lineHeight: 1.7 }}>
               Twenty years of clinical practice, faculty-level teaching in integrative health, and the builder of the Founded Project ecosystem.
@@ -94,7 +94,7 @@ export default function SpeakingPage() {
         </div>
 
         <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-12">
-          Dr. Stephen Thompson<br />
+          Stephen Thompson<br />
           The Founded Project
         </p>
       </article>

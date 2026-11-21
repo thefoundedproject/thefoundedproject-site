@@ -16,7 +16,7 @@ export const metadata = {
   alternates: { canonical: '/notes' },
   title: 'Field Notes — The Founded Project',
   description:
-    'Essays and video from Dr. Stephen Thompson on personal governance, agency, and building The Founded Project in the open.',
+    'Essays and video from Stephen Thompson on personal governance, agency, and building The Founded Project in the open.',
 }
 
 // Was force-static, which froze the list at build time. An hourly revalidate

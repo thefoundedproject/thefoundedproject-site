@@ -635,7 +635,7 @@ export default function Home() {
               The Founded Project is a map leading you from simple Survival to Human Flourishing. The vehicle is governance and your agency stays behind the wheel. Agency requires trust, council, boundaries, dynamic balance, and discernment. The books, apps, and daily practices within the Founded Project are the practical application of cultivated agency.
             </p>
             <p style={{ color: 'rgba(245,240,232,0.6)', fontSize: 15, lineHeight: 1.65, fontStyle: 'italic' }}>
-              Built for the coming age by Dr. Stephen Thompson, a clinician and humanist who believes in the power of radical collective agency.
+              Built for the coming age by Stephen Thompson, a clinician and humanist who believes in the power of radical collective agency.
             </p>
           </div>
 
@@ -693,7 +693,7 @@ export default function Home() {
             <p style={{ color: '#0F1B1F', fontSize: 'clamp(22px, 3.5vw, 36px)', fontWeight: 300, lineHeight: 1.3, letterSpacing: '-0.02em' }}>
               &ldquo;Survival is genius.<br />The goal is to give that genius somewhere to go.&rdquo;
             </p>
-            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, marginTop: 16, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Dr. Stephen Thompson</p>
+            <p style={{ color: 'rgba(15,27,31,0.55)', fontSize: 13, marginTop: 16, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Stephen Thompson</p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-start' }}>
             <a href="https://thefounded.app" style={{ backgroundColor: '#0F1B1F', color: '#D8AB69', padding: '14px 32px', borderRadius: 6, fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Go to The Founded</a>
@@ -1109,7 +1109,7 @@ export default function Home() {
           <Reveal delay={400}>
             <div style={{ marginTop: 60, display: 'flex', gap: 20, flexWrap: 'wrap', justifyContent: 'center' }}>
               <a href="https://thefounded.app" style={{ backgroundColor: '#D8AB69', color: '#0F1B1F', padding: '18px 48px', borderRadius: 6, fontSize: 15, fontWeight: 700, textDecoration: 'none' }}>Go to The Founded</a>
-              <a href="/about" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.6)', padding: '18px 48px', borderRadius: 6, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.15)' }}>Meet Dr. Thompson</a>
+              <a href="/about" style={{ backgroundColor: 'transparent', color: 'rgba(245,240,232,0.6)', padding: '18px 48px', borderRadius: 6, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(245,240,232,0.15)' }}>Meet Stephen Thompson</a>
             </div>
           </Reveal>
         </div>
@@ -1194,7 +1194,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 48, alignItems: 'center', borderBottom: '1px solid rgba(216,171,105,0.15)', paddingBottom: 48, marginBottom: 48 }}>
           <Reveal>
             <div>
-              <p style={{ color: '#F5F0E8', fontWeight: 600, fontSize: 18, marginBottom: 4 }}>Dr. Stephen Thompson</p>
+              <p style={{ color: '#F5F0E8', fontWeight: 600, fontSize: 18, marginBottom: 4 }}>Stephen Thompson</p>
               <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 14, lineHeight: 1.65, maxWidth: 420 }}>
                 Clinician, author, and builder of systems for human reclamation. Three generations of doctors. Two decades of practice. One mission: get humans organized and reinforced.
               </p>
@@ -1203,7 +1203,7 @@ export default function Home() {
           <Reveal delay={150}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {[
-                { label: 'Meet Dr. Thompson', href: '/about' },
+                { label: 'Meet Stephen Thompson', href: '/about' },
                 { label: 'Invite to speak', href: '/speaking' },
                 { label: 'GreyDoc Consulting', href: 'https://greydoc.com' },
                 { label: 'Publisher / media inquiries', href: '/contact' },

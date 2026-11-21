@@ -9,7 +9,7 @@
 export const metadata = {
   alternates: { canonical: '/books' },
   title: 'Books | The Founded Project',
-  description: 'Books by Dr. Stephen Thompson. Memoir, theory, somatic practice, civic analysis. Published, in-progress, and forthcoming titles from The Founded Project.',
+  description: 'Books by Stephen Thompson. Memoir, theory, somatic practice, civic analysis. Published, in-progress, and forthcoming titles from The Founded Project.',
 }
 
 /**
@@ -174,7 +174,7 @@ export default function BooksPage() {
         </div>
 
         <p style={{ color: 'rgba(15,27,31,0.5)' }} className="text-sm italic mt-12">
-          Dr. Stephen Thompson
+          Stephen Thompson
         </p>
       </article>
     </main>
