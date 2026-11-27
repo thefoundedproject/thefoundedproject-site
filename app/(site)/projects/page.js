@@ -95,6 +95,19 @@ const COMMUNITY = [
   },
 ]
 
+// The same six domains as /about, so both pages draw one map of the work.
+// Cards are looked up by name; a domain with no detailed card here is
+// skipped rather than shown empty (Health has none yet).
+const BY_NAME = Object.fromEntries([...PLATFORMS, ...SERVICES, ...COMMUNITY].map(p => [p.name, p]))
+const DOMAINS = [
+  { eyebrow: 'Self-Governance', title: 'Setting your own direction, and keeping it.', names: ['The Founded', 'Founded Emerging'] },
+  { eyebrow: 'Health', title: 'Care and practice for the body that does the living.', names: [] },
+  { eyebrow: 'Community', title: 'People to do the hard work alongside.', names: ['Rooted Reclaimers', 'BLACC Retreats'] },
+  { eyebrow: 'Work & Economy', title: 'Decisions and ownership where you earn a living.', names: ['GreyDoc Consulting'] },
+  { eyebrow: 'Civics', title: 'A say in who governs, and how.', names: ['GroundedVote'] },
+  { eyebrow: 'Truth', title: 'Telling what’s real when it’s contested.', names: ['RhetoricalPoints'] },
+].filter(d => d.names.length > 0)
+
 /**
  * Progress bar for anything short of shipped. Live projects show the status dot
  * alone: a full bar on a running product reads as finished, which no live
@@ -224,23 +237,15 @@ export default function Projects() {
       <section style={{ backgroundColor: '#FAFAF7' }} className="py-20 px-6">
         <div className="max-w-6xl mx-auto space-y-6">
 
-          <div style={{ borderBottom: '1px solid rgba(15,27,31,0.1)', paddingBottom: 12, marginBottom: 24 }}>
-            <span style={{ color: '#D8AB69', fontSize: 9, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase' }}>The Platform</span>
-            <h2 style={{ color: '#0F1B1F', fontSize: 22, fontWeight: 300, marginTop: 4 }}>Apps & Digital Tools</h2>
-          </div>
-          {PLATFORMS.map(p => <ProjectCard key={p.name} {...p} />)}
-
-          <div style={{ borderBottom: '1px solid rgba(15,27,31,0.1)', paddingBottom: 12, marginTop: 48, marginBottom: 24 }}>
-            <span style={{ color: '#D8AB69', fontSize: 9, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase' }}>The Practice</span>
-            <h2 style={{ color: '#0F1B1F', fontSize: 22, fontWeight: 300, marginTop: 4 }}>Clinical & Consulting Services</h2>
-          </div>
-          {SERVICES.map(p => <ProjectCard key={p.name} {...p} />)}
-
-          <div style={{ borderBottom: '1px solid rgba(15,27,31,0.1)', paddingBottom: 12, marginTop: 48, marginBottom: 24 }}>
-            <span style={{ color: '#D8AB69', fontSize: 9, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase' }}>The Community</span>
-            <h2 style={{ color: '#0F1B1F', fontSize: 22, fontWeight: 300, marginTop: 4 }}>Programs & Spaces</h2>
-          </div>
-          {COMMUNITY.map(p => <ProjectCard key={p.name} {...p} />)}
+          {DOMAINS.map((d, i) => (
+            <div key={d.eyebrow} className="space-y-6">
+              <div style={{ borderBottom: '1px solid rgba(15,27,31,0.1)', paddingBottom: 12, marginTop: i === 0 ? 0 : 48, marginBottom: 24 }}>
+                <span style={{ color: '#D8AB69', fontSize: 9, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase' }}>{d.eyebrow}</span>
+                <h2 style={{ color: '#0F1B1F', fontSize: 22, fontWeight: 300, marginTop: 4 }}>{d.title}</h2>
+              </div>
+              {d.names.map(n => <ProjectCard key={n} {...BY_NAME[n]} />)}
+            </div>
+          ))}
 
           {/* Destination */}
           <div style={{ backgroundColor: '#0F1B1F', borderRadius: 8, padding: '48px', textAlign: 'center', marginTop: 48 }}>
