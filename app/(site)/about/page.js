@@ -157,61 +157,68 @@ export default function About() {
           </p>
 
           <DomainSection
-            eyebrow="The Platform"
-            title="Apps & Digital Tools"
+            eyebrow="Self-Governance"
+            title="Setting your own direction, and keeping it."
             nodes={[
               { tag: 'Governance · Daily Ritual · Decision', name: 'The Founded', status: 'Live', desc: 'You\'re already governing your life. This gives you the structure to do it intentionally. Mission. Decisions. Continuity. Built around the life you\'re actually living.', href: 'https://thefounded.app' },
               { tag: 'Youth · Governance · Leadership', name: 'Founded Emerging', status: 'Live', desc: 'Human Enterprise Theory applied to emerging adults. Six modules teaching them the structural tools that school never gets to.', href: 'https://thefoundedemerging.app' },
-              { tag: 'Civic · Democracy · Alignment', name: 'GroundedVote', status: 'Live', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com' },
               { tag: 'Learning · Foundations · AI', name: 'Founded Academy', status: 'Live', desc: 'Free lessons inside The Founded and Founded Emerging on money, work, relationships, civic life, and personal safety, written for anyone who was never taught them directly. AI Academy builds a personalized path on top.', href: 'https://thefounded.app' },
-              { tag: 'Civic Accountability · Speech Analysis', name: 'RhetoricalPoints', status: 'Live', desc: 'Public discourse runs on disorientation. Four AI models score political speech in real time. Hear what people are actually saying. Signal restored.', href: 'https://rhetoricalpoints.com' },
-            ]}
-          />
-
-          <DomainSection
-            eyebrow="The Voice"
-            title="Books & Manuscripts"
-            nodes={[
-              { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', status: 'Live', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
-              { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', status: 'Forthcoming', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.' },
-              { tag: 'Civic · History · Culture', name: 'A Republic Possessed: How White Supremacy and Its American Hosts', status: 'In Progress', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.' },
               { tag: 'Governance · Theory · Framework', name: 'Founded: Human Enterprise Theory', status: 'Forthcoming', desc: 'Reclaimed agency deserves somewhere to live. Human Enterprise Theory is the structure. Built for survivors ready to protect what they built.' },
-              { tag: 'Story Medicine · Integrative · Clinical', name: 'The Body Integrative', status: 'In Progress', desc: 'A translation of integrative medicine through the language of story rather than biomedical pathology. The book the clinic was waiting for.', href: '/books' },
-              { tag: 'Fiction · Power · Identity', name: 'The Manufactured Knight', status: 'In Progress', desc: 'Julian Virelli has been the city\u2019s vigilante folk hero since he was twenty-one, inside a world his parents built for him, where every villain is an actor and every rescue is placed in the news. Book One is drafted.', href: '/books' },
               { tag: 'Coaching · Method · Practice', name: 'Thompson Coaching Method', status: 'In Progress', desc: 'The practitioner framework underneath the Founded apps. The manual is compiled and in active practice. The student edition and the certification course are in production now.' },
+              { tag: 'Certification · Coaching · Clinicians', name: 'Practitioner Certification', status: 'In Progress', desc: 'The Thompson Coaching Method, taught to licensed clinicians as a live cohort and certified on recorded and documented work.', href: '/certification' },
             ]}
           />
 
           <DomainSection
-            eyebrow="The Practice"
-            title="Clinical & Consulting Services"
+            eyebrow="Health"
+            title="Care and practice for the body that does the living."
             nodes={[
               { tag: 'Clinical · Integrative · Whole Person', name: 'Stockheart Whole Health', status: 'Live', desc: 'Integrative clinical practice in Minneapolis. Chiropractic, acupuncture, and whole-person health for patients in the community.' },
+              { tag: 'Somatic · Clinical · Practitioner', name: 'P/AIRS Bodywork', status: 'Forthcoming', desc: 'A practitioner manual for daily somatic work. Touch. Conversation. Nervous system practice you can pick up between clients.' },
+              { tag: 'Story Medicine · Integrative · Clinical', name: 'The Body Integrative', status: 'In Progress', desc: 'A translation of integrative medicine through the language of story rather than biomedical pathology. The book the clinic was waiting for.', href: '/books' },
+              { tag: 'Movement · Qigong · Practice', name: 'Golden Eight', status: 'Forthcoming', desc: 'A ten-week live course in Baduanjin: eight slow movements, taught standing or seated by Stephen Thompson. The next cohort starts in early 2027.', href: '/golden-eight' },
+              { tag: 'Reset · Structure · Accountability', name: 'Rooted Reset', status: 'Live', desc: 'A 21-day structured reset program. Daily worksheets, breathwork protocols, and community accountability. 21 days of rebuilding from the ground up.' },
+              { tag: 'Memoir · Trauma · Reclamation', name: 'Journey from the Edge', status: 'Live', desc: 'The body learns to survive. This book honors those adaptations, names the cost, and walks the road back to choice. On Amazon now.', href: 'https://www.amazon.com/dp/B0GTXBZGJY' },
+            ]}
+          />
+
+          <DomainSection
+            eyebrow="Community"
+            title="People to do the hard work alongside."
+            nodes={[
+              { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', status: 'Live', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.' },
+              { tag: 'Retreat · Healing · Brotherhood', name: 'BLACC Retreats', status: 'Live', desc: 'Healing-centered retreat experiences for Black men and communities. Space. Brotherhood. Practice. The conditions reclamation needs.' },
+            ]}
+          />
+
+          <DomainSection
+            eyebrow="Work & Economy"
+            title="Decisions and ownership where you earn a living."
+            nodes={[
               { tag: 'Corporate Wellness · AI Training', name: 'GreyDoc Consulting', status: 'Live', desc: 'Clinician, author, and builder of systems for human reclamation. Corporate wellness, integrative health consulting, and responsible AI deployment for organizations.', href: 'https://greydoc.com' },
-              { tag: 'Certification · Coaching · Clinicians', name: 'Practitioner Certification', status: 'In Progress', desc: 'The Thompson Coaching Method, taught to licensed clinicians as a live cohort and certified on recorded and documented work.', href: '/certification' },
               { tag: 'Method · Problem Solving · Facilitation', name: 'The Better Question', status: 'In Progress', desc: 'One method in three forms: a team game, a recursive problem-solving experience for executives, and a facilitation format for community decisions. Each round tests a problem for viability, then sustainability, then reproducibility, and closes on a question that rewrites it.' },
             ]}
           />
 
           <DomainSection
-            eyebrow="The Community"
-            title="Programs & Spaces"
+            eyebrow="Civics"
+            title="A say in who governs, and how."
             nodes={[
-              { tag: 'Community · Healing · Reclamation', name: 'Rooted Reclaimers', status: 'Live', desc: 'The community layer of the Thompson Ecosystem. Trauma-informed education, movement, breathwork, nutrition, and connection. Daily work, done together.' },
-              { tag: 'Reset · Structure · Accountability', name: 'Rooted Reset', status: 'Live', desc: 'A 21-day structured reset program. Daily worksheets, breathwork protocols, and community accountability. 21 days of rebuilding from the ground up.' },
-              { tag: 'Retreat · Healing · Brotherhood', name: 'BLACC Retreats', status: 'Live', desc: 'Healing-centered retreat experiences for Black men and communities. Space. Brotherhood. Practice. The conditions reclamation needs.' },
-              { tag: 'Movement · Qigong · Practice', name: 'Golden Eight', status: 'Forthcoming', desc: 'A ten-week live course in Baduanjin: eight slow movements, taught standing or seated by Stephen Thompson. The next cohort starts in early 2027.', href: '/golden-eight' },
+              { tag: 'Civic · Democracy · Alignment', name: 'GroundedVote', status: 'Live', desc: 'Your vote should reflect what you actually believe. Honest, bias-audited questions show you which candidates match your values.', href: 'https://groundedvote.com' },
+              { tag: 'Civic · Research · Measurement', name: 'Freedom Apex Index', status: 'In Progress', desc: 'A research program measuring how societies raise or lower the cost of becoming and staying an agent. It scores countries across six domains, from political liberty to environmental repair, and publishes its uncertainty alongside every score.' },
+              { tag: 'Civic · History · Culture', name: 'A Republic Possessed: How White Supremacy and Its American Hosts', status: 'In Progress', desc: 'How white supremacy outlives its defeats. After each loss, its beneficiaries adapt and bend courts, legislatures, and other institutions back toward the same hierarchy.' },
+              { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
             ]}
           />
 
           <DomainSection
-            eyebrow="The Signal"
-            title="Civic Infrastructure"
+            eyebrow="Truth"
+            title="Telling what’s real when it’s contested."
             nodes={[
+              { tag: 'Civic Accountability · Speech Analysis', name: 'RhetoricalPoints', status: 'Live', desc: 'Public discourse runs on disorientation. Four AI models score political speech in real time. Hear what people are actually saying. Signal restored.', href: 'https://rhetoricalpoints.com' },
               { tag: 'Conversation · Media Literacy · Public', name: 'Consider Otherwise: Life Conversations', status: 'In Progress', desc: 'Conversations with the public about the questions The Founded Project asks, about politics, and about whatever the day put in front of all of us. Everybody gets time. When a claim comes up that we can check, RhetoricalPoints checks it live, and the standard is the same for the host\u2019s claims as for yours. When a conversation needs more structure, it moves to the debate room.' },
               { tag: 'Civic Agency · AI · Media Literacy', name: 'Rhetorical Points: Bot vs Bot', status: 'In Progress', desc: 'Two AI models take opposite sides of a real question and talk it out while the RhetoricalPoints engine scores both of them live. Watch where each one stretches, dodges, or wins the point. Notice which one you believed before the scores came up. That gap is the whole lesson.' },
-              { tag: 'Civic · Community · Education', name: 'Youth AI Training', status: 'In Progress', desc: 'AI literacy training for young people. They\'ll grow up inside systems that tech founders, governments, and ad platforms are designing right now. They deserve the language to understand it and the skill to respond. Transitioning to nonprofit.' },
-              { tag: 'Civic · Research · Measurement', name: 'Freedom Apex Index', status: 'In Progress', desc: 'A research program measuring how societies raise or lower the cost of becoming and staying an agent. It scores countries across six domains, from political liberty to environmental repair, and publishes its uncertainty alongside every score.' },
+              { tag: 'Fiction · Power · Identity', name: 'The Manufactured Knight', status: 'In Progress', desc: 'Julian Virelli has been the city\u2019s vigilante folk hero since he was twenty-one, inside a world his parents built for him, where every villain is an actor and every rescue is placed in the news. Book One is drafted.', href: '/books' },
             ]}
           />
 
